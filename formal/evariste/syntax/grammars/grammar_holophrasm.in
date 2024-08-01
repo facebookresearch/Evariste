@@ -1,0 +1,1030 @@
+#class# ~w ~t Z1 Z0 Z' Z" Z Y1 Y0 Y' Y" Y X1 X0 X' X" X W2 W1 W0 W' W" W V3 V2 V1_ V1 V0 V' V" V U1 U0 U' U" U T1 T0 T' T" T S2 S1_ S1 S0 S' S" S Ro2 Ro1 R1_ R0 R' R" R Q1 Q0 Q' Q" Q P1 P0 P' P" P O2 O1_ O1 O0 O' O" O N1 N0 N' N" N M2 M1_ M1 M0 M' M" M L3 L2 L1_ L1 L0 L' L" L K1 K0 K' K" K J1 J0 J' J" J I2 I1_ I1 I0 I' I" I H2 H1_ H1 H0 H' H" H G2 G1_ G1 G0 G' G" G F3 F2 F1_ F1 F0 F' F" F E1 E0 E' E" E D2 D1_ D1 D0 D' D" D C2 C1_ C1 C0 C' C" C B2 B1_ B1 B0 B' B" B A2 A1_ A1 A0 A' A" A <_b <_a 1t 0w 0t /t .~ .|| .xb .x. .w .t .id .graph .dom .cod ._|_ .^ .\/ .X. .Object .Morphism .<_ .< .1. .0b .0. ./\ ./ .- ., .+b .+^ .+ .* .(x) .(+) -w -t +w +t
+#setvar# z1 z0 z' z" z y1 y0 y' y" y x1 x0 x' x" x w1 w0 w' w" w v2 v1 v0 v'_ v' v"_ v" v u1 u0 u' u" u t1 t0 t' t" t s1 s0 s'_ s' s"_ s" s r1 r0 r' r" r q1 q0 q' q" q p1 p0 p' p" p o1_ o1 o0_ o0 o'_ o' o"_ o" o n1 n0_ n' n" n m1 m0 m' m" m l1 l0 l' l" l k1 k0 k' k" k j1 j0 j' j" j i1 i0 i' i" i h1 h0 h' h" h g1 g0 g' g" g f1 f0_ f' f" f e1 e0 e' e" e d1 d0 d' d" d c1_ c0_ c' c" c b1_ b1 b0_ b0 b' b" b a1_ a1 a0_ a0 a' a" a
+#wff# ze1 ze0 ze' ze" ze th1 th0 th' th" th ta1 ta0 ta' ta" ta si1 si0 si' si" si rh1 rh0 rh' rh" rh ps1 ps0 ps' ps" ps ph1 ph0 ph' ph" ph mu la ka et1 et0 et' et" et ch1 ch0_ ch' ch" ch
+$start wff $wff
+$start class $class
+$start set $setvar
+$start setvar $setvar
+$wff ( $wff \/_ $wff ) $*wxo
+$wff $class We $class $*wwe
+$wff (. $wff , $wff , $wff ). $*wvhc3
+$wff (. $wff , $wff ). $*wvhc2
+$wff (. $wff , $wff , $wff ->. $wff ). $*wvd3
+$wff (. $wff , $wff ->. $wff ). $*wvd2
+$wff (. $wff ->. $wff ). $*wvd1
+$wff ( $wff until $wff ) $*wunt
+$wff T. $*wtru
+$wff Tr $class $*wtr
+$wff $class C_ $class $*wss
+$wff Smo $class $*wsmo
+$wff $class Se $class $*wse
+$wff [ $class / $setvar ] $wff $*wsbc
+$wff E. $setvar e. $class $wff $*wrex
+$wff E! $setvar e. $class $wff $*wreu
+$wff Rel $class $*wrel
+$wff A. $setvar e. $class $wff $*wral
+$wff $class C. $class $*wpss
+$wff Prt $class $*wprt
+$wff $class Po $class $*wpo
+$wff Ord $class $*word
+$wff $class Or $class $*wor
+$wff ( $wff \/ $wff ) $*wo
+$wff $class e/ $class $*wnel
+$wff $class =/= $class $*wne
+$wff ( $wff -/\ $wff ) $*wnan
+$wff -. $wff $*wn
+$wff E* $setvar $wff $*wmo
+$wff Lim $class $*wlim
+$wff $class Isom $class , $class ( $class , $class ) $*wiso
+$wff ( $wff -> $wff ) $*wi
+$wff Fun $class $*wfun
+$wff $class Fr $class $*wfr
+$wff $class : $class -onto-> $class $*wfo
+$wff $class Fn $class $*wfn
+$wff F. $*wfal
+$wff $class : $class -1-1-onto-> $class $*wf1o
+$wff $class : $class -1-1-> $class $*wf1
+$wff $class : $class --> $class $*wf
+$wff E. $setvar $wff $*wex
+$wff E! $setvar $wff $*weu
+$wff $class Er $class $*wer
+$wff <> $wff $*wdia
+$wff () $wff $*wcirc
+$wff $class = $class $*wceq
+$wff $class e. $class $*wcel
+$wff $class $class $class $*wbr
+$wff [.] $wff $*wbox
+$wff ( $wff <-> $wff ) $*wb
+$wff A. $setvar $wff $*wal
+$wff CHOICE $*wac
+$wff ( $wff /\ $wff ) $*wa
+$wff ( $wff \/ $wff \/ $wff ) $*w3o
+$wff ( $wff -/\ $wff -/\ $wff ) $*w3nand
+$wff ( $wff /\ $wff /\ $wff ) $*w3a
+$wff _TrFo ( $class , $class , $class ) $*w-bnj19
+$wff ( $wff /\ $wff /\ $wff /\ $wff ) $*w-bnj17
+$wff $class _FrSe $class $*w-bnj15
+$wff $class _Se $class $*w-bnj13
+$wff #wff# $*wff_var
+$setvar #setvar# $*setvar_var
+$class AC_ $class $*wacn
+$class ZRHom $*czrh
+$class ZRing $*czr
+$class Zp $*czp
+$class Z/nZ $*czn
+$class ZMod $*czlm
+$class zeta $*czeta
+$class zeroDiv $*czerodiv
+$class _ZZ $*cza
+$class ZZ $*cz
+$class RR*s $*cxrs
+$class RR* $*cxr
+$class Xs. $*cxps
+$class ( $class X. $class ) $*cxp
+$class -e $class $*cxne
+$class *e $*cxmu
+$class *Met $*cxmt
+$class *MetSp $*cxme
+$class xm $*cxmat
+$class ^ko $*cxko
+$class +e $*cxad
+$class Words $*cwrd
+$class WAtoms $*cwpointsN
+$class Word $class $*cword
+$class InaccW $*cwina
+$class ~<_* $*cwdom
+$class _V $*cvv
+$class .s $*cvsca
+$class varFMnd $*cvrmd
+$class varFGrp $*cvrgp
+$class RVec $*cvr
+$class vol $*cvol
+$class Vec $*cvec
+$class PolyAP $*cvdwp
+$class MonoAP $*cvdwm
+$class AP $*cvdwa
+$class VDeg $*cvdg
+$class CVecOLD $*cvc
+$class +h $*cva
+$class var1 $*cv1
+$class $setvar $*cv
+$class ZZ>= $*cuz
+$class unitVec $*cuvc
+$class 1r $*cur
+$class UniOp $*cuo
+$class UnifSp $*cunifsp
+$class Unif $*cunif
+$class U. $class $*cuni
+$class Undef $*cund
+$class ( $class u. $class ) $*cun
+$class UMGrph $*cumg
+$class ~~>u $*culm
+$class Unit $*cui
+$class UFL $*cufl
+$class UFil $*cufil
+$class UFD $*cufd
+$class Unic1p $*cuc1p
+$class ub $*cub
+$class ( $class (x) $class ) $*ctxp
+$class tX $*ctx
+$class TopVec $*ctvc
+$class tsums $*ctsu
+$class TosetRel $*ctsr
+$class tarskiMap $*ctskm
+$class Tarski $*ctsk
+$class TopSet $*cts
+$class TrPred ( $class , $class , $class ) $*ctrpred
+$class Trn $*ctrnN
+$class trL $*ctrl
+$class TopRing $*ctrg
+$class TransportTo $*ctransport
+$class Trans $*ctrans
+$class tr $*ctr
+$class TopSpOLD $*ctpsOLD
+$class TopSp $*ctps
+$class tpos $class $*ctpos
+$class toPoly1 $*ctp1
+$class { $class , $class , $class } $*ctp
+$class TotBnd $*ctotbnd
+$class Toset $*ctos
+$class topX $*ctopx
+$class TopSep $*ctopsep
+$class TopOn $*ctopon
+$class TopOpen $*ctopn
+$class TopLnd $*ctoplnd
+$class TopFld $*ctopfld
+$class Top $*ctop
+$class Tofld $*ctofld
+$class TermObj $*ctobj
+$class toNrmGrp $*ctng
+$class toMetSp $*ctmt
+$class TopMnd $*ctmd
+$class TopMod $*ctlm
+$class .v $*ctimesr
+$class toHL $*cthl
+$class TGrp $*ctgrp
+$class TopGrp $*ctgp
+$class topGen $*ctg
+$class TEndo $*ctendo
+$class TopDRing $*ctdrg
+$class t+ $*ctcl
+$class toCHil $*ctch
+$class TC $*ctc
+$class TopBases $*ctb
+$class tar $*ctar
+$class tanh $*ctanh
+$class tan $*ctan
+$class tail $*ctail
+$class Fre $*ct1
+$class Kol2 $*ct0
+$class SymGrp $*csymg
+$class ( $class (++) $class ) $*csymdif
+$class sym $*csym
+$class SubVec $*csvec
+$class No $*csur
+$class sup ( $class , $class , $class ) $*csup
+$class SumObj $*csumo
+$class Succ $*csuccf
+$class suc $class $*csuc
+$class substr $*csubstr
+$class SubSemiGrp $*csubsmg
+$class SubRing $*csubrg
+$class SubMnd $*csubmnd
+$class SubGrpOp $*csubgo
+$class SubGrp $*csubg
+$class SubCat $*csubc
+$class sum_ $setvar e. $class $class $*csu
+$class *r $*cstv
+$class sSet $*csts
+$class Struct $*cstr
+$class *rf $*cstf
+$class States $*cst
+$class SSet $*csset
+$class SubSp $*css
+$class Source $*csrce
+$class subringAlg $*csra
+$class *Ring $*csr
+$class []NN $*csquarenn
+$class sqr $*csqr
+$class supw $*cspw
+$class span $*cspn
+$class splice $*csplice
+$class Lambda $*cspc
+$class .ih $*csp
+$class Sink $*csnk
+$class { $class } $*csn
+$class SemiGrpHom $*csmhom
+$class .cv $*csmcv
+$class .m $*csmat
+$class .h $*csm
+$class pSyl $*cslw
+$class selectVars $*cslv
+$class <s $*cslt
+$class Slot $class $*cslot
+$class slices $*cslices
+$class sinh $*csinh
+$class Singletons $*csingles
+$class Singleton $*csingle
+$class sin $*csin
+$class shift $*cshi
+$class SH $*csh
+$class sgn $*csgnf
+$class Sgn $*csgn
+$class sigma $*csgm
+$class -g $*csg
+$class *-Fld $*csfld
+$class splitFld1 $*csf1
+$class splitFld $*csf
+$class seqom ( $class , $class ) $*cseqom
+$class seq $class ( $class , $class ) $*cseq
+$class SemiGrp $*csem
+$class Seg<_ $*csegle
+$class segc $*csegc
+$class seg $*cseg
+$class sec $*csec
+$class leR $*cse
+$class SubDRing $*csdrg
+$class ~< $*csdm
+$class SCon $*cscon
+$class .sf $*cscaf
+$class Scalar $*csca
+$class subSemiGrpGen $*csbsgrg
+$class [_ $class / $setvar ]_ $class $*csb
+$class SatE $*csate
+$class Sat $*csat
+$class <" $class $class $class $class $class $class $class $class "> $*cs8
+$class <" $class $class $class $class $class $class $class "> $*cs7
+$class <" $class $class $class $class $class $class "> $*cs6
+$class <" $class $class $class $class $class "> $*cs5
+$class <" $class $class $class $class "> $*cs4
+$class <" $class $class $class "> $*cs3
+$class <" $class $class "> $*cs2
+$class <" $class "> $*cs1
+$class t*rec $*crtrcl
+$class t* $*crtcl
+$class RSpan $*crsp
+$class RingIso $*crs
+$class Rn $*crrn
+$class RR3 $*crr3c
+$class /Qp $*crqp
+$class *Q $*crq
+$class [C.] $*crpss
+$class RPrime $*crpm
+$class RR+ $*crp
+$class roSetCat $*crocase
+$class rank $*crnk
+$class RingOps $*crngo
+$class RngIso $*crngiso
+$class RngHom $*crnghom
+$class ran $class $*crn
+$class rmY $*crmy
+$class rmX $*crmx
+$class RLReg $*crlreg
+$class ~~>r $*crli
+$class ~=r $*crisc
+$class ( iota_ $setvar e. $class $wff ) $*crio
+$class RingHom $*crh
+$class RingSpan $*crgspn
+$class ringLMod $*crglmod
+$class Ring $*crg
+$class reverse $*creverse
+$class Retr $*cretr
+$class Restrict $*crestrict
+$class |`t $*crest
+$class |`s $*cress
+$class ( $class |` $class ) $*cres
+$class ^r $*crelexp
+$class Reg $*creg
+$class Ref $*cref
+$class recs ( $class ) $*crecs
+$class Re $*cre
+$class rec ( $class , $class ) $*crdg
+$class ray $*cray2
+$class Ray $*cray
+$class Range $*crange
+$class Ramsey $*cram
+$class RAffSp $*craffsp
+$class { $setvar e. $class | $wff } $*crab
+$class rem1p $*cr1p
+$class R1 $*cr1
+$class RR $*cr
+$class /s $*cqus
+$class quot $*cquot
+$class qTop $*cqtop
+$class ( $class /. $class ) $*cqs
+$class _Qp $*cqpa
+$class Qp $*cqp
+$class ~QG $*cqg
+$class quot1p $*cq1p
+$class QQ $*cq
+$class ^s $*cpws
+$class ~P $class $*cpw
+$class +v $*cpv
+$class PtFin $*cptfin
+$class PtDf ( $class , $class ) $*cptdfc
+$class Xt_ $*cpt
+$class PSubSp $*cpsubsp
+$class polySplitLim $*cpsl
+$class pmSgn $*cpsgn
+$class mPSDer $*cpsd
+$class PSubCl $*cpscN
+$class PwSer1 $*cps1
+$class PosetRel $*cps
+$class |= $*cprv
+$class PrRing $*cprrng
+$class Prop $*cprop
+$class prj $*cproj
+$class ProdObj $*cprodo
+$class pr $*cpro
+$class Prime $*cprime
+$class PrIdl $*cpridl
+$class PresetRel $*cpresetrel
+$class Preset $*cpreset
+$class Pred ( $class , $class , $class ) $*cpred
+$class Xs_ $*cprds
+$class prdct $*cprdct
+$class prod3_ $setvar e. $class $class $class $*cprd3
+$class prod2_ $setvar e. $class $class $class $*cprd2
+$class prod_ $setvar e. $class $class $class $*cprd
+$class { $class , $class } $*cpr
+$class pprod ( $class , $class ) $*cpprod
+$class ppi $*cppi
+$class ||g $*cppg
+$class +P. $*cpp
+$class _|_P $*cpolN
+$class Points $*cpointsN
+$class PPoints $*cpoints
+$class Poset $*cpo
+$class PNrm $*cpnrm
+$class +oo $*cpnf
+$class pmTrsp $*cpmtr
+$class pmap $*cpmap
+$class ^pm $*cpm
+$class Poly< $*cplylt
+$class Poly $*cply
+$class +r $*cplusr
+$class +g $*cplusg
+$class +f $*cplusf
+$class lt $*cplt
+$class +R $*cplr
+$class +Q $*cplq
+$class +pR $*cplpr
+$class +pQ $*cplpq
+$class PLines $*cplines
+$class Plig $*cplig
+$class +N $*cpli
+$class le $*cple
+$class +cv $*cplcv
+$class plane3 $*cplane3
+$class Poly1 $*cpl1
+$class projh $*cpjh
+$class proj1 $*cpj1
+$class proj $*cpj
+$class piN $*cpin
+$class PID $*cpid
+$class pi1 $*cpi1
+$class pi $*cpi
+$class PHtpy $*cphtpy
+$class ~=ph $*cphtpc
+$class PreHil $*cphl
+$class phi $*cphi
+$class phc $*cphc
+$class +H $*cph
+$class pGrp $*cpgp
+$class polyFld $*cpfl
+$class PellFund $*cpellfund
+$class Pell1QR $*cpell1qr
+$class Pell14QR $*cpell14qr
+$class Pell1234QR $*cpell1234qr
+$class PCon $*cpcon
+$class *p $*cpco
+$class PCl $*cpclN
+$class pCnt $*cpc
+$class PAut $*cpautN
+$class +P $*cpadd
+$class 1. $*cp1
+$class 0. $*cp0
+$class vol* $*covol
+$class OutsideOf $*coutsideof
+$class <. $class , $class , $class >. $*cotp
+$class _|_ $*cort
+$class ors $*cors
+$class OrIso $*coriso
+$class OrHom $*corhom
+$class ordTop $*cordt
+$class ordPwSer $*copws
+$class OP $*cops
+$class oppR $*coppr
+$class oppG $*coppg
+$class opfn $*copfn
+$class { <. <. $setvar , $setvar >. , $setvar >. | $wff } $*copab2
+$class { <. $setvar , $setvar >. | $wff } $*copab
+$class <. $class , $class >. $*cop
+$class On $*con0
+$class .o $*comu
+$class OmN $*comn
+$class OML $*coml
+$class Om1 $*comi
+$class om $*com
+$class OL $*col
+$class OrdIso ( $class , $class ) $*coi
+$class OuterFiveSeg $*cofs
+$class oR $class $*cofr
+$class oF $class $*cof
+$class ^o $*coe
+$class odZ $*codz
+$class ODual $*codu
+$class od $*cod
+$class ocv $*cocv
+$class ocH $*coch
+$class ocA $*cocaN
+$class oc $*coc
+$class OBasis $*cobs
+$class +o $*coa
+$class o_ $*co_
+$class O(1) $*co1
+$class ( $class $class $class ) $*co
+$class NzRing $*cnzr
+$class ndx $*cnx
+$class NrmVec $*cnvc
+$class NrmCVec $*cnv
+$class numer $*cnumer
+$class Natural $*cntrl
+$class int $*cnt
+$class NrmSGrp $*cnsg
+$class -v $*cnsb
+$class .sOLD $*cns
+$class nrm $*cnrm2
+$class Nrm $*cnrm
+$class NrmRing $*cnrg
+$class R. $*cnr
+$class Q. $*cnq
+$class N. $*cnpi
+$class P. $*cnp
+$class -.c $*cnots
+$class notc $*cnotc
+$class normop $*cnop
+$class normh $*cno
+$class normOpOLD $*cnmoo
+$class normOp $*cnmo
+$class NMHom $*cnmhm
+$class normfn $*cnmf
+$class normCV $*cnmcv
+$class norm $*cnm
+$class NrmMod $*cnlm
+$class N-Locally $class $*cnlly
+$class null $*cnl
+$class NrmGrp $*cngp
+$class NGHom $*cnghm
+$class Neug $*cneug
+$class nei $*cnei
+$class -ucv $*cnegcv
+$class -u $class $*cneg
+$class NoeACS $*cnacs
+$class 0vec $*cn0v
+$class NN0 $*cn0
+$class NN $*cn
+$class mzPolyCld $*cmzpcl
+$class mzPoly $*cmzp
+$class mxl $*cmxl
+$class mVar $*cmvr
+$class -h $*cmv
+$class .r $*cmulr
+$class x. $*cmul
+$class mmu $*cmu
+$class MetSp $*cmt
+$class CMet $*cms
+$class Moore $*cmre
+$class mrCls $*cmrc
+$class .R $*cmr
+$class .Q $*cmq
+$class ( $setvar e. $class , $setvar e. $class |-> $class ) $*cmpt2
+$class ( $setvar e. $class |-> $class ) $*cmpt
+$class mPwSer $*cmps
+$class .pR $*cmpr
+$class .pQ $*cmpq
+$class mPoly $*cmpl
+$class mapd $*cmpd
+$class minPolyAA $*cmpaa
+$class .P. $*cmp
+$class MetOpen $*cmopn
+$class Mono $*cmon
+$class mod $*cmo
+$class mnl $*cmnl
+$class -oo $*cmnf
+$class MndOp $*cmndo
+$class Mnd $*cmnd
+$class Monic $*cmnc
+$class Monic1p $*cmn1
+$class maMul $*cmmul
+$class +m $*cmmat
+$class -r $*cminusr
+$class invg $*cminusg
+$class - $*cmin
+$class .N $*cmi
+$class mHomP $*cmhp
+$class MndHom $*cmhm
+$class Dgra $*cmgra
+$class mulGrp $*cmgp
+$class .g $*cmg
+$class MEndo $*cmend
+$class meet $*cmee
+$class Met $*cme
+$class mDeg $*cmdg
+$class maDet $*cmdat
+$class MH $*cmd
+$class -cv $*cmcv
+$class MblFn $*cmbf
+$class MaxIdl $*cmaxidl
+$class Mat $*cmat
+$class ^m $*cmap
+$class Magma $*cmagm
+$class maAdju $*cmadu
+$class -1R $*cm1r
+$class LVols $*clvol
+$class LVec $*clvec
+$class lub $*club
+$class <RR $*cltrr
+$class LTrn $*cltrn
+$class <R $*cltr
+$class <Q $*cltq
+$class <pQ $*cltpq
+$class <P $*cltp
+$class <N $*clti
+$class <bag $*cltb
+$class < $*clt
+$class sup_ $setvar e. $class $class $*clsupp
+$class LSubSp $*clss
+$class LSpan $*clspn
+$class limsup $*clsp
+$class LSSum $*clsm
+$class LSHyp $*clsh
+$class ^md $*clsg
+$class LSAtoms $*clsa
+$class psc $*clpsc
+$class LPol $*clpoN
+$class LPlanes $*clpl
+$class LPIR $*clpir
+$class LPIdeal $*clpidl
+$class limPt $*clp
+$class \/c $*clors
+$class log $*clog
+$class LocFin $*clocfin
+$class LinOp $*clo
+$class LNoeR $*clnr
+$class LnOp $*clno
+$class LNoeM $*clnm
+$class LMod $*clmod
+$class LMIso $*clmim
+$class ~=m $*clmic
+$class LMHom $*clmhm
+$class LimCat $*clmct
+$class ~~>t $*clm
+$class Locally $class $*clly
+$class LLines $*clln
+$class LKer $*clk
+$class Hom $*clinm
+$class inf_ $setvar e. $class $class $*clinfp
+$class LinesEE $*clines2
+$class Lines $*clines
+$class line3 $*cline3
+$class Line $*cline2
+$class line $*cline
+$class LIndS $*clinds
+$class LIndF $*clindf
+$class IndClsBu $*clinclb
+$class IndCls $*clincl
+$class Limits $*climits
+$class LIdeal $*clidl
+$class ~~> $*cli
+$class LHyp $*clh
+$class /L $*clgs
+$class log_G $*clgam
+$class LFnl $*clfn
+$class LFinGen $*clfig
+$class LinFn $*clf
+$class <_op $*cleo
+$class <_ $*cle
+$class LDil $*cldil
+$class ldgIdlSeq $*cldgis
+$class LDual $*cld
+$class <oL $*clcv
+$class LCDual $*clcd
+$class CvLat $*clc
+$class LBasis $*clbs
+$class BndLat $*clbl
+$class lb $*clb
+$class LAut $*claut
+$class LatAlg $*clatalg
+$class Lat $*clat
+$class LatRel $*cla
+$class KQ $*ckq
+$class Kleene $*ckln
+$class kGen $*ckgen
+$class ketbra $*ck
+$class join $*cjn
+$class X_ $setvar e. $class $class $*cixp
+$class U_ $setvar e. $class $class $*ciun
+$class IntgRing $*citr
+$class IntgOver $*citgo
+$class S.2 $*citg2
+$class S.1 $*citg1
+$class S. $class $class _d $setvar $*citg
+$class IsolatedPt $*cisopt
+$class Iso $*ciso
+$class Ismty $*cismty
+$class Irred $*cir
+$class toInc $*cipo
+$class .if $*cipf
+$class .i $*cip
+$class (,) $*cioo
+$class (,] $*cioc
+$class InitObj $*ciobj
+$class ( iota $setvar $wff ) $*cio
+$class invr $*cinvr
+$class Intvl $*cintvl
+$class |^| $class $*cint
+$class infw $*cinf
+$class Inacc $*cina
+$class ( $class i^i $class ) $*cin
+$class IndMet $*cims
+$class =>c $*cimps
+$class impc $*cimpc
+$class Img $*cimg
+$class "s $*cimas
+$class Image $class $*cimage
+$class ( $class " $class ) $*cima
+$class Im $*cim
+$class |^|_ $setvar e. $class $class $*ciin
+$class II $*cii
+$class IdlGen $*cigen
+$class idlGen1p $*cig1p
+$class Ig $*cig
+$class Isofunc $*cifunc
+$class InnerFiveSeg $*cifs
+$class if ( $wff , $class , $class ) $*cif
+$class Xp $*cidp
+$class IDomn $*cidom
+$class IdlNEW $*cidln
+$class Idl $*cidl
+$class IdSetCat $*cidcase
+$class id_ $*cid_
+$class _I $*cid
+$class [,) $*cico
+$class [,] $*cicc
+$class L^1 $*cibl
+$class Ibg $*cibg
+$class Ibcg $*cibcg
+$class _i $*ci
+$class HVMap $*chvm
+$class Htpy $*chtpy
+$class \/H $*chsup
+$class CHStates $*chst
+$class Hil $*chs
+$class .op $*chot
+$class +op $*chos
+$class hom $*chom
+$class -op $*chod
+$class HrmOp $*cho
+$class ~= $*chmph
+$class HmOp $*chmo
+$class Homeo $*chmeo
+$class HL $*chlt
+$class CHilOLD $*chlo
+$class HomLim $*chlim
+$class ~~>v $*chli
+$class HLHil $*chlh
+$class HomLimB $*chlb
+$class CHil $*chl
+$class vH $*chj
+$class Iop $*chio
+$class ~H $*chil
+$class HGMap $*chg
+$class .fn $*chft
+$class +fn $*chfs
+$class HDMap1 $*chdma1
+$class HDMap $*chdma
+$class # $*chash
+$class har $*char
+$class Haus $*cha
+$class 0hop $*ch0o
+$class AxUn $*cgzu
+$class AxRep $*cgzr
+$class AxPow $*cgzp
+$class AxInf $*cgzi
+$class AxReg $*cgzg
+$class ZF $*cgzf
+$class AxExt $*cgze
+$class Z[i] $*cgz
+$class ^g $*cgx
+$class GrpWOp $*cgwo
+$class > $*cgt
+$class gsum $*cgsu
+$class /g $*cgs
+$class Univ $*cgru
+$class Grp $*cgrp
+$class Grammar $*cgrm
+$class graphSetCat $*cgraphcase
+$class GrpOp $*cgr
+$class E.g $class $class $*cgox
+$class =g $*cgoq
+$class \/g $*cgoo
+$class -.g $class $*cgon
+$class A.g $class $class $*cgol
+$class ->g $*cgoi
+$class e.g $*cgoe
+$class <->g $*cgob
+$class /\g $*cgoa
+$class |g $*cgna
+$class inv $*cgn
+$class glb $*cglb
+$class GrpOpIso $*cgiso
+$class GrpIso $*cgim
+$class ~=g $*cgic
+$class Id $*cgi
+$class GrpOpHom $*cghom
+$class GrpHom $*cghm
+$class GF_oo $*cgfo
+$class GF $*cgf
+$class >_ $*cge-real
+$class ge $*cge
+$class GCH $*cgch
+$class gcdOLD ( $class , $class ) $*cgcdOLD
+$class gcd $*cgcd
+$class _G $*cgam
+$class GrpAct $*cga
+$class ..^ $*cfzo
+$class ... $*cfz
+$class ( $class ` $class ) $*cfv
+$class Funs $*cfuns
+$class Funpart $class $*cfunpart
+$class Func $*cfunc
+$class FullFun $class $*cfullfn
+$class FreeSemiGrp $*cfsm
+$class FiveSeg $*cfs
+$class freeMnd $*cfrmd
+$class freeLMod $*cfrlm
+$class freeGrp $*cfrgp
+$class Frf $*cfrf
+$class Fne $*cfne
+$class Fin $*cfn
+$class Fmla $*cfmla
+$class FilMap $*cfm
+$class fLimfrs $*cflimfrs
+$class fLim $*cflim
+$class fLimf $*cflf
+$class Fld $*cfld
+$class |_ $*cfl
+$class Fix $class $*cfix
+$class Fin7 $*cfin7
+$class Fin6 $*cfin6
+$class Fin5 $*cfin5
+$class Fin4 $*cfin4
+$class Fin3 $*cfin3
+$class Fin2 $*cfin2
+$class Fin1a $*cfin1a
+$class Fil $*cfil
+$class Field $*cfield
+$class fi $*cfi
+$class filGen $*cfg
+$class fClus $*cfcls
+$class fClusf $*cfcf
+$class fBas $*cfbas
+$class _|_c $*cfals
+$class ! $*cfa
+$class ^ $*cexp
+$class ExId $*cexid
+$class eval $*cevl
+$class EulPaths $*ceup
+$class _e $*ceu
+$class evalSub1 $*ces1
+$class evalSub $*ces
+$class /Q $*cerq
+$class ~R $*cer
+$class ~Qp $*ceqp
+$class ~Q $*ceq
+$class Epic $*cepi
+$class _E $*cep
+$class ~~ $*cen
+$class gamma $*cem
+$class eigval $*cel
+$class eigvec $*cei
+$class ~FG $*cefg
+$class EE $*cee
+$class EDRingR $*cedring-rN
+$class EDRing $*cedring
+$class [ $class ] $class $*cec
+$class eval1 $*ce1
+$class exp $*ce
+$class /r $*cdvr
+$class Dn $*cdvn
+$class DVecH $*cdvh
+$class DVecA $*cdveca
+$class _D $*cdv
+$class dst $*cdst
+$class ||r $*cdsr
+$class (+)m $*cdsmm
+$class dist $*cds
+$class Dirset $*cdrs
+$class DivRingOps $*cdrng
+$class DivRing $*cdr
+$class _ $class $class $*cdp2
+$class . $*cdp
+$class Domn $*cdomn
+$class domSetCat $*cdomcase
+$class Domain $*cdomain
+$class dom_ $*cdom_
+$class ~<_ $*cdom
+$class Dmn $*cdmn
+$class MH* $*cdmd
+$class dom $class $*cdm
+$class DLat $*cdlat
+$class joinH $*cdjh
+$class vA $*cdjaN
+$class || $*cdivides
+$class /cv $*cdivcv
+$class / $*cdiv
+$class S_ [ $class -> $class ] $class _d $setvar $*cdit
+$class DirRel $*cdir
+$class .iOLD $*cdip
+$class Dioph $*cdioph
+$class Dil $*cdilN
+$class DIsoH $*cdih
+$class ( $class \ $class ) $*cdif
+$class DIsoC $*cdic
+$class DIsoB $*cdib
+$class DIsoA $*cdia
+$class degAA $*cdgraa
+$class deg $*cdgr
+$class deg1 $*cdg1
+$class derv $*cderv
+$class der $*cder
+$class denom $*cdenom
+$class Ded $*cded
+$class ; $class $class $*cdc
+$class CytP $*ccytp
+$class ^c $*ccxp
+$class <o $*ccvr
+$class CovMap $*ccvm
+$class <oH $*ccv
+$class cut $*ccut
+$class cur2 $*ccur2
+$class cur1 $*ccur1
+$class Cup $*ccup
+$class cset $*ccst
+$class CSubSp $*ccss
+$class csc $*ccsc
+$class CRingOps $*ccring
+$class CRing $*ccrg
+$class card $*ccrd
+$class C^n $*ccpn
+$class cplMetSp $*ccpms
+$class CPreHilOLD $*ccphlo
+$class CPreHil $*ccph
+$class Cp $*ccp
+$class cot $*ccot
+$class cosh $*ccosh
+$class cos $*ccos
+$class convex $*cconvex
+$class concat $*cconcat
+$class conc $*cconc
+$class con $*ccon2
+$class Con $*ccon
+$class ( $class o. $class ) $*ccom
+$class Colinear $*ccolin
+$class coln $*ccol
+$class coeff $*ccoe
+$class codSetCat $*ccodcase
+$class cod_ $*ccod_
+$class coe1 $*cco1
+$class ConOp $*cco
+$class `' $class $*ccnv
+$class Cntz $*ccntz
+$class Cntr $*ccntr
+$class CNrm $*ccnrm
+$class CnP $*ccnp
+$class ConFn $*ccnfn
+$class CCfld $*ccnfld
+$class CNF $*ccnf
+$class -cn-> $*ccncf
+$class Cn $*ccn
+$class cm $*ccmtN
+$class CMetSp $*ccms
+$class MorphismSetCat $*ccmrcase
+$class Comp $*ccmp
+$class CMnd $*ccmn
+$class Com2 $*ccm2
+$class Com1 $*ccm1
+$class C_H $*ccm
+$class CMod $*cclm
+$class Clsd $*ccld
+$class CLat $*ccla
+$class cls $*ccl
+$class * $*ccj
+$class Circle $*ccircle
+$class cinv $*ccinv
+$class theta $*ccht
+$class chr $*cchr
+$class CH $*cch
+$class Cgr3 $*ccgr3
+$class Cgr $*ccgr
+$class CauFil $*ccfil
+$class cf $*ccf
+$class ceiling $*ccei
+$class +c $*ccda
+$class CBan $*ccbn
+$class Cauchy $*ccau
+$class Cat $*ccat
+$class SetCat $*ccaset
+$class Cart $*ccart
+$class Cap $*ccap
+$class Cau $*cca
+$class 0 $*cc0
+$class CC $*cc
+$class Btwn $*cbtwn
+$class btw $*cbtw
+$class Base $*cbs
+$class bra $*cbr
+$class BernPoly $*cbp
+$class BndLinOp $*cbo
+$class Bnd $*cbnd
+$class Ban $*cbn
+$class BLnOp $*cblo
+$class ball $*cbl
+$class <=>c $*cbis
+$class Bigcup $*cbigcup
+$class bic $*cbic
+$class bday $*cbday
+$class _C $*cbc
+$class BaseSet $*cba
+$class Atoms $*catm
+$class arctan $*catan
+$class HAtoms $*cat
+$class Ass $*cass
+$class AlgSpan $*casp
+$class arcsin $*casin
+$class algSc $*cascl
+$class AssAlg $*casa
+$class area $*carea
+$class Apply $*capply
+$class AntiDir $*cantidir
+$class angc $*cangc
+$class /\c $*cands
+$class andc $*candc
+$class ( $class XX. $class ) $*caltxp
+$class << $class , $class >> $*caltop
+$class Alg $*calg
+$class aleph $*cale
+$class AtLat $*cal
+$class adj $*caj
+$class AlgInd $*cai
+$class adjh $*cado
+$class + $*caddc
+$class Action $*cact
+$class ACS $*cacs
+$class arccos $*cacos
+$class AbsVal $*cabv
+$class absv $*cabsv
+$class abs $*cabs
+$class AbelOp $*cablo
+$class Abel $*cabel
+$class { $setvar | $wff } $*cab
+$class AA $*caa
+$class Segments $*cSeg
+$class Pc $*cPc
+$class 9 $*c9
+$class 8 $*c8
+$class 7 $*c7
+$class 6 $*c6
+$class 5 $*c5
+$class 4o $*c4o
+$class 4 $*c4
+$class 3o $*c3o
+$class 3 $*c3
+$class 2o $*c2o
+$class 2ndc $*c2ndc
+$class 2nd $*c2nd
+$class 2Ideal $*c2idl
+$class 2 $*c2
+$class 1stc $*c1stc
+$class 1st $*c1st
+$class 1R $*c1r
+$class 1Q $*c1q
+$class 1P $*c1p
+$class 1o $*c1o
+$class 10 $*c10
+$class 1 $*c1
+$class 0h $*c0v
+$class 0R $*c0r
+$class 0p $*c0p
+$class 0op $*c0o
+$class 0H $*c0h
+$class 0g $*c0g
+$class 0cv $*c0cv
+$class (/) $*c0
+$class _trCl ( $class , $class , $class ) $*c-bnj18
+$class _fns $class $*c-bnj16
+$class _pred ( $class , $class , $class ) $*c-bnj14
+$class #class# $*class_var
+axiom_hyp_order {"wn": [0], "wi": [0, 1], "wb": [0, 1], "wo": [0, 1], "wa": [0, 1], "w3o": [0, 1, 2], "w3a": [0, 1, 2], "wnan": [0, 1], "wxo": [0, 1], "wtru": [], "wfal": [], "wal": [1, 0], "wex": [1, 0], "cv": [0], "wceq": [0, 1], "wcel": [0, 1], "wsbc": [2, 1, 0], "weu": [1, 0], "wmo": [1, 0], "cab": [1, 0], "wne": [0, 1], "wnel": [0, 1], "wral": [1, 2, 0], "wrex": [1, 2, 0], "wreu": [1, 2, 0], "crab": [1, 2, 0], "cvv": [], "csb": [1, 0, 2], "cdif": [0, 1], "cun": [0, 1], "cin": [0, 1], "wss": [0, 1], "wpss": [0, 1], "c0": [], "cif": [0, 1, 2], "cpw": [0], "csn": [0], "cpr": [0, 1], "ctp": [0, 1, 2], "cop": [0, 1], "cotp": [0, 1, 2], "cuni": [0], "cint": [0], "ciun": [0, 1, 2], "ciin": [0, 1, 2], "wbr": [0, 2, 1], "copab": [1, 2, 0], "cmpt": [0, 1, 2], "wtr": [0], "cep": [], "cid": [], "wpo": [1, 0], "wor": [1, 0], "wfr": [1, 0], "wse": [1, 0], "wwe": [1, 0], "word": [0], "con0": [], "wlim": [0], "csuc": [0], "com": [], "cxp": [0, 1], "ccnv": [0], "cdm": [0], "crn": [0], "cres": [0, 1], "cima": [0, 1], "ccom": [0, 1], "wrel": [0], "wfun": [0], "wfn": [0, 1], "wf": [2, 0, 1], "wf1": [2, 0, 1], "wfo": [2, 0, 1], "wf1o": [2, 0, 1], "cfv": [1, 0], "wiso": [4, 2, 3, 0, 1], "co": [0, 2, 1], "copab2": [1, 2, 3, 0], "cmpt2": [0, 2, 1, 3, 4], "cof": [0], "cofr": [0], "c1st": [], "c2nd": [], "ctpos": [0], "crpss": [], "cio": [1, 0], "wsmo": [0], "crecs": [0], "crdg": [0, 1], "cseqom": [0, 1], "c1o": [], "c2o": [], "c3o": [], "c4o": [], "coa": [], "comu": [], "coe": [], "wer": [1, 0], "cec": [0, 1], "cqs": [0, 1], "cmap": [], "cpm": [], "cixp": [0, 1, 2], "cen": [], "cdom": [], "csdm": [], "cfn": [], "cund": [], "crio": [1, 2, 0], "cfi": [], "csup": [0, 1, 2], "coi": [1, 0], "char": [], "cwdom": [], "ccnf": [], "ctc": [], "cr1": [], "crnk": [], "ccrd": [], "cale": [], "ccf": [], "wacn": [0], "wac": [], "ccda": [], "cfin1a": [], "cfin2": [], "cfin3": [], "cfin4": [], "cfin5": [], "cfin6": [], "cfin7": [], "cgch": [], "cwina": [], "cina": [], "ctsk": [], "cgru": [], "ctskm": [], "cnpi": [], "cpli": [], "cmi": [], "clti": [], "cplpq": [], "cmpq": [], "cltpq": [], "ceq": [], "cnq": [], "c1q": [], "cerq": [], "cplq": [], "cmq": [], "crq": [], "cltq": [], "cnp": [], "c1p": [], "cpp": [], "cmp": [], "cltp": [], "cplpr": [], "cmpr": [], "cer": [], "cnr": [], "c0r": [], "c1r": [], "cm1r": [], "cplr": [], "cmr": [], "cltr": [], "cc": [], "cr": [], "cc0": [], "c1": [], "ci": [], "caddc": [], "cltrr": [], "cmul": [], "cle": [], "cpnf": [], "cmnf": [], "cxr": [], "clt": [], "cmin": [], "cneg": [0], "cdiv": [], "cn": [], "cn0": [], "cz": [], "cq": [], "crp": [], "c2": [], "c3": [], "c4": [], "c5": [], "c6": [], "c7": [], "c8": [], "c9": [], "c10": [], "cdc": [0, 1], "cuz": [], "cxne": [0], "cxad": [], "cxmu": [], "cioo": [], "cioc": [], "cico": [], "cicc": [], "cfz": [], "cfzo": [], "cfl": [], "cmo": [], "cseq": [2, 0, 1], "cexp": [], "cfa": [], "cbc": [], "chash": [], "cshi": [], "cre": [], "cim": [], "ccj": [], "csqr": [], "cabs": [], "clsp": [], "cli": [], "crli": [], "co1": [], "csu": [2, 0, 1], "ce": [], "ceu": [], "csin": [], "ccos": [], "ctan": [], "cpi": [], "cdivides": [], "cgcd": [], "cprime": [], "codz": [], "cphi": [], "cpc": [], "cgz": [], "cvdwa": [], "cvdwm": [], "cvdwp": [], "cram": [], "cstr": [], "cnx": [], "csts": [], "cslot": [0], "cbs": [], "cress": [], "cplusg": [], "cmulr": [], "cstv": [], "csca": [], "cvsca": [], "cip": [], "cts": [], "cple": [], "coc": [], "cds": [], "cunif": [], "crest": [], "ctopn": [], "ctg": [], "cpt": [], "cprds": [], "cpws": [], "cordt": [], "cxrs": [], "c0g": [], "cgsu": [], "cimas": [], "cqus": [], "cqtop": [], "cxps": [], "cpreset": [], "cdrs": [], "cpo": [], "cplt": [], "club": [], "cglb": [], "cjn": [], "cmee": [], "ctos": [], "cp0": [], "cp1": [], "clat": [], "ccla": [], "codu": [], "cipo": [], "cdlat": [], "cps": [], "ctsr": [], "cspw": [], "cinf": [], "cla": [], "cdir": [], "ctail": [], "cmnd": [], "cgrp": [], "cminusg": [], "cplusf": [], "csg": [], "cmg": [], "cmhm": [], "csubmnd": [], "cword": [0], "cconcat": [], "cs1": [0], "csubstr": [], "csplice": [], "creverse": [], "cs2": [0, 1], "cs3": [0, 1, 2], "cs4": [0, 1, 2, 3], "cs5": [0, 1, 2, 3, 4], "cs6": [0, 1, 2, 3, 4, 5], "cs7": [0, 1, 2, 3, 4, 5, 6], "cs8": [0, 1, 2, 3, 4, 5, 6, 7], "cfrmd": [], "cvrmd": [], "csubg": [], "cnsg": [], "cqg": [], "cghm": [], "cgim": [], "cgic": [], "cga": [], "csymg": [], "cod": [], "cpgp": [], "cslw": [], "cefg": [], "cfrgp": [], "cvrgp": [], "ccmn": [], "cabel": [], "coppg": [], "cmgp": [], "crg": [], "ccrg": [], "cur": [], "coppr": [], "cdsr": [], "cui": [], "cir": [], "cinvr": [], "cdvr": [], "crh": [], "crs": [], "cdr": [], "cfield": [], "csubrg": [], "crgspn": [], "cabv": [], "csr": [], "cstf": [], "clmod": [], "cscaf": [], "clss": [], "clspn": [], "clmhm": [], "clmim": [], "clmic": [], "clbs": [], "clsm": [], "cpj1": [], "clvec": [], "clidl": [], "crglmod": [], "crsp": [], "csra": [], "c2idl": [], "clpidl": [], "clpir": [], "cnzr": [], "crlreg": [], "cdomn": [], "cidom": [], "cpid": [], "casa": [], "casp": [], "cascl": [], "cmps": [], "cmvr": [], "cmpl": [], "ces": [], "cevl": [], "cmhp": [], "cpsd": [], "cltb": [], "copws": [], "cslv": [], "cmdg": [], "cai": [], "cps1": [], "cv1": [], "cpl1": [], "ces1": [], "ce1": [], "cdg1": [], "cco1": [], "ctp1": [], "cxmt": [], "cme": [], "cbl": [], "cmopn": [], "ccnfld": [], "czrh": [], "czlm": [], "cchr": [], "czn": [], "cphl": [], "cipf": [], "cocv": [], "ccss": [], "cthl": [], "cpj": [], "chs": [], "cobs": [], "cmre": [], "cmrc": [], "cacs": [], "ctop": [], "ctopon": [], "ctpsOLD": [], "ctps": [], "ctb": [], "ccld": [], "cnt": [], "ccl": [], "cnei": [], "clp": [], "ccn": [], "ccnp": [], "clm": [], "ct0": [], "ct1": [], "cha": [], "creg": [], "cnrm": [], "ccnrm": [], "cpnrm": [], "ccmp": [], "ccon": [], "c1stc": [], "c2ndc": [], "clly": [0], "cnlly": [0], "ckgen": [], "ctx": [], "cxko": [], "ckq": [], "chmeo": [], "chmph": [], "cfbas": [], "cfg": [], "cfil": [], "cufil": [], "cufl": [], "cfm": [], "cflim": [], "cflf": [], "cfcls": [], "cfcf": [], "ctmd": [], "ctgp": [], "ctsu": [], "ctrg": [], "ctdrg": [], "ctlm": [], "ctvc": [], "cxme": [], "cmt": [], "ctmt": [], "cnm": [], "cngp": [], "ctng": [], "cnrg": [], "cnlm": [], "cnvc": [], "cnmo": [], "cnghm": [], "cnmhm": [], "cii": [], "ccncf": [], "chtpy": [], "cphtpy": [], "cphtpc": [], "cpco": [], "comi": [], "comn": [], "cpi1": [], "cpin": [], "cclm": [], "ccph": [], "ctch": [], "ccfil": [], "cca": [], "cms": [], "ccms": [], "cbn": [], "chl": [], "covol": [], "cvol": [], "cmbf": [], "cibl": [], "citg1": [], "citg2": [], "citg": [1, 2, 0], "cdit": [1, 2, 3, 0], "c0p": [], "cdv": [], "cdvn": [], "ccpn": [], "cmn1": [], "cuc1p": [], "cq1p": [], "cr1p": [], "cig1p": [], "cply": [], "cidp": [], "ccoe": [], "cdgr": [], "cquot": [], "caa": [], "culm": [], "clog": [], "ccxp": [], "casin": [], "cacos": [], "catan": [], "carea": [], "cem": [], "ccht": [], "cppi": [], "cmu": [], "csgm": [], "clgs": [], "cplig": [], "crpm": [], "cufd": [], "ctcl": [], "crtcl": [], "cgr": [], "cgi": [], "cgn": [], "cgs": [], "cgx": [], "cablo": [], "csubgo": [], "cass": [], "cexid": [], "cmagm": [], "csem": [], "cmndo": [], "cghom": [], "cgiso": [], "crngo": [], "cdrng": [], "csfld": [], "ccm2": [], "cfld": [], "cvc": [], "cnv": [], "cpv": [], "cba": [], "cns": [], "cn0v": [], "cnsb": [], "cnmcv": [], "cims": [], "cdip": [], "css": [], "clno": [], "cnmoo": [], "cblo": [], "c0o": [], "caj": [], "chmo": [], "ccphlo": [], "ccbn": [], "chlo": [], "chil": [], "cva": [], "csm": [], "c0v": [], "cmv": [], "csp": [], "cno": [], "ccau": [], "chli": [], "csh": [], "cch": [], "cort": [], "cph": [], "cspn": [], "chj": [], "chsup": [], "c0h": [], "ccm": [], "cpjh": [], "chos": [], "chot": [], "chod": [], "chfs": [], "chft": [], "ch0o": [], "chio": [], "cnop": [], "cco": [], "clo": [], "cbo": [], "cuo": [], "cho": [], "cnmf": [], "cnl": [], "ccnfn": [], "clf": [], "cado": [], "cbr": [], "ck": [], "cleo": [], "cei": [], "cel": [], "cspc": [], "cst": [], "chst": [], "cat": [], "ccv": [], "cmd": [], "cdmd": [], "czeta": [], "cgam": [], "clgam": [], "cretr": [], "cpcon": [], "cscon": [], "ccvm": [], "cumg": [], "ceup": [], "cvdg": [], "csgn": [], "cfmla": [], "csat": [], "csate": [], "cgoe": [], "cgna": [], "cgol": [1, 0], "cprv": [], "cgoq": [], "cgoa": [], "cgon": [0], "cgoi": [], "cgoo": [], "cgob": [], "cgox": [1, 0], "cgze": [], "cgzr": [], "cgzp": [], "cgzu": [], "cgzg": [], "cgzi": [], "cgzf": [], "citr": [], "ccpms": [], "chlb": [], "chlim": [], "cpfl": [], "csf1": [], "csf": [], "cpsl": [], "czr": [], "cgf": [], "cgfo": [], "ceqp": [], "crqp": [], "cqp": [], "czp": [], "cqpa": [], "ccp": [], "crelexp": [], "crtrcl": [], "cpred": [1, 0, 2], "ctrpred": [1, 0, 2], "csur": [], "cslt": [], "cbday": [], "csymdif": [0, 1], "ctxp": [0, 1], "cpprod": [0, 1], "csset": [], "ctrans": [], "cbigcup": [], "climits": [], "cfix": [0], "cfuns": [], "csingle": [], "csingles": [], "cimage": [0], "ccart": [], "cimg": [], "cdomain": [], "crange": [], "capply": [], "ccup": [], "ccap": [], "csuccf": [], "cfunpart": [0], "cfullfn": [0], "crestrict": [], "caltop": [0, 1], "caltxp": [0, 1], "cee": [], "cbtwn": [], "ccgr": [], "cofs": [], "ctransport": [], "cifs": [], "ccgr3": [], "ccolin": [], "cfs": [], "csegle": [], "coutsideof": [], "cline2": [], "cray": [], "clines2": [], "cbp": [], "w3nand": [0, 1, 2], "cgcdOLD": [0, 1], "wbox": [0], "wdia": [0], "wcirc": [0], "wunt": [0, 1], "cpro": [], "cproj": [], "ccst": [], "clatalg": [], "ccur1": [], "ccur2": [], "corhom": [], "coriso": [], "cpresetrel": [], "cmxl": [], "cmnl": [], "cub": [], "clb": [], "cge": [], "cse": [], "cantidir": [], "clbl": [], "cprd": [2, 0, 3, 1], "cprd2": [2, 0, 3, 1], "cprd3": [2, 0, 3, 1], "ccm1": [], "clsg": [], "csubsmg": [], "csbsgrg": [], "csmhom": [], "cfsm": [], "ctofld": [], "czerodiv": [], "cidln": [], "clinm": [], "cact": [], "cgwo": [], "cvec": [], "csvec": [], "cvr": [], "cmmat": [], "csmat": [], "cxmat": [], "craffsp": [], "cdst": [], "cabsv": [], "cnrm2": [], "ctopx": [], "cflimfrs": [], "cisopt": [], "cunifsp": [], "copfn": [], "ctopfld": [], "clsupp": [0, 1, 2], "clinfp": [0, 1, 2], "cfrf": [], "cplcv": [], "c0cv": [], "cmcv": [], "cnegcv": [], "csmcv": [], "cdivcv": [], "cintvl": [], "cder": [], "cmgra": [], "calg": [], "cdom_": [], "ccod_": [], "cid_": [], "co_": [], "cded": [], "ccat": [], "chom": [], "cepi": [], "cmon": [], "ciso": [], "ccinv": [], "cfunc": [], "cifunc": [], "csubc": [], "ciobj": [], "ctobj": [], "csrce": [], "csnk": [], "cntrl": [], "clmct": [], "cprodo": [], "csumo": [], "ctar": [], "ctr": [], "ccmrcase": [], "cdomcase": [], "cgraphcase": [], "ccodcase": [], "cidcase": [], "crocase": [], "ccaset": [], "cpoints": [], "cplines": [], "cig": [], "cline": [], "ccol": [], "ccon2": [], "cppg": [], "cibg": [], "cbtw": [], "cseg": [], "cSeg": [], "cray2": [], "cconvex": [], "cibcg": [], "csegc": [], "cangc": [], "cslices": [], "ccut": [], "cneug": [], "ccircle": [], "ckln": [], "cwrd": [], "clincl": [], "clinclb": [], "cgrm": [], "csym": [], "cprdct": [], "cconc": [], "cnots": [], "cands": [], "clors": [], "cimps": [], "cbis": [], "cfals": [], "cphc": [], "clpsc": [], "cPc": [], "cnotc": [], "candc": [], "cors": [], "cimpc": [], "cbic": [], "cprop": [], "cderv": [], "cfne": [], "cref": [], "cptfin": [], "clocfin": [], "ctotbnd": [], "cbnd": [], "cismty": [], "crrn": [], "crnghom": [], "crngiso": [], "crisc": [], "ccring": [], "cidl": [], "cpridl": [], "cmaxidl": [], "cprrng": [], "cdmn": [], "cigen": [], "wprt": [0], "cnacs": [], "cmzpcl": [], "cmzp": [], "cdioph": [], "cnumer": [], "cdenom": [], "cpell1qr": [], "cpell1234qr": [], "cpell14qr": [], "cpellfund": [], "csquarenn": [], "crmx": [], "crmy": [], "clfig": [], "clnm": [], "cdsmm": [], "cfrlm": [], "cuvc": [], "clindf": [], "clinds": [], "clnr": [], "cldgis": [], "cmnc": [], "cplylt": [], "cdgraa": [], "cmpaa": [], "citgo": [], "cza": [], "cpmtr": [], "cpsgn": [], "cmmul": [], "cmat": [], "cmdat": [], "cmadu": [], "cmend": [], "csdrg": [], "ccntz": [], "ccntr": [], "ccytp": [], "ctopsep": [], "ctoplnd": [], "cplusr": [], "cminusr": [], "ctimesr": [], "cptdfc": [0, 1], "crr3c": [], "cplane3": [], "cline3": [], "cge-real": [], "cgt": [], "csinh": [], "ccosh": [], "ctanh": [], "csec": [], "ccsc": [], "ccot": [], "cdp2": [0, 1], "cdp": [], "csgnf": [], "ccei": [], "wvd1": [0, 1], "wvd2": [0, 1, 2], "wvhc2": [0, 1], "wvd3": [0, 1, 2, 3], "wvhc3": [0, 1, 2], "w-bnj17": [0, 1, 2, 3], "c-bnj16": [0], "c-bnj14": [2, 0, 1], "w-bnj13": [1, 0], "w-bnj15": [1, 0], "c-bnj18": [2, 0, 1], "w-bnj19": [1, 0, 2], "clsa": [], "clsh": [], "clcv": [], "clfn": [], "clk": [], "cld": [], "cops": [], "ccmtN": [], "col": [], "coml": [], "ccvr": [], "catm": [], "cal": [], "clc": [], "chlt": [], "clln": [], "clpl": [], "clvol": [], "clines": [], "cpointsN": [], "cpsubsp": [], "cpmap": [], "cpadd": [], "cpclN": [], "cpolN": [], "cpscN": [], "clh": [], "claut": [], "cwpointsN": [], "cpautN": [], "cldil": [], "cltrn": [], "cdilN": [], "ctrnN": [], "ctrl": [], "ctgrp": [], "ctendo": [], "cedring": [], "cedring-rN": [], "cdveca": [], "cdia": [], "cdvh": [], "cocaN": [], "cdjaN": [], "cdib": [], "cdic": [], "cdih": [], "coch": [], "cdjh": [], "clpoN": [], "clcd": [], "cmpd": [], "chvm": [], "chdma1": [], "chdma": [], "chg": [], "chlh": []}
+f_table {"ph": ["wff", "wph"], "ps": ["wff", "wps"], "ch": ["wff", "wch"], "th": ["wff", "wth"], "ta": ["wff", "wta"], "et": ["wff", "wet"], "ze": ["wff", "wze"], "si": ["wff", "wsi"], "rh": ["wff", "wrh"], "mu": ["wff", "wmu"], "la": ["wff", "wla"], "ka": ["wff", "wka"], "x": ["set", "vx"], "y": ["set", "vy"], "z": ["set", "vz"], "w": ["set", "vw"], "v": ["set", "vv"], "u": ["set", "vu"], "t": ["set", "vt"], "A": ["class", "cA"], "B": ["class", "cB"], "C": ["class", "cC"], ".||": ["class", "c.pa"], "D": ["class", "cD"], "./": ["class", "c.dv"], "P": ["class", "cP"], ".+": ["class", "c.pl"], ".+^": ["class", "c.pd"], ".+b": ["class", "c.pb"], ".(+)": ["class", "c.po"], "Q": ["class", "cQ"], ".~": ["class", "c.sm"], "R": ["class", "cR"], "S": ["class", "cS"], ".<": ["class", "c.lt"], ".xb": ["class", "c.xb"], "T": ["class", "cT"], ".x.": ["class", "c.x"], ".X.": ["class", "c.xp"], ".(x)": ["class", "c.xo"], "U": ["class", "cU"], ".1.": ["class", "c.1"], "e": ["set", "ve"], "f": ["set", "vf"], "g": ["set", "vg"], "h": ["set", "vh"], "i": ["set", "vi"], "j": ["set", "vj"], "k": ["set", "vk"], "m": ["set", "vm"], "n": ["set", "vn"], "o": ["set", "vo"], "E": ["class", "cE"], ".^": ["class", "c.ex"], "F": ["class", "cF"], "G": ["class", "cG"], "H": ["class", "cH"], ".,": ["class", "c.xi"], "I": ["class", "cI"], ".*": ["class", "c.as"], "J": ["class", "cJ"], ".\\/": ["class", "c.or"], "K": ["class", "cK"], "L": ["class", "cL"], ".<_": ["class", "c.le"], "M": ["class", "cM"], "./\\": ["class", "c.an"], ".-": ["class", "c.mi"], "N": ["class", "cN"], "._|_": ["class", "c.pe"], "O": ["class", "cO"], "V": ["class", "cV"], "W": ["class", "cW"], "X": ["class", "cX"], "Y": ["class", "cY"], ".0.": ["class", "c.0"], ".0b": ["class", "c.0b"], "Z": ["class", "cZ"], "s": ["set", "vs"], "r": ["set", "vr"], "q": ["set", "vq"], "p": ["set", "vp"], "a": ["set", "va"], "b": ["set", "vb"], "c": ["set", "vc"], "d": ["set", "vd"], "l": ["set", "vl"], "A1": ["class", "cA1"], "A2": ["class", "cA2"], "B1": ["class", "cB1"], "B2": ["class", "cB2"], "O1": ["class", "cO1"], "M1": ["class", "cm1"], "O2": ["class", "co2"], "M2": ["class", "cm2"], "I1": ["class", "ci1"], "D1": ["class", "cd1"], "C1": ["class", "cc1"], "Ro1": ["class", "cro1"], "I2": ["class", "ci2"], "D2": ["class", "cd2"], "C2": ["class", "cc2"], "Ro2": ["class", "cro2"], "F1": ["class", "cF1"], "F2": ["class", "cF2"], "F3": ["class", "cF3"], "G1": ["class", "cG1"], "G2": ["class", "cG2"], "H1": ["class", "cH1"], "H2": ["class", "cH2"], "L1": ["class", "cL1"], "L2": ["class", "cL2"], "L3": ["class", "cL3"], "S1": ["class", "cS1"], "S2": ["class", "cS2"], "V1": ["class", "cV1"], "V2": ["class", "cV2"], "V3": ["class", "cV3"], "W2": ["class", "cW2"], "+t": ["class", "cpls"], "-t": ["class", "cmnu"], ".t": ["class", "cmus"], "/t": ["class", "cdis"], "~t": ["class", "cnes"], "0t": ["class", "czert"], "1t": ["class", "conet"], "+w": ["class", "cplw"], "-w": ["class", "cminw"], ".w": ["class", "cmw"], "0w": ["class", "czerw"], "~w": ["class", "cnegw"], "<_a": ["class", "cleqa"], "<_b": ["class", "cleqb"], "o'": ["set", "bnjvom"], "s'": ["set", "bnjvsm"], "v'": ["set", "bnjvvm"], "o\"": ["set", "bnjvon"], "s\"": ["set", "bnjvsn"], "v\"": ["set", "bnjvvn"], "a0": ["set", "bnjva0"], "b0": ["set", "bnjvb0"], "o0": ["set", "bnjvo0"], "a1": ["set", "bnjva1"], "b1": ["set", "bnjvb1"], "o1": ["set", "bnjvo1"], "v2": ["set", "bnjvv2"], ".Morphism": ["class", "cmorp"], ".Object": ["class", "cobj"], ".graph": ["class", "cgra"], ".dom": ["class", "cdomc"], ".cod": ["class", "ccod"], ".id": ["class", "cidc"], "ph'": ["wff", "bnjwphm"], "ps'": ["wff", "bnjwpsm"], "ch'": ["wff", "bnjwchm"], "th'": ["wff", "bnjwthm"], "ta'": ["wff", "bnjwtam"], "et'": ["wff", "bnjwetm"], "ze'": ["wff", "bnjwzem"], "si'": ["wff", "bnjwsim"], "rh'": ["wff", "bnjwrhm"], "ph\"": ["wff", "bnjwphn"], "ps\"": ["wff", "bnjwpsn"], "ch\"": ["wff", "bnjwchn"], "th\"": ["wff", "bnjwthn"], "ta\"": ["wff", "bnjwtan"], "et\"": ["wff", "bnjwetn"], "ze\"": ["wff", "bnjwzen"], "si\"": ["wff", "bnjwsin"], "rh\"": ["wff", "bnjwrhn"], "ph0": ["wff", "bnjwph0"], "ps0": ["wff", "bnjwps0"], "ch0_": ["wff", "bnjwch0_"], "th0": ["wff", "bnjwth0"], "ta0": ["wff", "bnjwta0"], "et0": ["wff", "bnjwet0"], "ze0": ["wff", "bnjwze0"], "si0": ["wff", "bnjwsi0"], "rh0": ["wff", "bnjwrh0"], "ph1": ["wff", "bnjwph1"], "ps1": ["wff", "bnjwps1"], "ch1": ["wff", "bnjwch1"], "th1": ["wff", "bnjwth1"], "ta1": ["wff", "bnjwta1"], "et1": ["wff", "bnjwet1"], "ze1": ["wff", "bnjwze1"], "si1": ["wff", "bnjwsi1"], "rh1": ["wff", "bnjwrh1"], "a'": ["set", "bnjvam"], "b'": ["set", "bnjvbm"], "c'": ["set", "bnjvcm"], "d'": ["set", "bnjvdm"], "e'": ["set", "bnjvem"], "f'": ["set", "bnjvfm"], "g'": ["set", "bnjvgm"], "h'": ["set", "bnjvhm"], "i'": ["set", "bnjvim"], "j'": ["set", "bnjvjm"], "k'": ["set", "bnjvkm"], "l'": ["set", "bnjvlm"], "m'": ["set", "bnjvmm"], "n'": ["set", "bnjvnm"], "o'_": ["set", "bnjvom_"], "p'": ["set", "bnjvpm"], "q'": ["set", "bnjvqm"], "r'": ["set", "bnjvrm"], "s'_": ["set", "bnjvsm_"], "t'": ["set", "bnjvtm"], "u'": ["set", "bnjvum"], "v'_": ["set", "bnjvvm_"], "w'": ["set", "bnjvwm"], "x'": ["set", "bnjvxm"], "y'": ["set", "bnjvym"], "z'": ["set", "bnjvzm"], "a\"": ["set", "bnjvan"], "b\"": ["set", "bnjvbn"], "c\"": ["set", "bnjvcn"], "d\"": ["set", "bnjvdn"], "e\"": ["set", "bnjven"], "f\"": ["set", "bnjvfn"], "g\"": ["set", "bnjvgn"], "h\"": ["set", "bnjvhn"], "i\"": ["set", "bnjvin"], "j\"": ["set", "bnjvjn"], "k\"": ["set", "bnjvkn"], "l\"": ["set", "bnjvln"], "m\"": ["set", "bnjvmn"], "n\"": ["set", "bnjvnn"], "o\"_": ["set", "bnjvon_"], "p\"": ["set", "bnjvpn"], "q\"": ["set", "bnjvqn"], "r\"": ["set", "bnjvrn"], "s\"_": ["set", "bnjvsn_"], "t\"": ["set", "bnjvtn"], "u\"": ["set", "bnjvun"], "v\"_": ["set", "bnjvvn_"], "w\"": ["set", "bnjvwn"], "x\"": ["set", "bnjvxn"], "y\"": ["set", "bnjvyn"], "z\"": ["set", "bnjvzn"], "a0_": ["set", "bnjva0_"], "b0_": ["set", "bnjvb0_"], "c0_": ["set", "bnjvc0_"], "d0": ["set", "bnjvd0"], "e0": ["set", "bnjve0"], "f0_": ["set", "bnjvf0_"], "g0": ["set", "bnjvg0"], "h0": ["set", "bnjvh0"], "i0": ["set", "bnjvi0"], "j0": ["set", "bnjvj0"], "k0": ["set", "bnjvk0"], "l0": ["set", "bnjvl0"], "m0": ["set", "bnjvm0"], "n0_": ["set", "bnjvn0_"], "o0_": ["set", "bnjvo0_"], "p0": ["set", "bnjvp0"], "q0": ["set", "bnjvq0"], "r0": ["set", "bnjvr0"], "s0": ["set", "bnjvs0"], "t0": ["set", "bnjvt0"], "u0": ["set", "bnjvu0"], "v0": ["set", "bnjvv0"], "w0": ["set", "bnjvw0"], "x0": ["set", "bnjvx0"], "y0": ["set", "bnjvy0"], "z0": ["set", "bnjvz0"], "a1_": ["set", "bnjva1_"], "b1_": ["set", "bnjvb1_"], "c1_": ["set", "bnjvc1_"], "d1": ["set", "bnjvd1"], "e1": ["set", "bnjve1"], "f1": ["set", "bnjvf1"], "g1": ["set", "bnjvg1"], "h1": ["set", "bnjvh1"], "i1": ["set", "bnjvi1"], "j1": ["set", "bnjvj1"], "k1": ["set", "bnjvk1"], "l1": ["set", "bnjvl1"], "m1": ["set", "bnjvm1"], "n1": ["set", "bnjvn1"], "o1_": ["set", "bnjvo1_"], "p1": ["set", "bnjvp1"], "q1": ["set", "bnjvq1"], "r1": ["set", "bnjvr1"], "s1": ["set", "bnjvs1"], "t1": ["set", "bnjvt1"], "u1": ["set", "bnjvu1"], "v1": ["set", "bnjvv1"], "w1": ["set", "bnjvw1"], "x1": ["set", "bnjvx1"], "y1": ["set", "bnjvy1"], "z1": ["set", "bnjvz1"], "A'": ["class", "bnjcAm"], "B'": ["class", "bnjcBm"], "C'": ["class", "bnjcCm"], "D'": ["class", "bnjcDm"], "E'": ["class", "bnjcEm"], "F'": ["class", "bnjcFm"], "G'": ["class", "bnjcGm"], "H'": ["class", "bnjcHm"], "I'": ["class", "bnjcIm"], "J'": ["class", "bnjcJm"], "K'": ["class", "bnjcKm"], "L'": ["class", "bnjcLm"], "M'": ["class", "bnjcMm"], "N'": ["class", "bnjcNm"], "O'": ["class", "bnjcOm"], "P'": ["class", "bnjcPm"], "Q'": ["class", "bnjcQm"], "R'": ["class", "bnjcRm"], "S'": ["class", "bnjcSm"], "T'": ["class", "bnjcTm"], "U'": ["class", "bnjcUm"], "V'": ["class", "bnjcVm"], "W'": ["class", "bnjcWm"], "X'": ["class", "bnjcXm"], "Y'": ["class", "bnjcYm"], "Z'": ["class", "bnjcZm"], "A\"": ["class", "bnjcAn"], "B\"": ["class", "bnjcBn"], "C\"": ["class", "bnjcCn"], "D\"": ["class", "bnjcDn"], "E\"": ["class", "bnjcEn"], "F\"": ["class", "bnjcFn"], "G\"": ["class", "bnjcGn"], "H\"": ["class", "bnjcHn"], "I\"": ["class", "bnjcIn"], "J\"": ["class", "bnjcJn"], "K\"": ["class", "bnjcKn"], "L\"": ["class", "bnjcLn"], "M\"": ["class", "bnjcMn"], "N\"": ["class", "bnjcNn"], "O\"": ["class", "bnjcOn"], "P\"": ["class", "bnjcPn"], "Q\"": ["class", "bnjcQn"], "R\"": ["class", "bnjcRn"], "S\"": ["class", "bnjcSn"], "T\"": ["class", "bnjcTn"], "U\"": ["class", "bnjcUn"], "V\"": ["class", "bnjcVn"], "W\"": ["class", "bnjcWn"], "X\"": ["class", "bnjcXn"], "Y\"": ["class", "bnjcYn"], "Z\"": ["class", "bnjcZn"], "A0": ["class", "bnjcA0"], "B0": ["class", "bnjcB0"], "C0": ["class", "bnjcC0"], "D0": ["class", "bnjcD0"], "E0": ["class", "bnjcE0"], "F0": ["class", "bnjcF0"], "G0": ["class", "bnjcG0"], "H0": ["class", "bnjcH0"], "I0": ["class", "bnjcI0"], "J0": ["class", "bnjcJ0"], "K0": ["class", "bnjcK0"], "L0": ["class", "bnjcL0"], "M0": ["class", "bnjcM0"], "N0": ["class", "bnjcN0"], "O0": ["class", "bnjcO0"], "P0": ["class", "bnjcP0"], "Q0": ["class", "bnjcQ0"], "R0": ["class", "bnjcR0"], "S0": ["class", "bnjcS0"], "T0": ["class", "bnjcT0"], "U0": ["class", "bnjcU0"], "V0": ["class", "bnjcV0"], "W0": ["class", "bnjcW0"], "X0": ["class", "bnjcX0"], "Y0": ["class", "bnjcY0"], "Z0": ["class", "bnjcZ0"], "A1_": ["class", "bnjcA1"], "B1_": ["class", "bnjcB1"], "C1_": ["class", "bnjcC1"], "D1_": ["class", "bnjcD1"], "E1": ["class", "bnjcE1"], "F1_": ["class", "bnjcF1"], "G1_": ["class", "bnjcG1"], "H1_": ["class", "bnjcH1"], "I1_": ["class", "bnjcI1"], "J1": ["class", "bnjcJ1"], "K1": ["class", "bnjcK1"], "L1_": ["class", "bnjcL1"], "M1_": ["class", "bnjcM1"], "N1": ["class", "bnjcN1"], "O1_": ["class", "bnjcO1_"], "P1": ["class", "bnjcP1"], "Q1": ["class", "bnjcQ1"], "R1_": ["class", "bnjcR1_"], "S1_": ["class", "bnjcS1"], "T1": ["class", "bnjcT1"], "U1": ["class", "bnjcU1"], "V1_": ["class", "bnjcV1"], "W1": ["class", "bnjcW1"], "X1": ["class", "bnjcX1"], "Y1": ["class", "bnjcY1"], "Z1": ["class", "bnjcZ1"]}

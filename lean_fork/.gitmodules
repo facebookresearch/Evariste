@@ -1,0 +1,11 @@
+[submodule "mathlib"]
+	path = mathlib
+	url = git@github.com:leanprover-community/mathlib.git
+[submodule "lean"]
+	path = lean
+	url = https://github.com/gebner/lean
+	branch = xxx
+[submodule "checkpoint-process"]
+	path = checkpoint-process
+	url = git@github.com:fairinternal/checkpoint-process.git
+	branch = update_zstd

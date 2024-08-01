@@ -1,0 +1,47 @@
+{
+    "SUBSWEEP_DATA": {
+        "real": {
+            "random_gen": ["lean_gen_rwalk_real"],
+            "random_gen.env.unary_ops_str": [
+                "neg,exp,ln,sqrt,cos,sin,tan,abs",
+                "neg,exp,ln,sqrt,cos,sin,tan,abs"
+            ]
+        },
+        "nat": {
+            "random_gen": ["lean_gen_rwalk_nat"],
+            "random_gen.env.binary_ops_str": [
+                "add,sub,mul,div,%,**,gcd,lcm",
+                "add,sub,mul,div,%"
+            ]
+        },
+        "int": {
+            "random_gen": ["lean_gen_rwalk_int"],
+            "random_gen.env.binary_ops_str": [
+                "add,sub,mul,div,%",
+                "add,sub,mul,div,%"
+            ]
+        }
+    },
+    "n_jobs": [10],
+    "random_gen.n_generations": [300],
+    "random_gen.remove_comments": [true],
+    "random_gen.max_true_nodes": [20],
+    "random_gen.bias_rules": [0, 1, 5],
+    "random_gen.bias_nodes": [0],
+    "random_gen.max_hyps": [5, 10],
+
+    "SUBSWEEP_GENERATION": {
+        "rwalk": {
+            "random_gen.rwalk": [true],
+            "random_gen.n_steps": [30, 30, 30]
+        },
+        "graph": {
+            "random_gen.rwalk": [false],
+            "random_gen.graph_nodes": [1000],
+            "random_gen.max_trials": [2000],
+            "random_gen.graph_sampler.max_prefix_len": [300],
+            "random_gen.graph_sampler.sd_ratio_weight": [0, 5, 10],
+            "random_gen.graph_sampler.rule_weight": [0, 5]
+        }
+    }
+}

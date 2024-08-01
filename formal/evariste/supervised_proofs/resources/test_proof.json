@@ -1,0 +1,44 @@
+{
+  "label": "aopsbook_v1_c6_ex4_1",
+  "split": "oai_curriculum",
+  "statement": "  (x : \u211d)\n  (h\u2080 : 3 * x^2 + 5 * x = 0) :\n  x = -5 / 3 \u2228 x = 0",
+  "n_proof_steps": 5,
+  "proof_steps": [
+    {
+      "id": 0,
+      "theorem": "x : \u211d,\nh\u2080 : 3 * x ^ 2 + 5 * x = 0\n\u22a2 x = (-5) / 3 \u2228 x = 0",
+      "tactic": "unfreezingI {rcases lt_trichotomy x 0}",
+      "children_ids": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "theorem": "x : \u211d,\nh\u2080 : 3 * x ^ 2 + 5 * x = 0,\nh : x = 0 \u2228 0 < x\n\u22a2 x = (-5) / 3 \u2228 x = 0",
+      "tactic": "cases(h)",
+      "children_ids": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "theorem": "case or.inr\nx : \u211d,\nh\u2080 : 3 * x ^ 2 + 5 * x = 0,\nh : 0 < x\n\u22a2 x = (-5) / 3 \u2228 x = 0",
+      "tactic": "nlinarith [h.ne']",
+      "children_ids": []
+    },
+    {
+      "id": 3,
+      "theorem": "case or.inl\nx : \u211d,\nh\u2080 : 3 * x ^ 2 + 5 * x = 0,\nh : x = 0\n\u22a2 x = (-5) / 3 \u2228 x = 0",
+      "tactic": "simp * at *",
+      "children_ids": []
+    },
+    {
+      "id": 4,
+      "theorem": "x : \u211d,\nh\u2080 : 3 * x ^ 2 + 5 * x = 0,\nh : x < 0\n\u22a2 x = (-5) / 3 \u2228 x = 0",
+      "tactic": "left, nlinarith [h]",
+      "children_ids": []
+    }
+  ]
+}

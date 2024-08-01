@@ -1,0 +1,56 @@
+{
+    "train_params.root_dump_path": [""],
+
+    "n_gpu_trainer": [16],
+    "zmq_prover.n_machines": [32],
+
+    "SUBSWEEP_PARTITIONS": {
+    },
+
+    "cfg": ["base_online_mcts_mm"],
+    "data_src_props": ["valid:1,train:1"],
+    "zmq_prover.send_to_all": [true],
+
+    "zmq_prover.prover.beam_kind": ["automatically_reloading"],
+    "zmq_prover.prover.n_simultaneous_proofs": [40],
+
+    "zmq_prover.prover.mcts.policy": ["alpha_zero"],
+    "zmq_prover.prover.mcts.n_expansions": [5000],
+    "zmq_prover.prover.mcts.expander.tokens_per_batch": [10000],
+    "zmq_prover.prover.mcts.expander.chunk_size": [2048],
+    "zmq_prover.prover.mcts.depth_penalty": [1.0],
+    "zmq_prover.prover.mcts.exploration": [1.0],
+    "zmq_prover.prover.mcts.q_value_solved": [5],
+    "zmq_prover.prover.mcts.proof_stype": ["size"],
+    "zmq_prover.prover.mcts.early_stop": [true],
+    "zmq_prover.prover.mcts.early_stop_on_solved_if_root_unproved": [false],
+
+    "zmq_prover.decoding.use_sampling": [true],
+    "zmq_prover.decoding.length_penalty": [0],
+    "zmq_prover.decoding.use_beam": [false],
+    "zmq_prover.decoding.n_samples": [32],
+    "zmq_prover.decoding.fixed_temperature": [1.5],
+    "train_params.mcts_train.only_learn_tactics_from": ["minproof"],
+    "train_params.mcts_train.replay_buffer.min_len": [10000],
+    "train_params.critic_freeze": [""],
+
+    "SUBSWEEP_HYPEROPT": {
+        "balance":{
+            "zmq_prover.prover.mcts.balance_critic_data": [true],
+            "zmq_prover.prover.mcts.count_threshold": [10, 50, 500],
+            "zmq_prover.prover.mcts.init_tactic_scores": [0.25, 0.5, 0.75]
+        },
+        "regular":{
+            "zmq_prover.prover.mcts.balance_critic_data": [false],
+            "zmq_prover.prover.mcts.count_threshold": [50],
+            "zmq_prover.prover.mcts.init_tactic_scores": [0.25, 0.5, 0.75]
+        }
+    },
+
+    "hyperopt": ["random"],
+    "hyperopt_param_str": ["{'n_expansions':[1000,10000],'n_samples':[8,16,32,48],'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2]}"],
+    "train_params.optimizer": ["adam_warmup,lr=0.00003,warmup_updates=10000"],
+    "train_params.epoch_size": [20000],
+    "train_params.async_bwd_eval_freq": [10],
+    "train_params.eval_freq": [10]
+}

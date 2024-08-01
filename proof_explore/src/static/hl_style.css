@@ -1,0 +1,33 @@
+/* Copyright (c) 2019-present, Facebook, Inc.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree. */
+
+.hl_digit {
+  color: #ae81ff;
+}
+
+.hl_tactic {
+  color: #f92672;
+}
+
+.hl_theorem {
+  color: #ae81ff;
+}
+
+.hl_definition {
+  color: #9effff;
+}
+
+.hl_var {
+  color: #a6e22e;
+}
+
+.hl_symbol {
+  color: #ccc;
+}
+
+.hl_normal {
+  color: #ccc;
+}

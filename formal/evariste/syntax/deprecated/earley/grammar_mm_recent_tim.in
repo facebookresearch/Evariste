@@ -1,0 +1,7 @@
+#setvar# x y
+#wff# ph
+$start wff $wff
+$wff F/ $setvar $wff $*wnf
+$wff A. $setvar $wff $*wal
+$wff #wff# $*wff_var
+$setvar #setvar# $*setvar_var

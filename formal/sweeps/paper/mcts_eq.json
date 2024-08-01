@@ -1,0 +1,88 @@
+{
+    "train_params.root_dump_path": [""],
+
+    "n_gpu_trainer": [16],
+    "zmq_prover.n_machines": [32],
+    "zmq_prover.max_restarts": [10000],
+
+    "SUBSWEEP_PARTITIONS": {
+    },
+
+    "cfg": ["rwalk_online_mcts_eq__eq_1600_1"],
+    "zmq_prover.send_to_all": [true],
+
+    "zmq_prover.prover.beam_kind": ["automatically_reloading"],
+    "zmq_prover.prover.n_simultaneous_proofs": [40],
+
+    "zmq_prover.prover.mcts.policy": ["other"],
+    "zmq_prover.prover.mcts.n_expansions": [5000],
+    "zmq_prover.prover.mcts.expander.tokens_per_batch": [10000],
+    "zmq_prover.prover.mcts.expander.chunk_size": [2048],
+    "zmq_prover.prover.mcts.depth_penalty": [1.0],
+    "zmq_prover.prover.mcts.exploration": [1.0],
+    "zmq_prover.prover.mcts.q_value_solved": [5],
+    "zmq_prover.prover.mcts.proof_stype": ["size"],
+    "zmq_prover.prover.mcts.early_stop_on_solved_if_root_unproved": [false],
+
+    "zmq_prover.decoding.max_gen_len": [64],
+    "zmq_prover.decoding.use_sampling": [true],
+    "zmq_prover.decoding.length_penalty": [0],
+    "zmq_prover.decoding.use_beam": [false],
+    "zmq_prover.decoding.n_samples": [32],
+    "zmq_prover.decoding.fixed_temperature": [1.5],
+
+    "train_params.mcts_train.only_learn_tactics_from": ["minproof-solving"],
+    "zmq_prover.prover.mcts.only_learn_best_tactics": [true],
+
+    "train_params.mcts_train.replay_buffer.min_len": [10000],
+
+    "zmq_prover.prover.mcts.early_stop": [true],
+    "zmq_prover.prover.mcts.count_threshold": [500],
+    "train_params.critic_freeze": ["encdec"],
+
+    "hyperopt": ["random"],
+    "hyperopt_param_str": ["{'n_expansions':[1000,10000],'n_samples':[8,16,32,48],'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2]}"],
+
+    "SUBSWEEP_HYPEROPT": {
+        "baseline": {
+            "train_params.mcts_train.only_learn_tactics_from": ["minproof-solving"],
+            "zmq_prover.prover.mcts.only_learn_best_tactics": [true]
+        },
+        "no-best-tactics": {
+            "train_params.mcts_train.only_learn_tactics_from": ["minproof-solving"],
+            "zmq_prover.prover.mcts.only_learn_best_tactics": [false]
+        },
+        "minproof": {
+            "train_params.mcts_train.only_learn_tactics_from": ["minproof"],
+            "zmq_prover.prover.mcts.only_learn_best_tactics": [true]
+        },
+        "not-minproof-or-minproof-solving": {
+            "train_params.mcts_train.only_learn_tactics_from": ["", "solving", "proof"],
+            "zmq_prover.prover.mcts.only_learn_best_tactics": [false, true]
+        },
+        "no_hyper_opt": {
+            "hyperopt": ["fixed"]
+        },
+        "hard_critic": {
+            "train_params.mcts_train.hard_critic_estimates": [true]
+        },
+        "no_critic": {
+            "zmq_prover.prover.mcts.no_critic": [true],
+            "train_params.mcts_train.train_critic": [false],
+            "train_params.tasks": ["eq_bwd_rwalk_seq2seq,eq_mcts_tactic_fmt,eq_critic_rwalk_seq2seqtok"],
+            "train_params.no_train": ["eq_critic_rwalk_seq2seqtok"]
+        },
+        "full_hyperopts": {
+            "a": [],
+            "hyperopt_param_str": [
+                "{'n_expansions':[1000,10000],'n_samples':[8,16,32,48],'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node'],'beam':[true,false],'tactic_fill':['all','errors','none']}"
+            ]
+        }
+    },
+
+    "train_params.optimizer": ["adam_warmup,lr=0.00003,warmup_updates=10000"],
+    "train_params.epoch_size": [20000],
+    "train_params.async_bwd_eval_freq": [10],
+    "train_params.num_workers": [4],
+    "train_params.eval_freq": [10]
+}

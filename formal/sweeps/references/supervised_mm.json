@@ -1,0 +1,41 @@
+{
+
+    "accumulate_gradients": [1],
+
+    "batch.size": [8],
+    "batch.tokens": [3000],
+    "batch.max_len": [1024],
+    "model.fp16": ["true"],
+    "model.emb_n_layers": [4],
+    "model.enc_n_layers": [12],
+    "model.dec_n_layers": [6],
+    "model.n_heads": [8],
+    "model.dropout": [0.3],
+    "model.attention_dropout": [0],
+    "model.activation_dropout": [0],
+    "model.gelu_activation": ["false"],
+    "model.share_inout_emb": ["true"],
+    "model.share_all_emb": ["false"],
+    "model.sinusoidal_embeddings": ["false"],
+
+    "mm.dataset": ["new3"],
+    "n_th_to_prove": [500],
+    "label_smoothing_eps": [0],
+    "model.enc_emb_dim": [1600],
+    "model.dec_emb_dim": [1024],
+    "reload_model": [""],
+    "model.layer_dropout": [0],
+    "model.min_layers": [0],
+    "bwd_proving_eval_str": ["mm:valid"],
+    "async_bwd_eval_freq": [10],
+    "tasks": ["mm_x2y_goal--label-mandsubst-EOU-theorem-predsubst_seq2seq"],
+    "stopping_criterion": ["valid-mm-proven-greedy,50"],
+    "validation_metrics": ["valid-mm-proven-greedy,_valid-mm_x2y_goal--label-mandsubst-EOU-theorem-predsubst_seq2seq-tok-ppl"],
+    "env_base_seed": [-1],
+    "num_workers": [2],
+
+    "optimizer": ["adam_inverse_sqrt,warmup_updates=10000,lr=0.0001,weight_decay=0.01"],
+    "clip_grad_norm": [1],
+    "epoch_size": [50000],
+    "max_epoch": [100000]
+}

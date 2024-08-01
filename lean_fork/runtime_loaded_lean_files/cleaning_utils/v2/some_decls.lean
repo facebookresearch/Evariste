@@ -1,0 +1,1 @@
+meta def test: tactic unit := tactic.trace "test2"

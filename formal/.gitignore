@@ -1,0 +1,6 @@
+DATASET_*
+decompressed_proofs.gz
+.env
+.vscode
+plots
+notebooks/tim

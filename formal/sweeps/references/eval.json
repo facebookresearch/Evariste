@@ -1,0 +1,64 @@
+{
+    "SUBSWEEP_LANG": {
+        "eq": {
+            "lang": ["eq"],
+            "split": ["identities"],
+            "zmq.decoding.n_samples": [8],
+            "model_name": ["YOUR_PATH"]
+        },
+        "mm_supervised": {
+            "a": [],
+            "lang": ["mm"],
+            "split": ["valid"],
+            "model_name": ["mm_supervised"],
+            "zmq.decoding.n_samples": [32]
+        }
+    },
+    "SUBSWEEP_PARTITIONS": {
+    },
+
+    "zmq.n_machines": [16],
+    "zmq.max_attempts": [32],
+    "zmq.max_restarts": [10000],
+
+    "zmq.prover.n_simultaneous_proofs": [40],
+    "zmq.prover.mcts.expander.tokens_per_batch": [10000],
+    "zmq.prover.mcts.expander.chunk_size": [2048],
+
+    "zmq.prover.mcts.policy": ["alpha_zero"],
+    "zmq.prover.mcts.depth_penalty": [1.0],
+    "zmq.prover.mcts.exploration": [1, 5],
+    "zmq.prover.mcts.n_expansions": [3000],
+
+    "zmq.prover.add_tactic_fill": [true, false],
+    "zmq.prover.add_tactic_errors": [false],
+
+    "zmq.decoding.precision": ["half"],
+    "zmq.decoding.max_gen_len": [512, 1024],
+    "zmq.decoding.length_penalty": [0],
+    "zmq.decoding.fixed_temperature": [1.5],
+    "zmq.decoding.use_sampling": [true],
+    "zmq.decoding.use_beam": ["false"],
+
+    "SUBSWEEP_hyperopt": {
+        "no": {
+            "zmq.hyperopt": ["fixed"],
+            "zmq.hyperopt_param_str": [""],
+            "zmq.decoding.n_samples": [32]
+        },
+        "with": {
+            "a": [],
+            "zmq.hyperopt": ["random"],
+            "zmq.hyperopt_param_str": [
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2]}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other']}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5]}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node']}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node'],'beam':[true,false]}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node'],'beam':[true,false],'tactic_fill':['all','errors','none']}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy':['alpha_zero','other'],'q_value_solved':[3,4,5],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node'],'tactic_fill':['all','errors','none']}",
+                "{'temperature':[0.8,2.0],'exploration':[0.01,100],'depth_penalty':[0.8,0.9,0.95,1],'length_penalty':[0,1.2],'policy_temperature':[0,0.5,1],'policy_temp_level':['global','simutree','node']}"
+            ]
+        }
+    }
+}

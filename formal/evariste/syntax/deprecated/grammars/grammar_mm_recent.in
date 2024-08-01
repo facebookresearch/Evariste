@@ -1,0 +1,1280 @@
+#class# T0 T1 G0 S" E0 L G" .0b .(x) Z' Q F' A' T C" Z" M" N" Y0 E' M' B O' U" D1_ J" O1_ X S0 M Q" .- K .X. Y L1_ P C1_ B' .* P1 I L0 K" Q' N1 O" O0 B" .^ I1_ A1_ .\/ B0 Z0 V1_ .+^ B1_ S1_ G' X' .|| R A" E" I" C0 .1. J1 S F Y" W1 G U0 S' H M1_ A V" K0 .<_ U1 P" W0 L' H" D ._|_ F0 W D' M0 R' Y' T" .x. E ./ X1 X" F" C' C .+b V' H1_ P0 F1_ X0 K1 N0 E1 .+ V U' W' D0 .(+) P' N' N J0 ., K' I0 U V0 W" R1_ H0 Z1 R0 .o. J Q0 ./\ A0 Q1 Z J' T' O .0. .< D" R" .xb L" Y1 .~ G1_ I' H'
+#setvar# q' o0_ h b" s1 s0 w' a1_ a0_ c0_ i1 u a" v1 o1_ x1 k z0 m" b0_ j0 p' z d' u" y' a z" m d1 l' h' v0 q" r" s"_ i' t' n1 v'_ x' a' m0 m1 l1 f0_ t0 w1 j1 c" x" y0 w r' y j' s b q0 v"_ t e0 g" o z1 o"_ t" n0_ k' r1 m' n q j" d e' b1_ p0 d" e g1 y1 h0 w" z' p" o'_ w0 k0 x0 x l" u0 q1 t1 r p1 c' s'_ f" f u' u1 k1 e" k" h" e1 y" r0 c1_ f1 c n' v l i" f' g0 p h1 l0 g' j d0 b' i0 g n" i
+#wff# et" ta0 si' jmu rh ch' ch1 ze" jrh th ze0 ps1 jla rh' et' ka th0 et si0 la ph' et1 jch ze1 jze rh" ps ch" jps si1 jph ph" mu ze ps" ta ch jsi jth si" ch0_ ph rh1 th1 et0 ta" ph1 ph0 ps' th' jet ta1 rh0 ze' si jta ta' th" ps0
+$start wff $wff
+$start class $class
+$start set $set
+$start setvar $set
+$wff ( $wff \/_ $wff ) $*wxo
+$wff $class We $class $*wwe
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc9
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc8
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc7
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc6
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc5
+$wff (. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc4
+$wff (. $wff ,. $wff ,. $wff ). $*wvhc3
+$wff (. $wff ,. $wff ). $*wvhc2
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc12
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc11
+$wff (. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ,. $wff ). $*wvhc10
+$wff (. $wff ,. $wff ,. $wff ->. $wff ). $*wvd3
+$wff (. $wff ,. $wff ->. $wff ). $*wvd2
+$wff (. $wff ->. $wff ). $*wvd1
+$wff T. $*wtru
+$wff Tr $class $*wtr
+$wff $class C_ $class $*wss
+$wff Smo $class $*wsmo
+$wff $class Se $class $*wse
+$wff [. $class / $setvar ]. $wff $*wsbc
+$wff [ $setvar / $setvar ] $wff $*wsb
+$wff E* $setvar e. $class $wff $*wrmo
+$wff E. $setvar e. $class $wff $*wrex
+$wff E! $setvar e. $class $wff $*wreu
+$wff Rel $class $*wrel
+$wff $class Reflexive $class $*wreflexive
+$wff A. $setvar e. $class $wff $*wral
+$wff $class C. $class $*wpss
+$wff Prt $class $*wprt
+$wff $class Po $class $*wpo
+$wff Ord $class $*word
+$wff $class Or $class $*wor
+$wff ( $wff \/ $wff ) $*wo
+$wff FF/ $setvar $wff $*wnff
+$wff F/_ $setvar $class $*wnfc
+$wff F/ $setvar $wff $*wnf
+$wff $class e/ $class $*wnel
+$wff $class =/= $class $*wne
+$wff ( $wff -/\ $wff ) $*wnan
+$wff -. $wff $*wn
+$wff E* $setvar $wff $*wmo
+$wff Lim $class $*wlim
+$wff $class Isom $class , $class ( $class , $class ) $*wiso
+$wff $class Irreflexive $class $*wirreflexive
+$wff if- ( $wff , $wff , $wff ) $*wif
+$wff ( $wff -> $wff ) $*wi
+$wff $class hereditary $class $*whe
+$wff hadd ( $wff , $wff , $wff ) $*whad
+$wff Fun $class $*wfun
+$wff $class Fr $class $*wfr
+$wff $class : $class -onto-> $class $*wfo
+$wff $class Fn $class $*wfn
+$wff F. $*wfal
+$wff $class : $class -1-1-onto-> $class $*wf1o
+$wff $class : $class -1-1-> $class $*wf1
+$wff $class : $class --> $class $*wf
+$wff E. $setvar $wff $*wex
+$wff E! $setvar $wff $*weu
+$wff $class Er $class $*wer
+$wff Disj_ $setvar e. $class $class $*wdisj
+$wff $class defAt $class $*wdfat
+$wff $class = $class $*wceq
+$wff $class e. $class $*wcel
+$wff CondEq ( $setvar = $setvar -> $wff ) $*wcdeq
+$wff cadd ( $wff , $wff , $wff ) $*wcad
+$wff $class $class $class $*wbr
+$wff ( $wff <-> $wff ) $*wb
+$wff A! $setvar ( $wff -> $wff ) $*walsi
+$wff A! $setvar e. $class $wff $*walsc
+$wff A. $setvar $wff $*wal
+$wff CHOICE $*wac
+$wff ( $wff /\ $wff ) $*wa
+$wff ( $wff \/ $wff \/ $wff ) $*w3o
+$wff ( $wff -/\ $wff -/\ $wff ) $*w3nand
+$wff ( $wff /\ $wff /\ $wff ) $*w3a
+$wff _TrFo ( $class , $class , $class ) $*w-bnj19
+$wff ( $wff /\ $wff /\ $wff /\ $wff ) $*w-bnj17
+$wff $class _FrSe $class $*w-bnj15
+$wff $class _Se $class $*w-bnj13
+$wff Prv $wff $*cprvb
+$wff #wff# $*wff_var
+$setvar #setvar# $*setvar_var
+$class ZZring $*zring
+$class AC_ $class $*wacn
+$class ZRHom $*czrh
+$class ZRing $*czr
+$class Zp $*czp
+$class Z/nZ $*czn
+$class ZMod $*czlm
+$class zeta $*czeta
+$class ZeroO $*czeroo
+$class _ZZ $*cza
+$class ZZ $*cz
+$class Yon $*cyon
+$class RR*s $*cxrs
+$class RR*Hom $*cxrh
+$class RR* $*cxr
+$class Xs. $*cxps
+$class Xc. $*cxpc
+$class ( $class X. $class ) $*cxp
+$class -e $class $*cxne
+$class *e $*cxmu
+$class *Met $*cxmt
+$class *MetSp $*cxme
+$class ^ko $*cxko
+$class /e $*cxdiv
+$class +e $*cxad
+$class WWalksN $*cwwlkn
+$class WWalks $*cwwlk
+$class wUniCl $*cwunm
+$class WUni $*cwun
+$class wsuc ( $class , $class , $class ) $*cwsuc
+$class wrecs ( $class , $class , $class ) $*cwrecs
+$class WAtoms $*cwpointsN
+$class Word $class $*cword
+$class WalkOn $*cwlkon
+$class WLim ( $class , $class ) $*cwlim
+$class InaccW $*cwina
+$class ~<_* $*cwdom
+$class Walks $*cwalk
+$class _V $*cvv
+$class VtxALTV $*cvtxaltv
+$class Vtx $*cvtx
+$class .s $*cvsca
+$class varFMnd $*cvrmd
+$class varFGrp $*cvrgp
+$class voln $*cvoln
+$class vol $*cvol
+$class Lam $*cvma
+$class PolyAP $*cvdwp
+$class MonoAP $*cvdwm
+$class AP $*cvdwa
+$class VDeg $*cvdg
+$class CVecOLD $*cvc
+$class +h $*cva
+$class var1 $*cv1
+$class $setvar $*cv
+$class ZZ>= $*cuz
+$class UnivVertex $*cuvtx
+$class unitVec $*cuvc
+$class unifTop $*cutop
+$class mUSyn $*cusyn
+$class UnifOn $*cust
+$class UnifSt $*cuss
+$class UnifSp $*cusp
+$class USLGrph $*cuslg
+$class USHGraphALTV $*cushgraltv
+$class USHGraph $*cushgr
+$class USHGrph $*cushg
+$class USGrph $*cusg
+$class 1r $*cur
+$class UniOp $*cuo
+$class UnifSet $*cunif
+$class U. $class $*cuni
+$class Undef $*cund
+$class uncurryF $*cuncf
+$class uncurry_ $*cunc-
+$class uncurry $class $*cunc
+$class ( $class u. $class ) $*cun
+$class UMGraph $*cumgr
+$class UMGrph $*cumg
+$class ~~>u $*culm
+$class Unit $*cui
+$class UHGraphALTV $*cuhgraltv
+$class UHGraph $*cuhgr
+$class UHGrph $*cuhg
+$class UFL $*cufl
+$class UFil $*cufil
+$class uCn $*cucn
+$class Unic1p $*cuc1p
+$class UB $class $*cub
+$class ( $class (x) $class ) $*ctxp
+$class tX $*ctx
+$class TopVec $*ctvc
+$class toUnifSp $*ctus
+$class toTG $*cttg
+$class tsums $*ctsu
+$class TosetRel $*ctsr
+$class tarskiMap $*ctskm
+$class Tarski $*ctsk
+$class TopSet $*cts
+$class TrPred ( $class , $class , $class ) $*ctrpred
+$class Trn $*ctrnN
+$class TrailOn $*ctrlon
+$class trL $*ctrl
+$class TopRing $*ctrg
+$class TransportTo $*ctransport
+$class Trans $*ctrans
+$class Trails $*ctrail
+$class TopSp $*ctps
+$class tpos $class $*ctpos
+$class toPoly1 $*ctp1
+$class { $class , $class , $class } $*ctp
+$class TotBnd $*ctotbnd
+$class Toset $*ctos
+$class TopSep $*ctopsep
+$class TopOn $*ctopon
+$class TopOpen $*ctopn
+$class TopLnd $*ctoplnd
+$class Top $*ctop
+$class toNrmGrp $*ctng
+$class toMetSp $*ctmt
+$class TopMnd $*ctmd
+$class TopMod $*ctlm
+$class .v $*ctimesr
+$class toHL $*cthl
+$class TGrp $*ctgrp
+$class TopGrp $*ctgp
+$class topGen $*ctg
+$class TermO $*ctermo
+$class TEndo $*ctendo
+$class TopDRing $*ctdrg
+$class t+ $*ctcl
+$class toCHil $*ctch
+$class TC $*ctc
+$class TopBases $*ctb
+$class Tayl $*ctayl
+$class _tau $*ctau
+$class tanh $*ctanh
+$class tan $*ctan
+$class tail $*ctail
+$class Fre $*ct1
+$class Kol2 $*ct0
+$class SymGrp $*csymg
+$class ( $class /_\ $class ) $*csymdif
+$class sX $*csx
+$class No $*csur
+$class supp $*csupp
+$class sup ( $class , $class , $class ) $*csup
+$class sum^ $*csumge0
+$class Succ $*csuccf
+$class suc $class $*csuc
+$class substr $*csubstr
+$class SubRing $*csubrg
+$class SubMnd $*csubmnd
+$class SubMgm $*csubmgm
+$class subMat $*csubma
+$class SubGrpOp $*csubgo
+$class SubGrp $*csubg
+$class Subcat $*csubc
+$class sum_ $setvar e. $class $class $*csu
+$class *r $*cstv
+$class sSet $*csts
+$class TarskiGDim>= $*cstrkgld
+$class TarskiGE $*cstrkge
+$class TarskiGCB $*cstrkgcb
+$class TarskiGC $*cstrkgc
+$class TarskiGB $*cstrkgb
+$class TarskiG2D $*cstrkg2d
+$class TarskiG $*cstrkg
+$class Struct $*cstr
+$class *rf $*cstf
+$class States $*cst
+$class SSet $*csset
+$class seqstr $*csseq
+$class C_cat $*cssc
+$class SubSp $*css
+$class SRing $*csrg
+$class subringAlg $*csra
+$class *Ring $*csr
+$class []NN $*csquarenn
+$class sqrt $*csqrt
+$class SPathOn $*cspthon
+$class span $*cspn
+$class splice $*csplice
+$class Lambda $*cspc
+$class SPaths $*cspath
+$class .ih $*csp
+$class { $class } $*csn
+$class smul $*csmu
+$class subMat1 $*csmat
+$class .h $*csm
+$class pSyl $*cslw
+$class selectVars $*cslv
+$class <s $*cslt
+$class Slot $class $*cslot
+$class SLMod $*cslmd
+$class sitm $*csitm
+$class sitg $*csitg
+$class sinh $*csinh
+$class Singletons $*csingles
+$class Singleton $*csingle
+$class sin $*csin
+$class sigaGen $*csigagen
+$class sigAlgebra $*csiga
+$class shift $*cshi
+$class SH $*csh
+$class SGrpALT $*csgrp2
+$class SGrp $*csgrp
+$class sgns $*csgns
+$class sgn $*csgn
+$class sigma $*csgm
+$class -g $*csg
+$class *-Fld $*csfld
+$class splitFld1 $*csf1
+$class splitFld $*csf
+$class SetCat $*csetc
+$class seqom ( $class , $class ) $*cseqom
+$class seq $class ( $class , $class ) $*cseq
+$class SemiGrp $*csem
+$class Seg<_ $*csegle
+$class Sect $*csect
+$class sec $*csec
+$class SubDRing $*csdrg
+$class ~< $*csdm
+$class SCon $*cscon
+$class ScMatALT $*cscmatalt
+$class ScMat $*cscmat
+$class .sf $*cscaf
+$class Scalar $*csca
+$class [_ $class / $setvar ]_ $class $*csb
+$class SatE $*csate
+$class Sat $*csat
+$class SalOn $*csalon
+$class SalGen $*csalgen
+$class SAlg $*csalg
+$class sadd $*csad
+$class <" $class $class $class $class $class $class $class $class "> $*cs8
+$class <" $class $class $class $class $class $class $class "> $*cs7
+$class <" $class $class $class $class $class $class "> $*cs6
+$class <" $class $class $class $class $class "> $*cs5
+$class <" $class $class $class $class "> $*cs4
+$class <" $class $class $class "> $*cs3
+$class <" $class $class "> $*cs2
+$class <" $class "> $*cs1
+$class RegUSGrph $*crusgra
+$class t*rec $*crtrcl
+$class t* $*crtcl
+$class RSpan $*crsp
+$class RingIso $*crs
+$class RR^ $*crrx
+$class RRVec $*crrvec
+$class rRndVar $*crrv
+$class Rn $*crrn
+$class RRhat $*crrhat
+$class RRHom $*crrh
+$class RRExt $*crrext
+$class RRbar $*crrbar
+$class RR3 $*crr3c
+$class /Qp $*crqp
+$class *Q $*crq
+$class [C.] $*crpss
+$class RPrime $*crpm
+$class RR+ $*crp
+$class rank $*crnk
+$class RngIsom $*crngs
+$class RingOps $*crngo
+$class RngIso $*crngiso
+$class RngHom $*crnghom
+$class RngHomo $*crngh
+$class RngCatALTV $*crngcALTV
+$class RngCat $*crngc
+$class Rng $*crng
+$class ran $class $*crn
+$class rmY $*crmy
+$class rmX $*crmx
+$class RLReg $*crlreg
+$class ~~>r $*crli
+$class RiseFac $*crisefac
+$class ~=R $*crisc
+$class ( iota_ $setvar e. $class $wff ) $*crio
+$class RingCatALTV $*cringcALTV
+$class RingCat $*cringc
+$class ~=r $*cric
+$class RingHom $*crh
+$class RingSpan $*crgspn
+$class RegGrph $*crgra
+$class ringLMod $*crglmod
+$class Ring $*crg
+$class reverse $*creverse
+$class Retr $*cretr
+$class |`v $*cresv
+$class Restrict $*crestrict
+$class |`t $*crest
+$class |`s $*cress
+$class |`f $*cresf
+$class |`cat $*cresc
+$class ( $class |` $class ) $*cres
+$class repeatS $*creps
+$class ^r $*crelexp
+$class Reg $*creg
+$class RRfld $*crefld
+$class Ref $*cref
+$class recs ( $class ) $*crecs
+$class Re $*cre
+$class rec ( $class , $class ) $*crdg
+$class r* $*crcl
+$class Ray $*cray
+$class Range $*crange
+$class RamseyOLD $*cramold
+$class Ramsey $*cram
+$class raG $*crag
+$class { $setvar e. $class | $wff } $*crab
+$class rem1p $*cr1p
+$class R1 $*cr1
+$class RR $*cr
+$class /s $*cqus
+$class quot $*cquot
+$class qTop $*cqtop
+$class ( $class /. $class ) $*cqs
+$class QQHom $*cqqh
+$class _Qp $*cqpa
+$class Qp $*cqp
+$class ~QG $*cqg
+$class quot1p $*cq1p
+$class QQ $*cq
+$class ^s $*cpws
+$class ~P $class $*cpw
+$class +v $*cpv
+$class PathOn $*cpthon
+$class PtFin $*cptfin
+$class PtDf ( $class , $class ) $*cptdfc
+$class Xt_ $*cpt
+$class PSubSp $*cpsubsp
+$class pstoMet $*cpstm
+$class PsMet $*cpsmet
+$class polySplitLim $*cpsl
+$class pmSgn $*cpsgn
+$class mPSDer $*cpsd
+$class PSubCl $*cpscN
+$class PwSer1 $*cps1
+$class PosetRel $*cps
+$class |= $*cprv
+$class PrRing $*cprrng
+$class prod_ $setvar e. $class $class $*cprod
+$class #p $*cprmo
+$class Prime $*cprime
+$class PrIdl $*cpridl
+$class pairF $*cprf
+$class Preset $*cpreset
+$class Pred ( $class , $class , $class ) $*cpred
+$class Xs_ $*cprds
+$class prcpal $*cprcpal
+$class Prob $*cprb
+$class { $class , $class } $*cpr
+$class pprod ( $class , $class ) $*cpprod
+$class ppi $*cppi
+$class +P. $*cpp
+$class _|_P $*cpolN
+$class Points $*cpointsN
+$class Poset $*cpo
+$class PNrm $*cpnrm
+$class +oo $*cpnf
+$class pmTrsp $*cpmtr
+$class pmap $*cpmap
+$class pMatToMatPoly $*cpm2mp
+$class ^pm $*cpm
+$class Poly< $*cplylt
+$class Poly $*cply
+$class +r $*cplusr
+$class +g $*cplusg
+$class +f $*cplusf
+$class lt $*cplt
+$class +R $*cplr
+$class +Q $*cplq
+$class +pQ $*cplpq
+$class Plig $*cplig
+$class +N $*cpli
+$class le $*cple
+$class Poly1 $*cpl1
+$class projh $*cpjh
+$class proj1 $*cpj1
+$class proj $*cpj
+$class _piOLD $*cpiold
+$class pinfty $*cpinfty
+$class piN $*cpin
+$class PID $*cpid
+$class pi1 $*cpi1
+$class _pi $*cpi
+$class PHtpy $*cphtpy
+$class ~=ph $*cphtpc
+$class PreHil $*cphl
+$class phi $*cphi
+$class +H $*cph
+$class pGrpOLD $*cpgpold
+$class pGrp $*cpgp
+$class prefix $*cpfx
+$class polyFld $*cpfl
+$class perpG $*cperpg
+$class Perf $*cperf
+$class PellFundOLD $*cpellfundold
+$class PellFund $*cpellfund
+$class Pell1QR $*cpell1qr
+$class Pell14QR $*cpell14qr
+$class Pell1234QR $*cpell1234qr
+$class PCon $*cpcon
+$class *p $*cpco
+$class Paracomp $*cpcmp
+$class PCl $*cpclN
+$class pCnt $*cpc
+$class PAut $*cpautN
+$class Paths $*cpath
+$class +P $*cpadd
+$class 1. $*cp1
+$class 0. $*cp0
+$class vol*OLD $*covolold
+$class voln* $*covoln
+$class vol* $*covol
+$class OutsideOf $*coutsideof
+$class <. $class , $class , $class >. $*cotp
+$class oRVC $class $*corvc
+$class _|_ $*cort
+$class oRing $*corng
+$class ordTop $*cordt
+$class ordPwSer $*copws
+$class OP $*cops
+$class { <. <. $setvar , $setvar >. , $setvar >. | $wff } $*coprab
+$class oppR $*coppr
+$class oppG $*coppg
+$class -cc $*coppcc
+$class oppCat $*coppc
+$class { <. $setvar , $setvar >. | $wff } $*copab
+$class <. $class , $class >. $*cop
+$class On $*con0
+$class .o $*comu
+$class toOMeasOLD $*comsold
+$class toOMeas $*coms
+$class oMnd $*comnd
+$class OmN $*comn
+$class OML $*coml
+$class Om1 $*comi
+$class OutMeas $*come
+$class _om $*com
+$class OL $*col
+$class OrdIso ( $class , $class ) $*coi
+$class oGrp $*cogrp
+$class OuterFiveSeg $*cofs
+$class oR $class $*cofr
+$class oField $*cofld
+$class oFC $class $*cofc
+$class oF $class $*cof
+$class ^o $*coe
+$class odZOLD $*codzold
+$class odZ $*codz
+$class ODual $*codu
+$class odOLD $*codold
+$class Odd $*codd
+$class od $*cod
+$class ocv $*cocv
+$class ocH $*coch
+$class ocA $*cocaN
+$class oc $*coc
+$class OBasis $*cobs
+$class +o $*coa
+$class O(1) $*co1
+$class ( $class $class $class ) $*co
+$class NzRing $*cnzr
+$class ndx $*cnx
+$class NrmVec $*cnvc
+$class NrmCVec $*cnv
+$class numer $*cnumer
+$class int $*cnt
+$class NrmSGrp $*cnsg
+$class -v $*cnsb
+$class .sOLD $*cns
+$class Nrm $*cnrm
+$class NrmRing $*cnrg
+$class R. $*cnr
+$class Q. $*cnq
+$class N. $*cnpi
+$class P. $*cnp
+$class normop $*cnop
+$class normh $*cno
+$class normOpOLDOLD $*cnmoold
+$class normOpOLD $*cnmoo
+$class normOp $*cnmo
+$class NMHom $*cnmhm
+$class normfn $*cnmf
+$class normCV $*cnmcv
+$class norm $*cnm
+$class NrmMod $*cnlm
+$class N-Locally $class $*cnlly
+$class null $*cnl
+$class NrmGrp $*cngp
+$class NGHomOLD $*cnghmold
+$class NGHom $*cnghm
+$class nei $*cnei
+$class -u $class $*cneg
+$class Neighbors $*cnbgra
+$class Nat $*cnat
+$class NoeACS $*cnacs
+$class 0vec $*cn0v
+$class NN0 $*cn0
+$class NN $*cn
+$class mzPolyCld $*cmzpcl
+$class mzPoly $*cmzp
+$class mWGFS $*cmwgfs
+$class mVT $*cmvt
+$class mVSubst $*cmvsb
+$class mVars $*cmvrs
+$class mVar $*cmvr
+$class maVecMul $*cmvmul
+$class mVL $*cmvl
+$class mVH $*cmvh
+$class mVR $*cmvar
+$class -h $*cmv
+$class mUV $*cmuv
+$class .r $*cmulr
+$class .cc $*cmulc
+$class x. $*cmul
+$class mUFS $*cmufs
+$class mmu $*cmu
+$class mType $*cmty
+$class mTree $*cmtree
+$class mThm $*cmthm
+$class mTC $*cmtc
+$class MetSp $*cmt
+$class mSyn $*cmsy
+$class mSubst $*cmsub
+$class mStat $*cmsta
+$class mST $*cmst
+$class mStRed $*cmsr
+$class mSAX $*cmsax
+$class mSA $*cmsa
+$class CMet $*cms
+$class mRSubst $*cmrsub
+$class mrInd $*cmri
+$class mREx $*cmrex
+$class Moore $*cmre
+$class mrCls $*cmrc
+$class .R $*cmr
+$class .Q $*cmq
+$class ( $setvar e. $class , $setvar e. $class , $setvar e. $class |-> $class ) $*cmpt3
+$class ( $setvar e. $class , $setvar e. $class |-> $class ) $*cmpt2
+$class ( $setvar e. $class |-> $class ) $*cmpt
+$class mPreSt $*cmpst
+$class mPwSer $*cmps
+$class .pQ $*cmpq
+$class mPPSt $*cmpps
+$class mPoly $*cmpl
+$class mapd $*cmpd
+$class minPolyAA $*cmpaa
+$class .P. $*cmp
+$class MetOpen $*cmopn
+$class Mono $*cmon
+$class mod $*cmo
+$class ManTop $*cmntop
+$class -oo $*cmnf
+$class MndOp $*cmndo
+$class MndOLD $*cmndOLD
+$class Mnd $*cmnd
+$class Monic $*cmnc
+$class Monic1p $*cmn1
+$class maMul $*cmmul
+$class mItp $*cmitp
+$class pInvG $*cmir
+$class -r $*cminusr
+$class invg $*cminusg
+$class minMatR1 $*cminmar1
+$class minfty $*cminfty
+$class - $*cmin
+$class midG $*cmid
+$class .N $*cmi
+$class mHomP $*cmhp
+$class MndHom $*cmhm
+$class mulGrp $*cmgp
+$class MgmHom $*cmgmhm
+$class MgmALT $*cmgm2
+$class Mgm $*cmgm
+$class mGFS $*cmgfs
+$class .g $*cmg
+$class mFresh $*cmfsh
+$class mFS $*cmfs
+$class mFRel $*cmfr
+$class mFromItp $*cmfitp
+$class mEx $*cmex
+$class mEval $*cmevl
+$class metUnif $*cmetu
+$class ~Met $*cmetid
+$class mESyn $*cmesy
+$class MEndo $*cmend
+$class meet $*cmee
+$class measures $*cmeas
+$class Meas $*cmea
+$class Met $*cme
+$class mDV $*cmdv
+$class mMdl $*cmdl
+$class mDeg $*cmdg
+$class maDet $*cmdat
+$class MH $*cmd
+$class mCN $*cmcn
+$class mCls $*cmcls
+$class MblFnM $*cmbfm
+$class MblFn $*cmbf
+$class MaxIdl $*cmaxidl
+$class mAx $*cmax
+$class matRepV $*cmatrepV
+$class matToPolyMat $*cmat2pmat
+$class Mat $*cmat
+$class matRRep $*cmarrep
+$class ^m $*cmap
+$class Magma $*cmagm
+$class maAdju $*cmadu
+$class -1R $*cm1r
+$class m0St $*cm0s
+$class LVols $*clvol
+$class LVec $*clvec
+$class lub $*club
+$class <RR $*cltrr
+$class LTrn $*cltrn
+$class <R $*cltr
+$class <Q $*cltq
+$class <pQ $*cltpq
+$class <P $*cltp
+$class <N $*clti
+$class <bag $*cltb
+$class < $*clt
+$class lastS $*clsw
+$class LSubSp $*clss
+$class limsupOLD $*clspold
+$class LSpan $*clspn
+$class limsup $*clsp
+$class LSSum $*clsm
+$class LSHyp $*clsh
+$class LSAtoms $*clsa
+$class LPol $*clpoN
+$class LPlanes $*clpl
+$class LPIR $*clpir
+$class LPIdeal $*clpidl
+$class limPt $*clp
+$class logb $*clogb
+$class log_ $*clog-
+$class log $*clog
+$class LocFin $*clocfin
+$class <_O(1) $*clo1
+$class LinOp $*clo
+$class LNoeR $*clnr
+$class LnOp $*clno
+$class LNoeM $*clnm
+$class LineG $*clng
+$class LMod $*clmod
+$class LMIso $*clmim
+$class ~=m $*clmic
+$class lInvG $*clmi
+$class LMHom $*clmhm
+$class litMat $*clmat
+$class ~~>t $*clm
+$class Locally $class $*clly
+$class LLines $*clln
+$class LKer $*clk
+$class linIndS $*clininds
+$class LinesEE $*clines2
+$class Lines $*clines
+$class line3 $*cline3
+$class Line $*cline2
+$class LIndS $*clinds
+$class LIndF $*clindf
+$class linDepS $*clindeps
+$class LinCo $*clinco
+$class linC $*clinc
+$class Limits $*climits
+$class limCC $*climc
+$class LIdeal $*clidl
+$class ~~> $*cli
+$class LHyp $*clh
+$class /L $*clgs
+$class log_G $*clgam
+$class LFnl $*clfn
+$class LFinGen $*clfig
+$class LinFn $*clf
+$class <_op $*cleo
+$class leG $*cleg
+$class leA $*cleag
+$class <_ $*cle
+$class Ldlf $*cldlf
+$class LDil $*cldil
+$class ldgIdlSeq $*cldgis
+$class LDual $*cld
+$class <oL $*clcv
+$class lcmOLD $*clcmold
+$class _lcmOLD $*clcmfold
+$class _lcm $*clcmf
+$class lcm $*clcm
+$class LCDual $*clcd
+$class CvLat $*clc
+$class LBasis $*clbs
+$class LB $class $*clb
+$class LAut $*claut
+$class Lat $*clat
+$class KQ $*ckq
+$class kGen $*ckgen
+$class ketbra $*ck
+$class join $*cjn
+$class X_ $setvar e. $class $class $*cixp
+$class U_ $setvar e. $class $class $*ciun
+$class Itv $*citv
+$class IntgRing $*citr
+$class IntgOver $*citgo
+$class itgm $*citgm
+$class S.2 $*citg2
+$class S.1 $*citg1
+$class S. $class $class _d $setvar $*citg
+$class Iso $*ciso
+$class Ismty $*cismty
+$class Ismt $*cismt
+$class Irred $*cir
+$class toInc $*cipo
+$class .if $*cipf
+$class .i $*cip
+$class (,) $*cioo
+$class (,] $*cioc
+$class ( iota $setvar $wff ) $*cio
+$class invr $*cinvr
+$class invc $*cinvc
+$class Inv $*cinv
+$class intOp $*cintop
+$class |^| $class $*cint
+$class InitO $*cinito
+$class inftyexpi $*cinftyexpi
+$class infty $*cinfty
+$class <<< $*cinftm
+$class inf ( $class , $class , $class ) $*cinf
+$class _Ind $*cind
+$class inA $*cinag
+$class Inacc $*cina
+$class ( $class i^i $class ) $*cin
+$class IndMet $*cims
+$class Img $*cimg
+$class "sOLD $*cimasold
+$class "s $*cimas
+$class Image $class $*cimage
+$class ( $class " $class ) $*cima
+$class Im $*cim
+$class |^|_ $setvar e. $class $class $*ciin
+$class II $*cii
+$class IdlGen $*cigen
+$class 1/_G $*cigam
+$class idlGen1pOLD $*cig1pold
+$class idlGen1p $*cig1p
+$class InnerFiveSeg $*cifs
+$class if ( $wff , $class , $class ) $*cif
+$class iEdg $*ciedg
+$class Xp $*cidp
+$class IDomn $*cidom
+$class Idl $*cidl
+$class idFunc $*cidfu
+$class IdA $*cida
+$class _I $*cid
+$class [,) $*cico
+$class RePart $*ciccp
+$class [,] $*cicc
+$class L^1 $*cibl
+$class _i $*ci
+$class HVMap $*chvm
+$class Htpy $*chtpy
+$class \/H $*chsup
+$class CHStates $*chst
+$class Hil $*chs
+$class hpG $*chpg
+$class .op $*chot
+$class +op $*chos
+$class Homf $*chomf
+$class HomA $*choma
+$class Hom $*chom
+$class HomF $*chof
+$class -op $*chod
+$class HrmOp $*cho
+$class ~= $*chmph
+$class HmOp $*chmo
+$class Homeo $*chmeo
+$class HL $*chlt
+$class CHilOLD $*chlo
+$class HomLim $*chlim
+$class ~~>v $*chli
+$class HLHil $*chlh
+$class hlG $*chlg
+$class HomLimB $*chlb
+$class CHil $*chl
+$class vH $*chj
+$class Iop $*chio
+$class ~H $*chil
+$class HGMap $*chg
+$class .fn $*chft
+$class +fn $*chfs
+$class Hf $*chf
+$class HDMap1 $*chdma1
+$class HDMap $*chdma
+$class HCmp $*chcmp
+$class # $*chash
+$class har $*char
+$class Haus $*cha
+$class 0hop $*ch0o
+$class AxUn $*cgzu
+$class AxRep $*cgzr
+$class AxPow $*cgzp
+$class AxInf $*cgzi
+$class AxReg $*cgzg
+$class ZF $*cgzf
+$class AxExt $*cgze
+$class Z[i] $*cgz
+$class ^g $*cgx
+$class > $*cgt
+$class gsum $*cgsu
+$class GrSize $*cgsiz
+$class /g $*cgs
+$class Univ $*cgru
+$class Grp $*cgrp
+$class GrpOp $*cgr
+$class E.g $class $class $*cgox
+$class GrOrder $*cgord
+$class =g $*cgoq
+$class \/g $*cgoo
+$class -.g $class $*cgon
+$class A.g $class $class $*cgol
+$class ->g $*cgoi
+$class e.g $*cgoe
+$class <->g $*cgob
+$class /\g $*cgoa
+$class |g $*cgna
+$class inv $*cgn
+$class mGMdl $*cgmdl
+$class glb $*cglb
+$class GrpOpIso $*cgisoOLD
+$class GrpIso $*cgim
+$class ~=g $*cgic
+$class GId $*cgi
+$class GrpOpHom $*cghomOLD
+$class GrpHom $*cghm
+$class GF_oo $*cgfo
+$class GF $*cgf
+$class gExOLD $*cgexold
+$class gEx $*cgex
+$class >_ $*cge-real
+$class GCH $*cgch
+$class gcdOLD ( $class , $class ) $*cgcdOLD
+$class gcd $*cgcd
+$class GoldbachOddALTV $*cgboa
+$class GoldbachOdd $*cgbo
+$class GoldbachEven $*cgbe
+$class _G $*cgam
+$class GrpAct $*cga
+$class ..^ $*cfzo
+$class ... $*cfz
+$class _/_\^n $*cfwddifn
+$class _/_\ $*cfwddif
+$class ( $class ` $class ) $*cfv
+$class FinUSGrph $*cfusg
+$class Funs $*cfuns
+$class Funpart $class $*cfunpart
+$class Func $*cfunc
+$class FullFun $class $*cfullfn
+$class Full $*cful
+$class FuncCat $*cfuc
+$class Faith $*cfth
+$class finSupp $*cfsupp
+$class -Set-> $*cfset
+$class FiveSeg $*cfs
+$class freeMnd $*cfrmd
+$class freeLMod $*cfrlm
+$class FriendGrph $*cfrgra
+$class freeGrp $*cfrgp
+$class Fne $*cfne
+$class Fin $*cfn
+$class Fmla $*cfmla
+$class FilMap $*cfm
+$class fLim $*cflim
+$class fLimf $*cflf
+$class Fld $*cfld
+$class |_ $*cfl
+$class Fix $class $*cfix
+$class FinSum $*cfinsum
+$class Fin7 $*cfin7
+$class Fin6 $*cfin6
+$class Fin5 $*cfin5
+$class Fin4 $*cfin4
+$class Fin3 $*cfin3
+$class Fin2 $*cfin2
+$class Fin1a $*cfin1a
+$class Fil $*cfil
+$class Field $*cfield
+$class Fibci $*cfib
+$class fi $*cfi
+$class filGen $*cfg
+$class /_f $*cfdiv
+$class fClus $*cfcls
+$class fClusf $*cfcf
+$class fBas $*cfbas
+$class FallFac $*cfallfac
+$class ~ae $*cfae
+$class ! $*cfa
+$class ^ $*cexp
+$class ExId $*cexid
+$class pmEven $*cevpm
+$class evalF $*cevlf
+$class eval $*cevl
+$class Even $*ceven
+$class EulPaths $*ceup
+$class _e $*ceu
+$class sum* $setvar e. $class $class $*cesum
+$class ExtStrCat $*cestrc
+$class evalSub1 $*ces1
+$class evalSub $*ces
+$class /Q $*cerq
+$class ~R $*cer
+$class ~Qp $*ceqp
+$class eqltrG $*ceqlg
+$class ~Q $*ceq
+$class Epi $*cepi
+$class _E $*cep
+$class ~~ $*cen
+$class gamma $*cem
+$class eigval $*cel
+$class eigvec $*cei
+$class EEhil $*cehl
+$class ~FG $*cefg
+$class EEG $*ceeng
+$class EE $*cee
+$class EDRingR $*cedring-rN
+$class EDRing $*cedring
+$class .ef $*cedgf
+$class Edges $*cedg
+$class [ $class ] $class $*cec
+$class eval1 $*ce1
+$class exp $*ce
+$class /r $*cdvr
+$class Dn $*cdvn
+$class DVecH $*cdvh
+$class DVecA $*cdveca
+$class || $*cdvds
+$class _D $*cdv
+$class ||r $*cdsr
+$class (+)m $*cdsmm
+$class dist $*cds
+$class Dirset $*cdrs
+$class DivRingOps $*cdrng
+$class DivRing $*cdr
+$class DProd $*cdprd
+$class dProj $*cdpj
+$class _ $class $class $*cdp2
+$class . $*cdp
+$class Domn $*cdomn
+$class Domain $*cdomain
+$class domA $*cdoma
+$class ~<_ $*cdom
+$class Dmn $*cdmn
+$class MH* $*cdmd
+$class DMatALT $*cdmatalt
+$class DMat $*cdmat
+$class dom $class $*cdm
+$class DLat $*cdlat
+$class joinH $*cdjh
+$class vA $*cdjaN
+$class / $*cdiv
+$class S_ [ $class -> $class ] $class _d $setvar $*cdit
+$class DirRel $*cdir
+$class .iOLD $*cdip
+$class Dioph $*cdioph
+$class Dil $*cdilN
+$class DIsoH $*cdih
+$class digit $*cdig
+$class ( $class \ $class ) $*cdif
+$class DIsoC $*cdic
+$class DIsoB $*cdib
+$class Diag $*cdiag2
+$class DiagFunc $*cdiag
+$class DIsoA $*cdia
+$class degAAOLD $*cdgraaold
+$class degAA $*cdgraa
+$class deg $*cdgr
+$class deg1 $*cdg1
+$class denom $*cdenom
+$class decompPMat $*cdecpmat
+$class Ddelta $*cdde
+$class DChr $*cdchr
+$class ; $class $class $*cdc
+$class CytP $*ccytp
+$class CycGrp $*ccyg
+$class Cycles $*ccycl
+$class ^c $*ccxp
+$class CVec $*ccvs
+$class <o $*ccvr
+$class CovMap $*ccvm
+$class <oH $*ccv
+$class CUnifSp $*ccusp
+$class ComplUSGrph $*ccusgra
+$class curryF $*ccurf
+$class curry_ $*ccur-
+$class curry $class $*ccur
+$class Cup $*ccup
+$class CSubSp $*ccss
+$class cyclShift $*ccsh
+$class CSGrpALT $*ccsgrp2
+$class csc $*ccsc
+$class CRingOps $*ccring
+$class CRing $*ccrg
+$class CovHasRef $class $*ccref
+$class card $*ccrd
+$class Circuits $*ccrct
+$class cprob $*ccprob
+$class C^n $*ccpn
+$class cplMetSp $*ccpms
+$class cPolyMatToMat $*ccpmat2mat
+$class ConstPolyMat $*ccpmat
+$class CPreHilOLD $*ccphlo
+$class CPreHil $*ccph
+$class Cp $*ccp
+$class cot $*ccot
+$class cosh $*ccosh
+$class cos $*ccos
+$class ConOp $*ccop
+$class ConnGrph $*cconngra
+$class ++ $*cconcat
+$class Con $*ccon
+$class comLaw $*ccomlaw
+$class comf $*ccomf
+$class ( $class o. $class ) $*ccom
+$class Colinear $*ccolin
+$class o.func $*ccofu
+$class coeff $*ccoe
+$class codA $*ccoda
+$class compA $*ccoa
+$class coe1 $*cco1
+$class comp $*cco
+$class `' $class $*ccnv
+$class Cntz $*ccntz
+$class Cntr $*ccntr
+$class CNrm $*ccnrm
+$class CnP $*ccnp
+$class ConFn $*ccnfn
+$class CCfld $*ccnfld
+$class CNF $*ccnf
+$class CnExt $*ccnext
+$class -cn-> $*ccncf
+$class Cn $*ccn
+$class cm $*ccmtN
+$class CMetSp $*ccms
+$class Comp $*ccmp
+$class CMnd $*ccmn
+$class CMgmALT $*ccmgm2
+$class Com2 $*ccm2
+$class C_H $*ccm
+$class ClWWalksN $*cclwwlkn
+$class ClWWalks $*cclwwlk
+$class ClWalks $*cclwlk
+$class CMod $*cclm
+$class clLaw $*ccllaw
+$class clIntOp $*cclintop
+$class Clsd $*ccld
+$class CLat $*ccla
+$class cls $*ccl
+$class * $*ccj
+$class Id $*ccid
+$class ~=c $*ccic
+$class theta $*ccht
+$class chr $*cchr
+$class CharPlyMat $*cchpmat
+$class psi $*cchp
+$class CH $*cch
+$class cgrG $*ccgrg
+$class cgrA $*ccgra
+$class Cgr3 $*ccgr3
+$class Cgr $*ccgr
+$class CauFilU $*ccfilu
+$class CauFil $*ccfil
+$class cf $*ccf
+$class |^ $*cceil
+$class +c $*ccda
+$class CCinfty $*cccinfty
+$class CChat $*ccchat
+$class CCbar $*cccbar
+$class CBan $*ccbn
+$class Cauchy $*ccau
+$class CatCat $*ccatc
+$class Cat $*ccat
+$class Cart $*ccart
+$class toCaraSiga $*ccarsg
+$class CaraGen $*ccaragen
+$class Cap $*ccap
+$class Cau $*cca
+$class 0 $*cc0
+$class CC $*cc
+$class Btwn $*cbtwn
+$class Base $*cbs
+$class BrSiga $*cbrsiga
+$class bra $*cbr
+$class BernPoly $*cbp
+$class BndLinOp $*cbo
+$class Bnd $*cbnd
+$class Ban $*cbn
+$class BLnOp $*cblo
+$class #b $*cblen
+$class ball $*cbl
+$class bits $*cbits
+$class _O $*cbigo
+$class Bigcup $*cbigcup
+$class bday $*cbday
+$class _Cc $*cbcc
+$class _C $*cbc
+$class BaseSet $*cba
+$class Atoms $*catm
+$class arctan $*catan
+$class HAtoms $*cat
+$class assLaw $*casslaw
+$class assIntOp $*cassintop
+$class Ass $*cass
+$class AlgSpan $*casp
+$class arcsin $*casin
+$class algSc $*cascl
+$class AssAlg $*casa
+$class Arrow $*carw
+$class Arg $*carg
+$class area $*carea
+$class Archi $*carchi
+$class Apply $*capply
+$class (( $class $class $class )) $*caov
+$class Ana $*cana
+$class ( $class XX. $class ) $*caltxp
+$class << $class , $class >> $*caltop
+$class aleph $*cale
+$class AtLat $*cal
+$class adj $*caj
+$class AlgInd $*cai
+$class ( $class ''' $class ) $*cafv
+$class AFS $*cafs
+$class ae $*cae
+$class adjh $*cado
+$class +cc $*caddcc
+$class + $*caddc
+$class ACS $*cacs
+$class arccos $*cacos
+$class AbsVal $*cabv
+$class abs $*cabs
+$class AbelOp $*cablo
+$class Abel $*cabl
+$class { $setvar | $wff } $*cab
+$class AA $*caa
+$class 9 $*c9
+$class 8 $*c8
+$class 7 $*c7
+$class 6 $*c6
+$class 5 $*c5
+$class 4o $*c4o
+$class 4 $*c4
+$class 3o $*c3o
+$class 3 $*c3
+$class 2WalksOt $*c2wlkot
+$class 2WalksOnOt $*c2wlkonot
+$class 2SPathsOt $*c2spthot
+$class 2SPathOnOt $*c2pthonot
+$class 2o $*c2o
+$class 2ndF $*c2ndf
+$class 2ndc $*c2ndc
+$class 2nd $*c2nd
+$class 2Ideal $*c2idl
+$class 2 $*c2
+$class 1stF $*c1stf
+$class 1stc $*c1stc
+$class 1st $*c1st
+$class 1R $*c1r
+$class 1Q $*c1q
+$class 1P $*c1p
+$class 1o $*c1o
+$class 10 $*c10
+$class 1 $*c1
+$class 0h $*c0v
+$class 0R $*c0r
+$class 0p $*c0p
+$class 0op $*c0o
+$class 0H $*c0h
+$class 0g $*c0g
+$class (/) $*c0
+$class _trCl ( $class , $class , $class ) $*c-bnj18
+$class _pred ( $class , $class , $class ) $*c-bnj14
+$class tag $class $*bj-ctag
+$class sngl $class $*bj-csngl
+$class ( $class Proj $class ) $*bj-cproj
+$class pr2 $class $*bj-cpr2
+$class pr1 $class $*bj-cpr1
+$class (| $class ,, $class |) $*bj-c2uple
+$class (| $class |) $*bj-c1upl
+$class #class# $*class_var

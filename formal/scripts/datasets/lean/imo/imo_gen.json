@@ -1,0 +1,44 @@
+{
+    "SUBSWEEP_DATA": {
+        "imo": {
+            "random_gen": [
+                "lean_gen_imo"
+            ],
+            "random_gen.env.unary_ops_str": [
+                "neg,exp,ln,sqrt,cos,sin,tan,abs",
+                "neg,exp,ln,sqrt,cos,sin,tan,abs"
+            ]
+        }
+    },
+    "n_jobs": [
+        10
+    ],
+    "random_gen.n_generations": [
+        300
+    ],
+    "random_gen.remove_comments": [
+        true
+    ],
+    "random_gen.max_true_nodes": [
+        20
+    ],
+    "random_gen.max_hyps": [
+        2,
+        5
+    ],
+    "SUBSWEEP_GENERATION": {
+        "imo": {
+            "random_gen.rwalk": [
+                false
+            ],
+            "random_gen.imo_gen": [
+                true
+            ],
+            "random_gen.n_steps": [
+                30,
+                30,
+                30
+            ]
+        }
+    }
+}

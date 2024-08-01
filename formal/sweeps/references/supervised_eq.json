@@ -1,0 +1,70 @@
+{
+    "root_dump_path": [""],
+    "accumulate_gradients": [1],
+    "no_eval_on_test": ["true"],
+    "log_network_stats_freq": [100],
+    "batch.size": [16],
+    "batch.tokens": [10000],
+    "batch.max_len": [1024],
+    "model.fp16": ["true"],
+    "model.enc_n_layers": [12],
+    "model.dec_n_layers": [6, 12],
+    "model.n_heads": [8],
+    "model.dropout": [0],
+    "model.attention_dropout": [0],
+    "model.activation_dropout": [0],
+    "model.gelu_activation": ["false"],
+    "model.share_inout_emb": ["true"],
+    "model.share_all_emb": ["false"],
+    "model.sinusoidal_embeddings": ["false"],
+    "SUBSWEEP_MODEL": {
+        "default": {
+            "a": [],
+            "model.enc_emb_dim": [512],
+            "model.dec_emb_dim": [512]
+        },
+        "1600_512": {
+            "model.enc_emb_dim": [1600],
+            "model.dec_emb_dim": [512, 1024]
+        }
+    },
+    "eq.dataset": ["eq_dataset_exp_trigo_hyper"],
+    "n_th_to_prove": [500],
+    "SUBSWEEP_TASK": {
+        "bwd_rwalk": {
+            "tasks": ["eq_bwd_rwalk_seq2seq"],
+            "stopping_criterion": ["_valid-eq_bwd_rwalk_seq2seq-tok-ppl,100"],
+            "validation_metrics": [""],
+            "bwd_proving_eval_str": ["eq:valid,eq:identities"]
+        },
+        "bwd_graph": {
+            "tasks": ["eq_bwd_graph_seq2seq"],
+            "stopping_criterion": ["_valid-eq_bwd_graph_seq2seq-tok-ppl,100"],
+            "validation_metrics": [""],
+            "eq.dataset.n_graph_samples": [30],
+            "eq.dataset.max_true_nodes": [10],
+            "eq.dataset.sampler_params": ["eq_graph_sampler_default"],
+            "bwd_proving_eval_str": ["eq:valid,eq:identities"]
+        },
+        "fwd_gen_graph": {
+            "a": [],
+            "tasks": ["eq_gen_graph_seq2seq"],
+            "stopping_criterion": ["_valid-eq_gen_graph_seq2seq-tok-ppl,100"],
+            "validation_metrics": ["_valid-eq_gen_graph_seq2seq-tok-ppl"],
+            "eq.dataset.n_graph_samples": [30],
+            "eq.dataset.max_init_hyps": [10],
+            "eq.dataset.max_true_nodes": [10],
+            "eq.dataset.sampler_params": ["eq_graph_sampler_default"],
+            "bwd_proving_eval_str": [""]
+        }
+    },
+    "env_base_seed": [-1],
+    "num_workers": [10],
+    "epoch_size": [100000],
+    "fwd_proving_eval_str": [""],
+    "optimizer": ["adam_inverse_sqrt,warmup_updates=10000,lr=0.0001,weight_decay=0.01"],
+    "clip_grad_norm": [1],
+    "max_epoch": [100000],
+    "async_bwd_eval_freq": [5],
+    "mcts_train.q_conditioning" : [""]
+}

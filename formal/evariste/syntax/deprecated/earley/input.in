@@ -1,0 +1,9 @@
+#CLASS_VAR# 0 1 2 3 4 5 6 7 8 9
+#SET_VAR# a b c d
+#WFF_VAR# ph ch ps
+$start wff $wff
+$start class $class
+$start set $set
+$start setvar $set
+$class ( $class + $class ) $*wcadd
+$class #CLASS_VAR# $*c1

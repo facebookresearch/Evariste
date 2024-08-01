@@ -1,0 +1,1288 @@
+
+start: "wff" _WS wff -> wff
+ | "class" _WS class -> class
+ | ("setvar" | "set") _WS setvar -> setvar
+
+wff: WFF_VAR -> wff_var
+| class _WS "e." _WS class -> w20 // wcel
+| "(" _WS wff _WS "/\\" _WS wff _WS ")" -> w4 // wa
+| class _WS class _WS class -> w55 // wbr
+| class _WS "=" _WS class -> w12 // wceq
+| "(" _WS wff _WS "/\\" _WS wff _WS "/\\" _WS wff _WS ")" -> w6 // w3a
+| class _WS "C_" _WS class -> w39 // wss
+| class _WS "=/=" _WS class -> w25 // wne
+| "-." _WS wff -> w0 // wn
+| "A." _WS setvar _WS "e." _WS class _WS wff -> w27 // wral
+| "(" _WS wff _WS "->" _WS wff _WS ")" -> w1 // wi
+| class _WS ":" _WS class _WS "-->" _WS class -> w82 // wf
+| "E." _WS setvar _WS "e." _WS class _WS wff -> w28 // wrex
+| "(" _WS wff _WS "<->" _WS wff _WS ")" -> w2 // wb
+| class _WS ":" _WS class _WS "-1-1-onto->" _WS class -> w85 // wf1o
+| "E." _WS setvar _WS wff -> w17 // wex
+| "(" _WS wff _WS "\\/" _WS wff _WS ")" -> w3 // wo
+| "T." -> w13 // wtru
+| class _WS "Fn" _WS class -> w81 // wfn
+| "A." _WS setvar _WS wff -> w10 // wal
+| class _WS "Isom" _WS class _WS "," _WS class _WS "(" _WS class _WS "," _WS class _WS ")" -> w87 // wiso
+| "[." _WS class _WS "/" _WS setvar _WS "]." _WS wff -> w34 // wsbc
+| "Fun" _WS class -> w80 // wfun
+| class _WS ":" _WS class _WS "-1-1->" _WS class -> w83 // wf1
+| class _WS ":" _WS class _WS "-onto->" _WS class -> w84 // wfo
+| class _WS "C." _WS class -> w40 // wpss
+| "[" _WS setvar _WS "/" _WS setvar _WS "]" _WS wff -> w19 // wsb
+| class _WS "We" _WS class -> w65 // wwe
+| "Rel" _WS class -> w73 // wrel
+| class _WS "Or" _WS class -> w62 // wor
+| "Ord" _WS class -> w75 // word
+| "Lim" _WS class -> w77 // wlim
+| "Tr" _WS class -> w58 // wtr
+| "(" _WS wff _WS "\\/" _WS wff _WS "\\/" _WS wff _WS ")" -> w5 // w3o
+| "E!" _WS setvar _WS "e." _WS class _WS wff -> w29 // wreu
+| class _WS "e/" _WS class -> w26 // wnel
+| "Disj_" _WS setvar _WS "e." _WS class _WS class -> w54 // wdisj
+| "E!" _WS setvar _WS wff -> w21 // weu
+| "F." -> w14 // wfal
+| "(" _WS wff _WS "-/\\" _WS wff _WS ")" -> w7 // wnan
+| "E*" _WS setvar _WS wff -> w22 // wmo
+| class _WS "_FrSe" _WS class -> w905 // w-bnj15
+| class _WS "Er" _WS class -> w115 // wer
+| class _WS "Po" _WS class -> w61 // wpo
+| class _WS "Se" _WS class -> w64 // wse
+| "E*" _WS setvar _WS "e." _WS class _WS wff -> w30 // wrmo
+| "F/" _WS setvar _WS wff -> w18 // wnf
+| "(" _WS wff _WS "/\\" _WS wff _WS "/\\" _WS wff _WS "/\\" _WS wff _WS ")" -> w902 // w-bnj17
+| class _WS "Fr" _WS class -> w63 // wfr
+| "Smo" _WS class -> w104 // wsmo
+| "F/_" _WS setvar _WS class -> w24 // wnfc
+| "if-" _WS "(" _WS wff _WS "," _WS wff _WS "," _WS wff _WS ")" -> w9 // wif
+| "(" _WS wff _WS "\\/_" _WS wff _WS ")" -> w8 // wxo
+| class _WS "hereditary" _WS class -> w1173 // whe
+| "cadd" _WS "(" _WS wff _WS "," _WS wff _WS "," _WS wff _WS ")" -> w16 // wcad
+| "CHOICE" -> w140 // wac
+| "hadd" _WS "(" _WS wff _WS "," _WS wff _WS "," _WS wff _WS ")" -> w15 // whad
+| class _WS "defAt" _WS class -> w1204 // wdfat
+| "Prv" _WS wff -> w1040 // cprvb
+| "Prt" _WS class -> w1086 // wprt
+| "_TrFo" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w907 // w-bnj19
+| "FF/" _WS setvar _WS wff -> w1041 // wnff
+| "(." _WS wff _WS "->." _WS wff _WS ")." -> w1181 // wvd1
+| "(." _WS wff _WS ",." _WS wff _WS ")." -> w1183 // wvhc2
+| "A!" _WS setvar _WS "(" _WS wff _WS "->" _WS wff _WS ")" -> w1268 // walsi
+| "(" _WS wff _WS "-/\\" _WS wff _WS "-/\\" _WS wff _WS ")" -> w1038 // w3nand
+| class _WS "_Se" _WS class -> w904 // w-bnj13
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1185 // wvhc3
+| "(." _WS wff _WS ",." _WS wff _WS "->." _WS wff _WS ")." -> w1182 // wvd2
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS "->." _WS wff _WS ")." -> w1184 // wvd3
+| "A!" _WS setvar _WS "e." _WS class _WS wff -> w1269 // walsc
+| "CondEq" _WS "(" _WS setvar _WS "=" _WS setvar _WS "->" _WS wff _WS ")" -> w33 // wcdeq
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1186 // wvhc4
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1187 // wvhc5
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1188 // wvhc6
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1189 // wvhc7
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1190 // wvhc8
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1191 // wvhc9
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1192 // wvhc10
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1193 // wvhc11
+| "(." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ",." _WS wff _WS ")." -> w1194 // wvhc12
+| class _WS "Reflexive" _WS class -> w1266 // wreflexive
+| class _WS "Irreflexive" _WS class -> w1267 // wirreflexive
+
+class: CLASS_VAR -> class_var
+| setvar -> w11 // cv
+| "(" _WS class _WS class _WS class _WS ")" -> w89 // co
+| "(" _WS class _WS "`" _WS class _WS ")" -> w86 // cfv
+| "1" -> w188 // c1
+| "0" -> w187 // cc0
+| "RR" -> w186 // cr
+| "+" -> w190 // caddc
+| "-" -> w198 // cmin
+| "2" -> w202 // c2
+| "x." -> w192 // cmul
+| "..." -> w224 // cfz
+| "/" -> w200 // cdiv
+| "<" -> w196 // clt
+| "(,)" -> w220 // cioo
+| "NN" -> w201 // cn
+| "{" _WS class _WS "}" -> w45 // csn
+| "_pi" -> w277 // cpi
+| "CC" -> w185 // cc
+| "<_" -> w197 // cle
+| "^" -> w230 // cexp
+| "ZZ" -> w212 // cz
+| "-u" _WS class -> w199 // cneg
+| "ran" _WS class -> w69 // crn
+| "(" _WS setvar _WS "e." _WS class _WS "|->" _WS class _WS ")" -> w57 // cmpt
+| "abs" -> w260 // cabs
+| "NN0" -> w211 // cn0
+| "[,]" -> w223 // cicc
+| "(" _WS class _WS "X." _WS class _WS ")" -> w66 // cxp
+| "<." _WS class _WS "," _WS class _WS ">." -> w48 // cop
+| "..^" -> w225 // cfzo
+| "Base" -> w306 // cbs
+| "dom" _WS class -> w68 // cdm
+| "(" _WS class _WS "i^i" _WS class _WS ")" -> w38 // cin
+| "(" _WS class _WS "\\" _WS class _WS ")" -> w36 // cdif
+| "RR+" -> w216 // crp
+| "(/)" -> w42 // c0
+| "+oo" -> w193 // cpnf
+| "ZZ>=" -> w214 // cuz
+| "(" _WS class _WS "|`" _WS class _WS ")" -> w70 // cres
+| "#" -> w233 // chash
+| "(" _WS class _WS "u." _WS class _WS ")" -> w37 // cun
+| "|_" -> w226 // cfl
+| "(" _WS class _WS "\"" _WS class _WS ")" -> w71 // cima
+| "_V" -> w32 // cvv
+| "{" _WS setvar _WS "e." _WS class _WS "|" _WS wff _WS "}" -> w31 // crab
+| "`'" _WS class -> w67 // ccnv
+| "_D" -> w662 // cdv
+| "U." _WS class -> w50 // cuni
+| "if" _WS "(" _WS wff _WS "," _WS class _WS "," _WS class _WS ")" -> w43 // cif
+| "1st" -> w96 // c1st
+| "2nd" -> w97 // c2nd
+| "Fin" -> w124 // cfn
+| "RR*" -> w195 // cxr
+| "{" _WS class _WS "," _WS class _WS "}" -> w46 // cpr
+| "~P" _WS class -> w44 // cpw
+| "^m" -> w118 // cmap
+| "(" _WS class _WS "o." _WS class _WS ")" -> w72 // ccom
+| "HL" -> w1101 // chlt
+| "3" -> w203 // c3
+| "EE" -> w725 // cee
+| "_om" -> w95 // com
+| "log" -> w682 // clog
+| "||" -> w279 // cdvds
+| "_i" -> w189 // ci
+| "sum_" _WS setvar _WS "e." _WS class _WS class -> w267 // csu
+| "[,)" -> w222 // cico
+| "sup" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w127 // csup
+| "_I" -> w60 // cid
+| "[_" _WS class _WS "/" _WS setvar _WS "]_" _WS class -> w35 // csb
+| "Prime" -> w288 // cprime
+| "On" -> w76 // con0
+| "0g" -> w325 // c0g
+| "~H" -> w804 // chil
+| "Word" _WS class -> w234 // cword
+| "4" -> w204 // c4
+| "oF" _WS class -> w92 // cof
+| "Re" -> w257 // cre
+| "+g" -> w308 // cplusg
+| "Hom" -> w319 // chom
+| "suc" _WS class -> w78 // csuc
+| "mod" -> w228 // cmo
+| "U_" _WS setvar _WS "e." _WS class _WS class -> w52 // ciun
+| "CCfld" -> w519 // ccnfld
+| "sqrt" -> w259 // csqrt
+| "seq" _WS class _WS "(" _WS class _WS "," _WS class _WS ")" -> w229 // cseq
+| "-oo" -> w194 // cmnf
+| "Ring" -> w451 // crg
+| "vol" -> w653 // cvol
+| "vol*" -> w651 // covol
+| "|`t" -> w321 // crest
+| "Scalar" -> w311 // csca
+| "{" _WS setvar _WS "|" _WS wff _WS "}" -> w23 // cab
+| "!" -> w231 // cfa
+| "gcd" -> w283 // cgcd
+| "sin" -> w274 // csin
+| "S.1" -> w655 // citg1
+| "(" _WS setvar _WS "e." _WS class _WS "," _WS setvar _WS "e." _WS class _WS "|->" _WS class _WS ")" -> w91 // cmpt2
+| "pInvG" -> w714 // cmir
+| "gsum" -> w326 // cgsu
+| "Im" -> w258 // cim
+| "1o" -> w108 // c1o
+| "ball" -> w514 // cbl
+| "Poly" -> w673 // cply
+| "|`s" -> w307 // cress
+| ".r" -> w309 // cmulr
+| "deg" -> w676 // cdgr
+| "SubGrp" -> w417 // csubg
+| "TopOpen" -> w322 // ctopn
+| ";" _WS class _WS class -> w213 // cdc
+| "2o" -> w109 // c2o
+| "_e" -> w273 // ceu
+| ".s" -> w312 // cvsca
+| "TopOn" -> w557 // ctopon
+| "topGen" -> w323 // ctg
+| "Cn" -> w566 // ccn
+| "exp" -> w272 // ce
+| "<\"" _WS class _WS class _WS class _WS "\">" -> w244 // cs3
+| "Top" -> w556 // ctop
+| "~<_" -> w122 // cdom
+| "Grp" -> w413 // cgrp
+| "rmY" -> w1155 // crmy
+| "Btwn" -> w726 // cbtwn
+| "QQ" -> w215 // cq
+| "LMod" -> w469 // clmod
+| "(,]" -> w221 // cioc
+| "CRing" -> w452 // ccrg
+| "cos" -> w275 // ccos
+| "supp" -> w98 // csupp
+| "vH" -> w818 // chj
+| "II" -> w629 // cii
+| "|^|" _WS class -> w51 // cint
+| "1r" -> w449 // cur
+| ".ih" -> w807 // csp
+| "*Met" -> w512 // cxmt
+| "++" -> w236 // cconcat
+| "~~" -> w121 // cen
+| "ndx" -> w303 // cnx
+| "le" -> w315 // cple
+| "card" -> w136 // ccrd
+| "pCnt" -> w294 // cpc
+| "^o" -> w114 // coe
+| "normh" -> w808 // cno
+| "[" _WS class _WS "]" _WS class -> w116 // cec
+| "R1" -> w134 // cr1
+| "Cgr" -> w727 // ccgr
+| "Dn" -> w663 // cdvn
+| "TarskiG" -> w702 // cstrkg
+| "mulGrp" -> w448 // cmgp
+| "oR" _WS class -> w93 // cofr
+| "Func" -> w354 // cfunc
+| "<\"" _WS class _WS "\">" -> w237 // cs1
+| "substr" -> w238 // csubstr
+| "^c" -> w683 // ccxp
+| "0p" -> w659 // c0p
+| "Lam" -> w695 // cvma
+| "*" -> w256 // ccj
+| "+o" -> w112 // coa
+| "6" -> w206 // c6
+| "_|_" -> w815 // cort
+| "8" -> w208 // c8
+| "{" _WS class _WS "," _WS class _WS "," _WS class _WS "}" -> w47 // ctp
+| "coeff" -> w675 // ccoe
+| ".o" -> w113 // comu
+| "perpG" -> w716 // cperpg
+| "(" _WS "iota_" _WS setvar _WS "e." _WS class _WS wff _WS ")" -> w88 // crio
+| "~~>" -> w263 // cli
+| "5" -> w205 // c5
+| "CH" -> w814 // cch
+| "-cn->" -> w630 // ccncf
+| "+e" -> w218 // cxad
+| "invg" -> w414 // cminusg
+| "S." _WS class _WS class _WS "_d" _WS setvar -> w658 // citg
+| "dist" -> w317 // cds
+| "S.2" -> w656 // citg2
+| ".h" -> w806 // csm
+| "comp" -> w320 // cco
+| "+h" -> w805 // cva
+| "Lat" -> w395 // clat
+| "Clsd" -> w560 // ccld
+| "tX" -> w586 // ctx
+| "projh" -> w822 // cpjh
+| "coe1" -> w507 // cco1
+| "<." _WS class _WS "," _WS class _WS "," _WS class _WS ">." -> w49 // cotp
+| "_E" -> w59 // cep
+| "join" -> w390 // cjn
+| "^r" -> w252 // crelexp
+| "_C" -> w232 // cbc
+| "cls" -> w562 // ccl
+| "-g" -> w415 // csg
+| "LSubSp" -> w471 // clss
+| "X_" _WS setvar _WS "e." _WS class _WS class -> w120 // cixp
+| "USGrph" -> w733 // cusg
+| "9" -> w209 // c9
+| "rank" -> w135 // crnk
+| "-h" -> w810 // cmv
+| "0h" -> w809 // c0v
+| "N." -> w157 // cnpi
+| "rmX" -> w1154 // crmx
+| "psi" -> w696 // cchp
+| "rec" _WS "(" _WS class _WS "," _WS class _WS ")" -> w106 // crdg
+| "7" -> w207 // c7
+| "oc" -> w316 // coc
+| "Mnd" -> w407 // cmnd
+| "NrmCVec" -> w785 // cnv
+| "~<" -> w123 // csdm
+| "Cat" -> w340 // ccat
+| "finSupp" -> w125 // cfsupp
+| "cgrG" -> w710 // ccgrg
+| "inf" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w128 // cinf
+| "bits" -> w280 // cbits
+| "prod_" _WS setvar _WS "e." _WS class _WS class -> w268 // cprod
+| "DProd" -> w446 // cdprd
+| "+c" -> w141 // ccda
+| "MblFn" -> w654 // cmbf
+| "~~>t" -> w568 // clm
+| "L^1" -> w657 // cibl
+| "P." -> w172 // cnp
+| "Fil" -> w591 // cfil
+| "aleph" -> w137 // cale
+| "Atoms" -> w1098 // catm
+| "limCC" -> w661 // climc
+| "sum*" _WS setvar _WS "e." _WS class _WS class -> w877 // cesum
+| "Xp" -> w674 // cidp
+| "{" _WS "<." _WS setvar _WS "," _WS setvar _WS ">." _WS "|" _WS wff _WS "}" -> w56 // copab
+| "sum^" -> w1198 // csumge0
+| "Comp" -> w576 // ccmp
+| "int" -> w561 // cnt
+| "Pred" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w74 // cpred
+| "DivRing" -> w462 // cdr
+| "Abel" -> w444 // cabl
+| "Poly1" -> w506 // cpl1
+| "Met" -> w513 // cme
+| "+H" -> w816 // cph
+| ".g" -> w416 // cmg
+| "NrmGrp" -> w619 // cngp
+| "nei" -> w563 // cnei
+| "fi" -> w126 // cfi
+| "SubRing" -> w464 // csubrg
+| "LTrn" -> w1118 // cltrn
+| "Q." -> w165 // cnq
+| "-e" _WS class -> w217 // cxne
+| "SymGrp" -> w427 // csymg
+| "PsMet" -> w511 // cpsmet
+| "^s" -> w328 // cpws
+| "BaseSet" -> w787 // cba
+| "^pm" -> w119 // cpm
+| "meet" -> w391 // cmee
+| "_Cc" -> w1174 // cbcc
+| "lastS" -> w235 // clsw
+| "+P." -> w174 // cpp
+| "arctan" -> w687 // catan
+| "10" -> w210 // c10
+| "RingHom" -> w459 // crh
+| "LVec" -> w477 // clvec
+| "Id" -> w341 // ccid
+| "Xc." -> w374 // cxpc
+| "LMHom" -> w473 // clmhm
+| "0H" -> w820 // c0h
+| "Unit" -> w455 // cui
+| "GrpHom" -> w420 // cghm
+| "limsupOLD" -> w262 // clspold
+| "*e" -> w219 // cxmu
+| "EEG" -> w728 // ceeng
+| "limsup" -> w261 // clsp
+| "LSpan" -> w472 // clspn
+| "mmu" -> w698 // cmu
+| ".N" -> w159 // cmi
+| "IDomn" -> w488 // cidom
+| "midG" -> w718 // cmid
+| "~R" -> w177 // cer
+| "phi" -> w293 // cphi
+| "deg1" -> w666 // cdg1
+| "cyclShift" -> w242 // ccsh
+| ".P." -> w175 // cmp
+| "_pred" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w903 // c-bnj14
+| "RR*s" -> w330 // cxrs
+| "~Met" -> w868 // cmetid
+| "Inv" -> w348 // cinv
+| "+v" -> w786 // cpv
+| "MetOpen" -> w517 // cmopn
+| "<\"" _WS class _WS class _WS "\">" -> w243 // cs2
+| "RRfld" -> w525 // crefld
+| "GrpOp" -> w765 // cgr
+| "mzPoly" -> w1146 // cmzp
+| "tan" -> w276 // ctan
+| "Odd" -> w1209 // codd
+| "UnifOn" -> w607 // cust
+| "CnP" -> w567 // ccnp
+| "Xt_" -> w324 // cpt
+| "Mat" -> w540 // cmat
+| "ZZring" -> w520 // zring
+| "NrmMod" -> w622 // cnlm
+| "CPreHil" -> w641 // ccph
+| "/L" -> w701 // clgs
+| "recs" _WS "(" _WS class _WS ")" -> w105 // crecs
+| ".sOLD" -> w788 // cns
+| "hpG" -> w717 // chpg
+| "Z[i]" -> w295 // cgz
+| "Con" -> w577 // ccon
+| "(" _WS "iota" _WS setvar _WS wff _WS ")" -> w79 // cio
+| "[]NN" -> w1148 // csquarenn
+| "Neighbors" -> w735 // cnbgra
+| "freeLMod" -> w535 // cfrlm
+| "Z/nZ" -> w524 // czn
+| "RingOps" -> w779 // crngo
+| "cf" -> w138 // ccf
+| "TEndo" -> w1123 // ctendo
+| "0." -> w393 // cp0
+| "fBas" -> w515 // cfbas
+| "(" _WS class _WS "/." _WS class _WS ")" -> w117 // cqs
+| "normop" -> w830 // cnop
+| "HAtoms" -> w850 // cat
+| "SubSp" -> w794 // css
+| "Xs_" -> w327 // cprds
+| "mPoly" -> w495 // cmpl
+| "TopGrp" -> w601 // ctgp
+| "Moore" -> w336 // cmre
+| "lt" -> w387 // cplt
+| "ordTop" -> w329 // cordt
+| "DVecH" -> w1128 // cdvh
+| "Haus" -> w571 // cha
+| "1P" -> w173 // c1p
+| ".i" -> w313 // cip
+| "ZRHom" -> w521 // czrh
+| "kGen" -> w585 // ckgen
+| "_lcm" -> w285 // clcmf
+| "sadd" -> w281 // csad
+| "SH" -> w813 // csh
+| "t+" -> w250 // ctcl
+| "algSc" -> w492 // cascl
+| "lcm" -> w284 // clcm
+| "filGen" -> w516 // cfg
+| "VDeg" -> w758 // cvdg
+| "denom" -> w290 // cdenom
+| ".Q" -> w169 // cmq
+| ".R" -> w183 // cmr
+| "Field" -> w463 // cfield
+| "Walks" -> w738 // cwalk
+| "TopBases" -> w559 // ctb
+| "normCV" -> w791 // cnmcv
+| "invr" -> w457 // cinvr
+| "SubMnd" -> w410 // csubmnd
+| "OrdIso" _WS "(" _WS class _WS "," _WS class _WS ")" -> w129 // coi
+| "adjh" -> w840 // cado
+| "Homf" -> w342 // chomf
+| "pGrp" -> w435 // cpgp
+| "chr" -> w523 // cchr
+| "mrCls" -> w337 // cmrc
+| "span" -> w817 // cspn
+| "0R" -> w179 // c0r
+| "|`cat" -> w352 // cresc
+| "oppR" -> w453 // coppr
+| "+Q" -> w168 // cplq
+| "NrmSGrp" -> w418 // cnsg
+| "linC" -> w1247 // clinc
+| "CMnd" -> w443 // ccmn
+| "logb" -> w684 // clogb
+| "NzRing" -> w485 // cnzr
+| "FriendGrph" -> w762 // cfrgra
+| "LSSum" -> w438 // clsm
+| "No" -> w994 // csur
+| "~QG" -> w419 // cqg
+| "sigAlgebra" -> w879 // csiga
+| "qTop" -> w331 // cqtop
+| ".op" -> w824 // chot
+| "N-Locally" _WS class -> w581 // cnlly
+| "MndHom" -> w409 // cmhm
+| "hlG" -> w713 // chlg
+| "fLim" -> w595 // cflim
+| "sSet" -> w304 // csts
+| "~=ph" -> w633 // cphtpc
+| "mPwSer" -> w493 // cmps
+| "LineG" -> w709 // clng
+| "Nat" -> w360 // cnat
+| "Domn" -> w487 // cdomn
+| "~~>r" -> w264 // crli
+| "RngHomo" -> w1239 // crngh
+| "measures" -> w883 // cmeas
+| "CMod" -> w639 // cclm
+| "decompPMat" -> w553 // cdecpmat
+| "evalSub" -> w498 // ces
+| "*p" -> w634 // cpco
+| "cgrA" -> w720 // ccgra
+| "Bnd" -> w1073 // cbnd
+| "<Q" -> w171 // cltq
+| "|^|_" _WS setvar _WS "e." _WS class _WS class -> w53 // ciin
+| "norm" -> w618 // cnm
+| "R." -> w178 // cnr
+| "ringLMod" -> w479 // crglmod
+| "pmTrsp" -> w428 // cpmtr
+| "bday" -> w996 // cbday
+| "LCDual" -> w1137 // clcd
+| "var1" -> w505 // cv1
+| "TopMnd" -> w600 // ctmd
+| "DIsoH" -> w1133 // cdih
+| "#b" -> w1253 // cblen
+| "IndMet" -> w792 // cims
+| "LIdeal" -> w480 // clidl
+| "KQ" -> w588 // ckq
+| "GId" -> w766 // cgi
+| "OML" -> w1096 // coml
+| "CNF" -> w132 // ccnf
+| "PreHil" -> w526 // cphl
+| "theta" -> w694 // ccht
+| "-op" -> w825 // chod
+| "_trCl" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w906 // c-bnj18
+| "mVR" -> w934 // cmvar
+| "HrmOp" -> w835 // cho
+| "OP" -> w1093 // cops
+| "0vec" -> w789 // cn0v
+| "Sect" -> w347 // csect
+| "har" -> w130 // char
+| "gamma" -> w689 // cem
+| "WWalksN" -> w750 // cwwlkn
+| "0hop" -> w828 // ch0o
+| "+R" -> w182 // cplr
+| "CPreHilOLD" -> w801 // ccphlo
+| "ppi" -> w697 // cppi
+| "+op" -> w823 // chos
+| "oGrp" -> w855 // cogrp
+| "quot" -> w677 // cquot
+| "fClus" -> w597 // cfcls
+| "<o" -> w1097 // ccvr
+| "^ko" -> w587 // cxko
+| "CMet" -> w645 // cms
+| "ocH" -> w1134 // coch
+| "[C.]" -> w94 // crpss
+| "ldgIdlSeq" -> w1159 // cldgis
+| "AP" -> w296 // cvdwa
+| "lub" -> w388 // club
+| "Rng" -> w1238 // crng
+| "O(1)" -> w265 // co1
+| "tpos" _WS class -> w99 // ctpos
+| "pmSgn" -> w429 // cpsgn
+| "TopSp" -> w558 // ctps
+| "Pell14QR" -> w1151 // cpell14qr
+| "Ramsey" -> w299 // cram
+| "*Q" -> w170 // crq
+| "mCN" -> w933 // cmcn
+| "NrmRing" -> w621 // cnrg
+| "FallFac" -> w269 // cfallfac
+| "CLat" -> w396 // ccla
+| "Homeo" -> w589 // chmeo
+| "Even" -> w1208 // ceven
+| "CauFil" -> w643 // ccfil
+| "CBan" -> w802 // ccbn
+| "*r" -> w310 // cstv
+| "ACS" -> w339 // cacs
+| "Iop" -> w829 // chio
+| "od" -> w431 // cod
+| "NGHom" -> w626 // cnghm
+| "/Q" -> w167 // cerq
+| "PCon" -> w909 // cpcon
+| "PellFund" -> w1152 // cpellfund
+| "1stc" -> w578 // c1stc
+| "AA" -> w678 // caa
+| "AtLat" -> w1099 // cal
+| "BernPoly" -> w271 // cbp
+| "UFil" -> w592 // cufil
+| "LinOp" -> w832 // clo
+| "TopSet" -> w314 // cts
+| "numer" -> w289 // cnumer
+| "1." -> w394 // cp1
+| "Idl" -> w1080 // cidl
+| "freeMnd" -> w411 // cfrmd
+| "GCH" -> w149 // cgch
+| "1Q" -> w166 // c1q
+| "LFnl" -> w1090 // clfn
+| "~~>v" -> w812 // chli
+| "OL" -> w1095 // col
+| "RSpan" -> w481 // crsp
+| "<R" -> w184 // cltr
+| "RegUSGrph" -> w760 // crusgra
+| "oppCat" -> w344 // coppc
+| "limPt" -> w564 // clp
+| "inv" -> w767 // cgn
+| "sigma" -> w699 // csgm
+| "GrpAct" -> w423 // cga
+| "trL" -> w1121 // ctrl
+| "Poset" -> w386 // cpo
+| "<\"" _WS class _WS class _WS class _WS class _WS "\">" -> w245 // cs4
+| "Itv" -> w708 // citv
+| "BndLinOp" -> w833 // cbo
+| "voln*" -> w1202 // covoln
+| "sgn" -> w255 // csgn
+| "reverse" -> w240 // creverse
+| "unifTop" -> w608 // cutop
+| "LKer" -> w1091 // clk
+| "CvLat" -> w1100 // clc
+| "ClWWalksN" -> w753 // cclwwlkn
+| "~~>u" -> w681 // culm
+| "repeatS" -> w241 // creps
+| "CovMap" -> w911 // ccvm
+| "o.func" -> w356 // ccofu
+| "Cntz" -> w424 // ccntz
+| "Tarski" -> w154 // ctsk
+| "MetSp" -> w616 // cmt
+| "Univ" -> w155 // cgru
+| "BrSiga" -> w881 // cbrsiga
+| "splice" -> w239 // csplice
+| "Colinear" -> w1027 // ccolin
+| "AssAlg" -> w490 // casa
+| "fLimf" -> w596 // cflf
+| "FilMap" -> w594 // cfm
+| "UnifSt" -> w609 // cuss
+| "{" _WS "<." _WS "<." _WS setvar _WS "," _WS setvar _WS ">." _WS "," _WS setvar _WS ">." _WS "|" _WS wff _WS "}" -> w90 // coprab
+| "pSyl" -> w437 // cslw
+| "prefix" -> w1213 // cpfx
+| "lInvG" -> w719 // clmi
+| "CycGrp" -> w445 // ccyg
+| "pmEven" -> w430 // cevpm
+| "<s" -> w995 // cslt
+| "Locally" _WS class -> w580 // clly
+| "MH" -> w851 // cmd
+| "quot1p" -> w669 // cq1p
+| "~Q" -> w164 // ceq
+| "-1R" -> w181 // cm1r
+| "digit" -> w1254 // cdig
+| "Rn" -> w1075 // crrn
+| "raG" -> w715 // crag
+| "EDRing" -> w1124 // cedring
+| "mPreSt" -> w946 // cmpst
+| "C_cat" -> w351 // cssc
+| "glb" -> w389 // cglb
+| "+N" -> w158 // cpli
+| "S_" _WS "[" _WS class _WS "->" _WS class _WS "]" _WS class _WS "_d" _WS setvar -> w660 // cdit
+| "WalkOn" -> w742 // cwlkon
+| "Line" -> w1031 // cline2
+| "shift" -> w254 // cshi
+| "matToPolyMat" -> w551 // cmat2pmat
+| "ocv" -> w528 // cocv
+| "*MetSp" -> w615 // cxme
+| "WUni" -> w152 // cwun
+| "LLines" -> w1102 // clln
+| "oppG" -> w426 // coppg
+| "CVecOLD" -> w784 // cvc
+| "SCon" -> w910 // cscon
+| "oRing" -> w860 // corng
+| "Monic1p" -> w667 // cmn1
+| "2ndF" -> w376 // c2ndf
+| "bra" -> w841 // cbr
+| "sigaGen" -> w880 // csigagen
+| "ClWWalks" -> w752 // cclwwlk
+| "maMul" -> w539 // cmmul
+| "Vtx" -> w1215 // cvtx
+| "||r" -> w454 // cdsr
+| "-v" -> w790 // cnsb
+| "t*rec" -> w253 // crtrcl
+| "C_H" -> w821 // ccm
+| "Mgm" -> w405 // cmgm
+| "iEdg" -> w1216 // ciedg
+| "mFS" -> w949 // cmfs
+| "pmap" -> w1108 // cpmap
+| "toInc" -> w398 // cipo
+| "TosetRel" -> w401 // ctsr
+| "<P" -> w176 // cltp
+| "2WalksOnOt" -> w755 // c2wlkonot
+| "Ref" -> w582 // cref
+| "FuncCat" -> w361 // cfuc
+| "toMetSp" -> w617 // ctmt
+| "<RR" -> w191 // cltrr
+| "PHtpy" -> w632 // cphtpy
+| "AbelOp" -> w770 // cablo
+| "DIsoA" -> w1127 // cdia
+| "1stF" -> w375 // c1stf
+| "SRing" -> w450 // csrg
+| "mREx" -> w939 // cmrex
+| "metUnif" -> w518 // cmetu
+| "mEx" -> w940 // cmex
+| "DIsoB" -> w1131 // cdib
+| "TC" -> w133 // ctc
+| "degAA" -> w1162 // cdgraa
+| "~<_*" -> w131 // cwdom
+| "CHil" -> w648 // chl
+| "Faith" -> w359 // cfth
+| "tsums" -> w602 // ctsu
+| "Fre" -> w570 // ct1
+| "<N" -> w160 // clti
+| "Dioph" -> w1147 // cdioph
+| "mRSubst" -> w943 // cmrsub
+| "seqstr" -> w894 // csseq
+| "arcsin" -> w685 // casin
+| "/e" -> w853 // cxdiv
+| "Om1" -> w635 // comi
+| "Iso" -> w349 // ciso
+| "MH*" -> w852 // cdmd
+| "Toset" -> w392 // ctos
+| "MonoAP" -> w297 // cvdwm
+| "eval" -> w499 // cevl
+| "Cgr3" -> w1026 // ccgr3
+| "normOpOLD" -> w796 // cnmoo
+| "MgmHom" -> w1226 // cmgmhm
+| "LinFn" -> w839 // clf
+| "mVar" -> w494 // cmvr
+| ".ef" -> w1214 // cedgf
+| "/r" -> w458 // cdvr
+| "Preset" -> w384 // cpreset
+| "Cau" -> w644 // cca
+| "(" _WS class _WS "'''" _WS class _WS ")" -> w1205 // cafv
+| "SPaths" -> w741 // cspath
+| "odZ" -> w291 // codz
+| "subringAlg" -> w478 // csra
+| "leG" -> w712 // cleg
+| "2SPathOnOt" -> w757 // c2pthonot
+| "Prob" -> w896 // cprb
+| "Trails" -> w739 // ctrail
+| "LPlanes" -> w1103 // clpl
+| "ExtStrCat" -> w373 // cestrc
+| "oField" -> w861 // cofld
+| "LSAtoms" -> w1087 // clsa
+| "PosetRel" -> w400 // cps
+| "RngHom" -> w1076 // crnghom
+| "C^n" -> w664 // ccpn
+| "odZOLD" -> w292 // codzold
+| "Full" -> w358 // cful
+| "AC_" _WS class -> w139 // wacn
+| "OutsideOf" -> w1030 // coutsideof
+| "Unic1p" -> w668 // cuc1p
+| "LIndF" -> w537 // clindf
+| "BLnOp" -> w797 // cblo
+| "Pell1QR" -> w1149 // cpell1qr
+| "Dirset" -> w385 // cdrs
+| "Nrm" -> w573 // cnrm
+| "oMnd" -> w854 // comnd
+| "mVars" -> w942 // cmvrs
+| "LSHyp" -> w1088 // clsh
+| "Fne" -> w1037 // cfne
+| "_|_P" -> w1111 // cpolN
+| "QQHom" -> w871 // cqqh
+| "<oH" -> w849 // ccv
+| "Reg" -> w572 // creg
+| "States" -> w847 // cst
+| "PwSer1" -> w504 // cps1
+| "UniOp" -> w834 // cuo
+| "LNoeR" -> w1158 // clnr
+| "Perf" -> w565 // cperf
+| "HDMap" -> w1141 // chdma
+| "Subcat" -> w353 // csubc
+| "varFGrp" -> w442 // cvrgp
+| "EulPaths" -> w761 // ceup
+| "LocFin" -> w584 // clocfin
+| "log_G" -> w691 // clgam
+| "RePart" -> w1207 // ciccp
+| "(" _WS class _WS "(x)" _WS class _WS ")" -> w997 // ctxp
+| "tail" -> w403 // ctail
+| "CauFilU" -> w613 // ccfilu
+| "ComplUSGrph" -> w736 // ccusgra
+| "LDual" -> w1092 // cld
+| "Fin2" -> w143 // cfin2
+| "UFL" -> w593 // cufl
+| "Tayl" -> w679 // ctayl
+| "CnExt" -> w599 // ccnext
+| "1R" -> w180 // c1r
+| "CHilOLD" -> w803 // chlo
+| "CMetSp" -> w646 // ccms
+| "UMGrph" -> w731 // cumg
+| "tag" _WS class -> w1043 // bj-ctag
+| "toCaraSiga" -> w890 // ccarsg
+| "2ndc" -> w579 // c2ndc
+| "GrpOpHom" -> w777 // cghomOLD
+| "GrpIso" -> w421 // cgim
+| "SPathOn" -> w745 // cspthon
+| "idFunc" -> w355 // cidfu
+| "ConFn" -> w838 // ccnfn
+| "Inacc" -> w151 // cina
+| "mVH" -> w945 // cmvh
+| "domA" -> w365 // cdoma
+| "seqom" _WS "(" _WS class _WS "," _WS class _WS ")" -> w107 // cseqom
+| ".pQ" -> w162 // cmpq
+| "LNoeM" -> w1157 // clnm
+| "SAlg" -> w1195 // csalg
+| "Edges" -> w734 // cedg
+| "*rf" -> w467 // cstf
+| "Ismty" -> w1074 // cismty
+| "DIsoC" -> w1132 // cdic
+| "+pQ" -> w161 // cplpq
+| "WWalks" -> w749 // cwwlk
+| "ConOp" -> w831 // ccop
+| "GoldbachOddALTV" -> w1212 // cgboa
+| "RingCat" -> w1243 // cringc
+| "TrPred" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w991 // ctrpred
+| "+f" -> w404 // cplusf
+| "2SPathsOt" -> w756 // c2spthot
+| "normfn" -> w836 // cnmf
+| "_Ind" -> w876 // cind
+| "#p" -> w301 // cprmo
+| "Singleton" -> w1005 // csingle
+| "CRingOps" -> w1079 // ccring
+| "SubMgm" -> w1227 // csubmgm
+| "PSubSp" -> w1107 // cpsubsp
+| "Bigcup" -> w1001 // cbigcup
+| "CHStates" -> w848 // chst
+| "oRVC" _WS class -> w899 // corvc
+| "Fin3" -> w145 // cfin3
+| "Paths" -> w740 // cpath
+| "ClWalks" -> w751 // cclwlk
+| "/s" -> w334 // cqus
+| "MblFnM" -> w887 // cmbfm
+| "LFinGen" -> w1156 // clfig
+| "DirRel" -> w402 // cdir
+| "GoldbachEven" -> w1210 // cgbe
+| ".iOLD" -> w793 // cdip
+| "codA" -> w366 // ccoda
+| "normOp" -> w624 // cnmo
+| "pi1" -> w637 // cpi1
+| "maDet" -> w547 // cmdat
+| "null" -> w837 // cnl
+| "((" _WS class _WS class _WS class _WS "))" -> w1206 // caov
+| "mType" -> w935 // cmty
+| "<_O(1)" -> w266 // clo1
+| "OutMeas" -> w1200 // come
+| "PathOn" -> w744 // cpthon
+| "Ismt" -> w711 // cismt
+| "UnifSp" -> w610 // cusp
+| "ketbra" -> w842 // ck
+| "LHyp" -> w1113 // clh
+| "/g" -> w768 // cgs
+| "Image" _WS class -> w1007 // cimage
+| "HVMap" -> w1139 // chvm
+| "~=" -> w590 // chmph
+| "Magma" -> w774 // cmagm
+| "Fibci" -> w895 // cfib
+| "eval1" -> w510 // ce1
+| "PolyAP" -> w298 // cvdwp
+| "proj1" -> w439 // cpj1
+| "curryF" -> w379 // ccurf
+| "LIndS" -> w538 // clinds
+| "IdlGen" -> w1085 // cigen
+| "GoldbachOdd" -> w1211 // cgbo
+| "mapd" -> w1138 // cmpd
+| "Pell1234QR" -> w1150 // cpell1234qr
+| "sitg" -> w893 // csitg
+| "mzPolyCld" -> w1145 // cmzpcl
+| "_piOLD" -> w278 // cpiold
+| "InaccW" -> w150 // cwina
+| "ExId" -> w773 // cexid
+| "OBasis" -> w533 // cobs
+| "Apply" -> w1012 // capply
+| "RingIso" -> w460 // crs
+| "unitVec" -> w536 // cuvc
+| "subMat1" -> w863 // csmat
+| "<_op" -> w843 // cleo
+| "Seg<_" -> w1029 // csegle
+| "UnifSet" -> w318 // cunif
+| "comf" -> w343 // ccomf
+| "RingCatALTV" -> w1244 // cringcALTV
+| "Fin1a" -> w142 // cfin1a
+| "Funpart" _WS class -> w1016 // cfunpart
+| "TarskiGDim>=" -> w706 // cstrkgld
+| "mDV" -> w941 // cmdv
+| "ocA" -> w1129 // cocaN
+| "FullFun" _WS class -> w1017 // cfullfn
+| "ConstPolyMat" -> w550 // ccpmat
+| "mTC" -> w937 // cmtc
+| "mAx" -> w938 // cmax
+| "UHGrph" -> w729 // cuhg
+| "Singletons" -> w1006 // csingles
+| "Hf" -> w1036 // chf
+| "inftyexpi" -> w1054 // cinftyexpi
+| "Fin4" -> w144 // cfin4
+| "smul" -> w282 // csmu
+| "pairF" -> w377 // cprf
+| "Kol2" -> w569 // ct0
+| "NGHomOLD" -> w627 // cnghmold
+| "Cycles" -> w747 // ccycl
+| "ZMod" -> w522 // czlm
+| "(+)m" -> w534 // cdsmm
+| "LAut" -> w1114 // claut
+| "pprod" _WS "(" _WS class _WS "," _WS class _WS ")" -> w998 // cpprod
+| "toOMeas" -> w888 // coms
+| "toOMeasOLD" -> w889 // comsold
+| "TotBnd" -> w1072 // ctotbnd
+| "wUniCl" -> w153 // cwunm
+| "LnOp" -> w795 // clno
+| "~=c" -> w350 // ccic
+| "SSet" -> w999 // csset
+| "matRepV" -> w545 // cmatrepV
+| "rem1p" -> w670 // cr1p
+| "Domain" -> w1010 // cdomain
+| "NoeACS" -> w1144 // cnacs
+| "InitO" -> w362 // cinito
+| "TermO" -> w363 // ctermo
+| "minMatR1" -> w549 // cminmar1
+| "SLMod" -> w859 // cslmd
+| "RngIsom" -> w1240 // crngs
+| "SubGrpOp" -> w771 // csubgo
+| "*Ring" -> w468 // csr
+| "UMGraph" -> w1219 // cumgr
+| "AbsVal" -> w466 // cabv
+| "matRRep" -> w544 // cmarrep
+| "uncurryF" -> w380 // cuncf
+| "Xs." -> w335 // cxps
+| "HomF" -> w382 // chof
+| "~FG" -> w440 // cefg
+| "LMIso" -> w474 // clmim
+| "RRHom" -> w872 // crrh
+| "ODual" -> w397 // codu
+| "FinUSGrph" -> w1225 // cfusg
+| "LinCo" -> w1248 // clinco
+| "Ddelta" -> w884 // cdde
+| "Fix" _WS class -> w1002 // cfix
+| "Struct" -> w302 // cstr
+| "0op" -> w798 // c0o
+| "mStat" -> w948 // cmsta
+| "RngCat" -> w1241 // crngc
+| "RngIso" -> w1077 // crngiso
+| "eigvec" -> w844 // cei
+| "pstoMet" -> w869 // cpstm
+| "<<" _WS class _WS "," _WS class _WS ">>" -> w1021 // caltop
+| "oFC" _WS class -> w878 // cofc
+| "\\/H" -> w819 // chsup
+| "HDMap1" -> w1140 // chdma1
+| "RngCatALTV" -> w1242 // crngcALTV
+| "linDepS" -> w1250 // clindeps
+| "gEx" -> w433 // cgex
+| "TopRing" -> w603 // ctrg
+| "RegGrph" -> w759 // crgra
+| "Img" -> w1009 // cimg
+| "UnivVertex" -> w737 // cuvtx
+| "_G" -> w692 // cgam
+| "(|" _WS class _WS "|)" -> w1045 // bj-c1upl
+| "SGrp" -> w406 // csgrp
+| "RLReg" -> w486 // crlreg
+| "HGMap" -> w1142 // chg
+| "minPolyAA" -> w1164 // cmpaa
+| "LPIdeal" -> w483 // clpidl
+| "mStRed" -> w947 // cmsr
+| "(" _WS class _WS "/_\\" _WS class _WS ")" -> w41 // csymdif
+| "DivRingOps" -> w780 // cdrng
+| "eigval" -> w845 // cel
+| "DChr" -> w700 // cdchr
+| "+P" -> w1109 // cpadd
+| "r*" -> w1172 // crcl
+| "fClusf" -> w598 // cfcf
+| "LDil" -> w1117 // cldil
+| "sX" -> w882 // csx
+| "sngl" _WS class -> w1042 // bj-csngl
+| "DiagFunc" -> w381 // cdiag
+| "subMat" -> w546 // csubma
+| "Archi" -> w858 // carchi
+| "RRExt" -> w873 // crrext
+| "assLaw" -> w1229 // casslaw
+| "HomA" -> w368 // choma
+| "evalSub1" -> w509 // ces1
+| "CSubSp" -> w529 // ccss
+| "toCHil" -> w642 // ctch
+| "Limits" -> w1003 // climits
+| "LinesEE" -> w1033 // clines2
+| "~=g" -> w422 // cgic
+| "<<<" -> w857 // cinftm
+| "rRndVar" -> w898 // crrv
+| "<oL" -> w1089 // clcv
+| "Cauchy" -> w811 // ccau
+| "VtxALTV" -> w1222 // cvtxaltv
+| "LBasis" -> w476 // clbs
+| "Htpy" -> w631 // chtpy
+| "mSubst" -> w944 // cmsub
+| "RR^" -> w649 // crrx
+| "UHGraphALTV" -> w1220 // cuhgraltv
+| "\"s" -> w332 // cimas
+| "<bag" -> w496 // cltb
+| "PtFin" -> w583 // cptfin
+| "varFMnd" -> w412 // cvrmd
+| "Succ" -> w1015 // csuccf
+| "joinH" -> w1135 // cdjh
+| "toUnifSp" -> w611 // ctus
+| "EEhil" -> w650 // cehl
+| "t*" -> w251 // crtcl
+| "Arrow" -> w367 // carw
+| "evalF" -> w378 // cevlf
+| "TarskiGB" -> w704 // cstrkgb
+| "arccos" -> w686 // cacos
+| "UHGraph" -> w1217 // cuhgr
+| "DMat" -> w541 // cdmat
+| "area" -> w688 // carea
+| "NMHom" -> w628 // cnmhm
+| "ZeroO" -> w364 // czeroo
+| "NrmVec" -> w623 // cnvc
+| "CVec" -> w640 // ccvs
+| "TarskiGC" -> w703 // cstrkgc
+| "(|" _WS class _WS ",," _WS class _WS "|)" -> w1047 // bj-c2uple
+| "curry" _WS class -> w100 // ccur
+| "uCn" -> w612 // cucn
+| "|^" -> w227 // cceil
+| "proj" -> w531 // cpj
+| "CUnifSp" -> w614 // ccusp
+| "mCls" -> w950 // cmcls
+| "Range" -> w1011 // crange
+| "(" _WS class _WS "Proj" _WS class _WS ")" -> w1044 // bj-cproj
+| "Mono" -> w345 // cmon
+| "~=R" -> w1078 // crisc
+| "GrOrder" -> w1223 // cgord
+| "inA" -> w721 // cinag
+| "DVecA" -> w1126 // cdveca
+| "pMatToMatPoly" -> w554 // cpm2mp
+| "TarskiGCB" -> w705 // cstrkgcb
+| "linIndS" -> w1249 // clininds
+| "Restrict" -> w1018 // crestrict
+| "RiseFac" -> w270 // crisefac
+| "Meas" -> w1199 // cmea
+| "|`f" -> w357 // cresf
+| ".sf" -> w470 // cscaf
+| "~=m" -> w475 // clmic
+| "maAdju" -> w548 // cmadu
+| "PrIdl" -> w1081 // cpridl
+| "TopMod" -> w605 // ctlm
+| "Trans" -> w1000 // ctrans
+| "wrecs" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w103 // cwrecs
+| "ae" -> w885 // cae
+| "Cup" -> w1013 // ccup
+| "PSubCl" -> w1112 // cpscN
+| "RingSpan" -> w465 // crgspn
+| "clIntOp" -> w1232 // cclintop
+| "Ban" -> w647 // cbn
+| "GrSize" -> w1224 // cgsiz
+| "OuterFiveSeg" -> w1023 // cofs
+| "Dmn" -> w1084 // cdmn
+| "SemiGrp" -> w775 // csem
+| "mPPSt" -> w951 // cmpps
+| "TopDRing" -> w604 // ctdrg
+| "mrInd" -> w338 // cmri
+| "Cart" -> w1008 // ccart
+| "TransportTo" -> w1024 // ctransport
+| "/_f" -> w1251 // cfdiv
+| "MndOp" -> w776 // cmndo
+| "CovHasRef" _WS class -> w865 // ccref
+| ".fn" -> w827 // chft
+| "<pQ" -> w163 // cltpq
+| "CNrm" -> w574 // ccnrm
+| "Com2" -> w782 // ccm2
+| "cprob" -> w897 // ccprob
+| "PNrm" -> w575 // cpnrm
+| "<\"" _WS class _WS class _WS class _WS class _WS class _WS "\">" -> w246 // cs5
+| "adj" -> w799 // caj
+| "MEndo" -> w1167 // cmend
+| "cPolyMatToMat" -> w552 // ccpmat2mat
+| "USLGrph" -> w732 // cuslg
+| "Funs" -> w1004 // cfuns
+| "<\"" _WS class _WS class _WS class _WS class _WS class _WS class _WS "\">" -> w247 // cs6
+| "ScMat" -> w542 // cscmat
+| "pr1" _WS class -> w1046 // bj-cpr1
+| "LVols" -> w1104 // clvol
+| "_O" -> w1252 // cbigo
+| "3o" -> w110 // c3o
+| "RamseyOLD" -> w300 // cramold
+| "dProj" -> w447 // cdpj
+| "ordPwSer" -> w497 // copws
+| "Ray" -> w1032 // cray
+| "WAtoms" -> w1115 // cwpointsN
+| "assIntOp" -> w1233 // cassintop
+| "pr2" _WS class -> w1048 // bj-cpr2
+| "CaraGen" -> w1201 // ccaragen
+| "tarskiMap" -> w156 // ctskm
+| "+r" -> w1175 // cplusr
+| "SetCat" -> w371 // csetc
+| ".if" -> w527 // cipf
+| "Paracomp" -> w867 // cpcmp
+| "mVT" -> w936 // cmvt
+| "Fin7" -> w148 // cfin7
+| "2Ideal" -> w482 // c2idl
+| "LPIR" -> w484 // clpir
+| "mDeg" -> w665 // cmdg
+| "normOpOLDOLD" -> w625 // cnmoold
+| "toTG" -> w724 // cttg
+| "CCinfty" -> w1055 // cccinfty
+| "Lines" -> w1105 // clines
+| "degAAOLD" -> w1163 // cdgraaold
+| "freeGrp" -> w441 // cfrgp
+| "|`v" -> w862 // cresv
+| "IntgOver" -> w1165 // citgo
+| "<\"" _WS class _WS class _WS class _WS class _WS class _WS class _WS class _WS "\">" -> w248 // cs7
+| "AlgSpan" -> w491 // casp
+| "wsuc" _WS "(" _WS class _WS "," _WS class _WS "," _WS class _WS ")" -> w992 // cwsuc
+| "clLaw" -> w1228 // ccllaw
+| "MaxIdl" -> w1082 // cmaxidl
+| "PrRing" -> w1083 // cprrng
+| "toNrmGrp" -> w620 // ctng
+| "idlGen1p" -> w671 // cig1p
+| "ConnGrph" -> w748 // cconngra
+| "SubDRing" -> w1168 // csdrg
+| "Undef" -> w102 // cund
+| "TrailOn" -> w743 // ctrlon
+| "Ass" -> w772 // cass
+| "Cap" -> w1014 // ccap
+| "Slot" _WS class -> w305 // cslot
+| "Fld" -> w783 // cfld
+| "comLaw" -> w1230 // ccomlaw
+| "MgmALT" -> w1234 // cmgm2
+| "USHGrph" -> w730 // cushg
+| "cm" -> w1094 // ccmtN
+| "(" _WS class _WS "XX." _WS class _WS ")" -> w1022 // caltxp
+| "Monic" -> w1160 // cmnc
+| "cot" -> w1262 // ccot
+| "intOp" -> w1231 // cintop
+| "sec" -> w1260 // csec
+| "DLat" -> w399 // cdlat
+| "Irred" -> w456 // cir
+| "CharPlyMat" -> w555 // cchpmat
+| "Circuits" -> w746 // ccrct
+| "2WalksOt" -> w754 // c2wlkot
+| "InnerFiveSeg" -> w1025 // cifs
+| "csc" -> w1261 // ccsc
+| "compA" -> w370 // ccoa
+| "Cntr" -> w425 // ccntr
+| "1/_G" -> w693 // cigam
+| "WLim" _WS "(" _WS class _WS "," _WS class _WS ")" -> w993 // cwlim
+| "minfty" -> w1058 // cminfty
+| "PAut" -> w1116 // cpautN
+| "TGrp" -> w1122 // ctgrp
+| "HLHil" -> w1143 // chlh
+| "Yon" -> w383 // cyon
+| "_/_\\^n" -> w1035 // cfwddifn
+| "Dil" -> w1119 // cdilN
+| "_" _WS class _WS class -> w1263 // cdp2
+| "toHL" -> w530 // cthl
+| "USHGraphALTV" -> w1221 // cushgraltv
+| "Fin5" -> w146 // cfin5
+| "<\"" _WS class _WS class _WS class _WS class _WS class _WS class _WS class _WS class _WS "\">" -> w249 // cs8
+| "~=r" -> w461 // cric
+| "TopVec" -> w606 // ctvc
+| "sitm" -> w892 // csitm
+| "_tau" -> w1071 // ctau
+| "-r" -> w1176 // cminusr
+| ".v" -> w1177 // ctimesr
+| "USHGraph" -> w1218 // cushgr
+| "Plig" -> w763 // cplig
+| "litMat" -> w864 // clmat
+| "~ae" -> w886 // cfae
+| "Diag" -> w1053 // cdiag2
+| "pinfty" -> w1057 // cpinfty
+| "RRVec" -> w1070 // crrvec
+| "DMatALT" -> w1245 // cdmatalt
+| "sinh" -> w1257 // csinh
+| "cosh" -> w1258 // ccosh
+| "Fin6" -> w147 // cfin6
+| "_lcmOLD" -> w287 // clcmfold
+| "CatCat" -> w372 // ccatc
+| "odOLD" -> w432 // codold
+| "TarskiGE" -> w707 // cstrkge
+| "leA" -> w722 // cleag
+| "eqltrG" -> w723 // ceqlg
+| "+fn" -> w826 // chfs
+| "mThm" -> w952 // cmthm
+| "FiveSeg" -> w1028 // cfs
+| "CCbar" -> w1056 // cccbar
+| "infty" -> w1060 // cinfty
+| "FinSum" -> w1069 // cfinsum
+| ">_" -> w1255 // cge-real
+| ">" -> w1256 // cgt
+| "4o" -> w111 // c4o
+| "Hil" -> w532 // chs
+| "ManTop" -> w875 // cmntop
+| "UB" _WS class -> w1019 // cub
+| "_/_\\" -> w1034 // cfwddif
+| "gcdOLD" _WS "(" _WS class _WS "," _WS class _WS ")" -> w1039 // cgcdOLD
+| "EDRingR" -> w1125 // cedring-rN
+| "vA" -> w1130 // cdjaN
+| "\"sOLD" -> w333 // cimasold
+| "Epi" -> w346 // cepi
+| "IdA" -> w369 // cida
+| "gExOLD" -> w434 // cgexold
+| "maVecMul" -> w543 // cmvmul
+| "idlGen1pOLD" -> w672 // cig1pold
+| "^g" -> w769 // cgx
+| "GrpOpIso" -> w778 // cgisoOLD
+| "sgns" -> w856 // csgns
+| "TarskiG2D" -> w900 // cstrkg2d
+| "AFS" -> w901 // cafs
+| "SalGen" -> w1197 // csalgen
+| "voln" -> w1203 // cvoln
+| "SGrpALT" -> w1236 // csgrp2
+| "." -> w1264 // cdp
+| "lcmOLD" -> w286 // clcmold
+| "MndOLD" -> w408 // cmndOLD
+| "PID" -> w489 // cpid
+| "vol*OLD" -> w652 // covolold
+| "HmOp" -> w800 // chmo
+| "Lambda" -> w846 // cspc
+| "RR*Hom" -> w874 // cxrh
+| "LB" _WS class -> w1020 // clb
+| "Points" -> w1106 // cpointsN
+| "PCl" -> w1110 // cpclN
+| "Trn" -> w1120 // ctrnN
+| "LPol" -> w1136 // clpoN
+| "CytP" -> w1169 // ccytp
+| "Ldlf" -> w866 // cldlf
+| "CChat" -> w1061 // ccchat
+| "RRhat" -> w1062 // crrhat
+| "PellFundOLD" -> w1153 // cpellfundold
+| "CMgmALT" -> w1235 // ccmgm2
+| "CSGrpALT" -> w1237 // ccsgrp2
+| "tanh" -> w1259 // ctanh
+| "uncurry" _WS class -> w101 // cunc
+| "pGrpOLD" -> w436 // cpgpold
+| "mHomP" -> w500 // cmhp
+| "mPSDer" -> w501 // cpsd
+| "selectVars" -> w502 // cslv
+| "AlgInd" -> w503 // cai
+| "toPoly1" -> w508 // ctp1
+| "OmN" -> w636 // comn
+| "piN" -> w638 // cpin
+| "Ana" -> w680 // cana
+| "zeta" -> w690 // czeta
+| "RPrime" -> w764 // crpm
+| "*-Fld" -> w781 // csfld
+| "HCmp" -> w870 // chcmp
+| "itgm" -> w891 // citgm
+| "Retr" -> w908 // cretr
+| "e.g" -> w912 // cgoe
+| "|g" -> w913 // cgna
+| "A.g" _WS class _WS class -> w914 // cgol
+| "Sat" -> w915 // csat
+| "Fmla" -> w916 // cfmla
+| "SatE" -> w917 // csate
+| "|=" -> w918 // cprv
+| "-.g" _WS class -> w919 // cgon
+| "/\\g" -> w920 // cgoa
+| "->g" -> w921 // cgoi
+| "\\/g" -> w922 // cgoo
+| "<->g" -> w923 // cgob
+| "=g" -> w924 // cgoq
+| "E.g" _WS class _WS class -> w925 // cgox
+| "AxExt" -> w926 // cgze
+| "AxRep" -> w927 // cgzr
+| "AxPow" -> w928 // cgzp
+| "AxUn" -> w929 // cgzu
+| "AxReg" -> w930 // cgzg
+| "AxInf" -> w931 // cgzi
+| "ZF" -> w932 // cgzf
+| "m0St" -> w953 // cm0s
+| "mSA" -> w954 // cmsa
+| "mWGFS" -> w955 // cmwgfs
+| "mSyn" -> w956 // cmsy
+| "mESyn" -> w957 // cmesy
+| "mGFS" -> w958 // cmgfs
+| "mTree" -> w959 // cmtree
+| "mST" -> w960 // cmst
+| "mSAX" -> w961 // cmsax
+| "mUFS" -> w962 // cmufs
+| "mUV" -> w963 // cmuv
+| "mVL" -> w964 // cmvl
+| "mVSubst" -> w965 // cmvsb
+| "mFresh" -> w966 // cmfsh
+| "mFRel" -> w967 // cmfr
+| "mEval" -> w968 // cmevl
+| "mMdl" -> w969 // cmdl
+| "mUSyn" -> w970 // cusyn
+| "mGMdl" -> w971 // cgmdl
+| "mItp" -> w972 // cmitp
+| "mFromItp" -> w973 // cmfitp
+| "IntgRing" -> w974 // citr
+| "cplMetSp" -> w975 // ccpms
+| "HomLimB" -> w976 // chlb
+| "HomLim" -> w977 // chlim
+| "polyFld" -> w978 // cpfl
+| "splitFld1" -> w979 // csf1
+| "splitFld" -> w980 // csf
+| "polySplitLim" -> w981 // cpsl
+| "ZRing" -> w982 // czr
+| "GF" -> w983 // cgf
+| "GF_oo" -> w984 // cgfo
+| "~Qp" -> w985 // ceqp
+| "/Qp" -> w986 // crqp
+| "Qp" -> w987 // cqp
+| "Zp" -> w988 // czp
+| "_Qp" -> w989 // cqpa
+| "Cp" -> w990 // ccp
+| "(" _WS setvar _WS "e." _WS class _WS "," _WS setvar _WS "e." _WS class _WS "," _WS setvar _WS "e." _WS class _WS "|->" _WS class _WS ")" -> w1049 // cmpt3
+| "-Set->" -> w1050 // cfset
+| "curry_" -> w1051 // ccur-
+| "uncurry_" -> w1052 // cunc-
+| "RRbar" -> w1059 // crrbar
+| "+cc" -> w1063 // caddcc
+| "-cc" -> w1064 // coppcc
+| "prcpal" -> w1065 // cprcpal
+| "Arg" -> w1066 // carg
+| ".cc" -> w1067 // cmulc
+| "invc" -> w1068 // cinvc
+| "Poly<" -> w1161 // cplylt
+| "_ZZ" -> w1166 // cza
+| "TopSep" -> w1170 // ctopsep
+| "TopLnd" -> w1171 // ctoplnd
+| "PtDf" _WS "(" _WS class _WS "," _WS class _WS ")" -> w1178 // cptdfc
+| "RR3" -> w1179 // crr3c
+| "line3" -> w1180 // cline3
+| "SalOn" -> w1196 // csalon
+| "ScMatALT" -> w1246 // cscmatalt
+| "log_" -> w1265 // clog-
+
+setvar: SETVAR_VAR -> setvar_var // Must be a var
+
+WFF_VAR: "ch0_" | "ps'" | "ph'" | "ta'" | "ch'" | "ph0" | "ps\"" | "ph\"" | "et'" | "ch\"" | "ph1" | "ps1" | "ps0" | "ze'" | "th'" | "jph" | "jps" | "jth" | "jch" | "ze\"" | "th0" | "ze0" | "th1" | "ze1" | "jta" | "si'" | "ta\"" | "jet" | "rh1" | "ch1" | "th\"" | "et\"" | "ta0" | "rh\"" | "jze" | "jmu" | "si\"" | "et0" | "ta1" | "jla" | "rh0" | "si1" | "jrh" | "si0" | "rh'" | "et1" | "jsi" | "ph" | "ps" | "ch" | "th" | "ta" | "et" | "ze" | "si" | "rh" | "mu" | "la" | "ka"
+
+CLASS_VAR: "._|_" | ".(+)" | ".(x)" | ".<_" | ".\\/" | ".0." | ".x." | "./\\" | ".1." | ".X." | ".xb" | ".+^" | ".o." | ".+b" | ".||" | "V1_" | "O1_" | "M1_" | "A1_" | "I1_" | "L1_" | "H1_" | "F1_" | "R1_" | "C1_" | "G1_" | "B1_" | "D1_" | ".0b" | "S1_" | ".-" | ".+" | ".~" | ".<" | ".," | ".^" | ".*" | "./" | "D0" | "S\"" | "T'" | "N1" | "A'" | "T0" | "S'" | "J'" | "Y0" | "V'" | "N'" | "E\"" | "U0" | "A\"" | "T\"" | "M0" | "B'" | "G0" | "A0" | "C\"" | "X1" | "C'" | "Y1" | "Y\"" | "V0" | "Q0" | "E1" | "Q'" | "I0" | "R\"" | "Q\"" | "W\"" | "I\"" | "O0" | "G\"" | "H'" | "Z0" | "Z\"" | "M'" | "X'" | "H\"" | "U\"" | "P0" | "W'" | "U'" | "K1" | "G'" | "J0" | "Z1" | "L'" | "P\"" | "J1" | "F\"" | "P1" | "O\"" | "C0" | "E'" | "K\"" | "Z'" | "K'" | "O'" | "Q1" | "R'" | "B0" | "R0" | "U1" | "L\"" | "H0" | "I'" | "N\"" | "B\"" | "D\"" | "P'" | "Y'" | "M\"" | "W0" | "S0" | "N0" | "J\"" | "L0" | "T1" | "X0" | "F0" | "K0" | "D'" | "X\"" | "W1" | "E0" | "V\"" | "F'" | "A" | "B" | "F" | "N" | "X" | "M" | "C" | "P" | "R" | "S" | "Q" | "G" | "T" | "K" | "D" | "W" | "Y" | "I" | "V" | "J" | "U" | "E" | "Z" | "H" | "L" | "O"
+
+SETVAR_VAR: "b0_" | "s\"_" | "n0_" | "f0_" | "o0_" | "v\"_" | "s'_" | "b1_" | "c1_" | "a1_" | "o1_" | "c0_" | "a0_" | "v'_" | "o'_" | "o\"_" | "n\"" | "p0" | "y'" | "t\"" | "f\"" | "d0" | "e0" | "y\"" | "r0" | "y0" | "l'" | "p\"" | "j0" | "j\"" | "b'" | "e'" | "j1" | "k0" | "w1" | "e1" | "w'" | "x0" | "u'" | "y1" | "w0" | "h'" | "h\"" | "u\"" | "p1" | "l1" | "j'" | "f1" | "i1" | "z\"" | "m0" | "h1" | "m1" | "u0" | "a'" | "k\"" | "l\"" | "v1" | "c'" | "r\"" | "s1" | "z'" | "e\"" | "g'" | "h0" | "d'" | "w\"" | "g0" | "k'" | "p'" | "d\"" | "r'" | "m\"" | "i0" | "r1" | "f'" | "x'" | "z0" | "m'" | "c\"" | "d1" | "t0" | "u1" | "i\"" | "n'" | "q'" | "k1" | "g\"" | "x\"" | "t'" | "t1" | "q\"" | "x1" | "s0" | "g1" | "q1" | "z1" | "l0" | "a\"" | "v0" | "n1" | "q0" | "b\"" | "i'" | "x" | "y" | "k" | "z" | "n" | "i" | "j" | "a" | "f" | "b" | "w" | "t" | "m" | "s" | "p" | "d" | "r" | "u" | "c" | "g" | "v" | "q" | "h" | "e" | "l" | "o"
+
+_WS: " "

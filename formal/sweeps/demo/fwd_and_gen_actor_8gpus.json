@@ -1,0 +1,9 @@
+{
+    "forward": {
+        "cfg": ["fwd_mm"],
+        "slurm_conf.torch_world_size": [6],
+        "online_fwd_generation": ["true"],
+        "mm.graph.generated_prob": [0.5],
+        "no_eval_on_train": ["true"]
+    }
+}

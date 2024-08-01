@@ -1,0 +1,6 @@
+enum-tools[sphinx]
+psutil
+submitit
+numpy
+torch
+tensorboard

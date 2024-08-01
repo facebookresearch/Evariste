@@ -1,0 +1,7 @@
+#term# 1 2 3 4
+$start $sum
+$sum $sum + $mult
+$sum $mult
+$mult $mult * $term
+$mult $term
+$term #term#

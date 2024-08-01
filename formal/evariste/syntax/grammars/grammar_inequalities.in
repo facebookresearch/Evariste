@@ -1,0 +1,37 @@
+#class# D C B A
+#setvar# 
+#wff# th ps ph ch
+$start wff $wff
+$start class $class
+$start set $setvar
+$start setvar $setvar
+$wff $class != $class $*wneq
+$wff $class < $class $*wles
+$wff $class <= $class $*wleq
+$wff $class > $class $*wgre
+$wff $class >= $class $*wgeq
+$wff $class = $class $*weq
+$wff ( $wff && $wff ) $*wand
+$wff #wff# $*wff_var
+$setvar #setvar# $*setvar_var
+$class ( $class ^ $class ) $*wpow
+$class - $class $*wneg
+$class ( $class * $class ) $*wmul
+$class ( log ` $class ) $*wlog
+$class ( exp ` $class ) $*wexp
+$class ( $class + $class ) $*wadd
+$class 9 $*w9
+$class 8 $*w8
+$class 7 $*w7
+$class 6 $*w6
+$class 5 $*w5
+$class 4 $*w4
+$class 3 $*w3
+$class 2 $*w2
+$class 10 $*w10
+$class 1 $*w1
+$class 0 $*w0
+$class ; $class $class $*cdc
+$class #class# $*class_var
+axiom_hyp_order {"w0": [], "w1": [], "w2": [], "w3": [], "w4": [], "w5": [], "w6": [], "w7": [], "w8": [], "w9": [], "w10": [], "weq": [0, 1], "wneq": [0, 1], "wles": [0, 1], "wgre": [0, 1], "wleq": [0, 1], "wgeq": [0, 1], "wand": [0, 1], "wmul": [0, 1], "wadd": [0, 1], "wpow": [0, 1], "wexp": [0], "wlog": [0], "wneg": [0], "cdc": [0, 1]}
+f_table {"A": ["class", "wA"], "B": ["class", "wB"], "C": ["class", "wC"], "D": ["class", "wD"], "ph": ["wff", "wph"], "ps": ["wff", "wps"], "ch": ["wff", "wch"], "th": ["wff", "wth"]}

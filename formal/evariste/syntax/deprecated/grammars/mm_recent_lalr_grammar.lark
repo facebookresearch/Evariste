@@ -1,0 +1,1288 @@
+
+start: _TWFF wff -> wff
+ | _TCLASS class -> class
+ | (_TSETVAR | _TSET) setvar -> setvar
+
+wff: _wff_var -> wff_var
+| T4 wff -> w0 // wn
+| T5 wff T6 wff T7 -> w1 // wi
+| T5 wff T8 wff T7 -> w2 // wb
+| T5 wff T9 wff T7 -> w3 // wo
+| T5 wff T10 wff T7 -> w4 // wa
+| T5 wff T9 wff T9 wff T7 -> w5 // w3o
+| T5 wff T10 wff T10 wff T7 -> w6 // w3a
+| T5 wff T11 wff T7 -> w7 // wnan
+| T5 wff T12 wff T7 -> w8 // wxo
+| T13 T5 wff T14 wff T14 wff T7 -> w9 // wif
+| T15 setvar wff -> w10 // wal
+| class T16 class -> w12 // wceq
+| T17 -> w13 // wtru
+| T18 -> w14 // wfal
+| T19 T5 wff T14 wff T14 wff T7 -> w15 // whad
+| T20 T5 wff T14 wff T14 wff T7 -> w16 // wcad
+| T21 setvar wff -> w17 // wex
+| T22 setvar wff -> w18 // wnf
+| T23 setvar T24 setvar T25 wff -> w19 // wsb
+| class T26 class -> w20 // wcel
+| T27 setvar wff -> w21 // weu
+| T28 setvar wff -> w22 // wmo
+| T32 setvar class -> w24 // wnfc
+| class T33 class -> w25 // wne
+| class T34 class -> w26 // wnel
+| T15 setvar T26 class wff -> w27 // wral
+| T21 setvar T26 class wff -> w28 // wrex
+| T27 setvar T26 class wff -> w29 // wreu
+| T28 setvar T26 class wff -> w30 // wrmo
+| T36 T5 setvar T16 setvar T6 wff T7 -> w33 // wcdeq
+| T37 class T24 setvar T38 wff -> w34 // wsbc
+| class T44 class -> w39 // wss
+| class T45 class -> w40 // wpss
+| T56 setvar T26 class class -> w54 // wdisj
+| class class class -> w55 // wbr
+| T58 class -> w58 // wtr
+| class T61 class -> w61 // wpo
+| class T62 class -> w62 // wor
+| class T63 class -> w63 // wfr
+| class T64 class -> w64 // wse
+| class T65 class -> w65 // wwe
+| T73 class -> w73 // wrel
+| T75 class -> w75 // word
+| T77 class -> w77 // wlim
+| T80 class -> w80 // wfun
+| class T81 class -> w81 // wfn
+| class T82 class T83 class -> w82 // wf
+| class T82 class T84 class -> w83 // wf1
+| class T82 class T85 class -> w84 // wfo
+| class T82 class T86 class -> w85 // wf1o
+| class T88 class T14 class T5 class T14 class T7 -> w87 // wiso
+| T102 class -> w104 // wsmo
+| class T113 class -> w115 // wer
+| T137 -> w140 // wac
+| T5 wff T10 wff T10 wff T10 wff T7 -> w902 // w-bnj17
+| class T894 class -> w904 // w-bnj13
+| class T895 class -> w905 // w-bnj15
+| T897 T5 class T14 class T14 class T7 -> w907 // w-bnj19
+| T5 wff T11 wff T11 wff T7 -> w1038 // w3nand
+| T1030 wff -> w1040 // cprvb
+| T1031 setvar wff -> w1041 // wnff
+| T1076 class -> w1086 // wprt
+| class T1163 class -> w1173 // whe
+| T1171 wff T1172 wff T1173 -> w1181 // wvd1
+| T1171 wff T1174 wff T1172 wff T1173 -> w1182 // wvd2
+| T1171 wff T1174 wff T1173 -> w1183 // wvhc2
+| T1171 wff T1174 wff T1174 wff T1172 wff T1173 -> w1184 // wvd3
+| T1171 wff T1174 wff T1174 wff T1173 -> w1185 // wvhc3
+| T1171 wff T1174 wff T1174 wff T1174 wff T1173 -> w1186 // wvhc4
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1187 // wvhc5
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1188 // wvhc6
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1189 // wvhc7
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1190 // wvhc8
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1191 // wvhc9
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1192 // wvhc10
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1193 // wvhc11
+| T1171 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1174 wff T1173 -> w1194 // wvhc12
+| class T1184 class -> w1204 // wdfat
+| class T1247 class -> w1266 // wreflexive
+| class T1248 class -> w1267 // wirreflexive
+| T1249 setvar T5 wff T6 wff T7 -> w1268 // walsi
+| T1249 setvar T26 class wff -> w1269 // walsc
+
+class: _class_var -> class_var
+| setvar -> w11 // cv
+| T29 setvar T30 wff T31 -> w23 // cab
+| T29 setvar T26 class T30 wff T31 -> w31 // crab
+| T35 -> w32 // cvv
+| T39 class T24 setvar T40 class -> w35 // csb
+| T5 class T41 class T7 -> w36 // cdif
+| T5 class T42 class T7 -> w37 // cun
+| T5 class T43 class T7 -> w38 // cin
+| T5 class T46 class T7 -> w41 // csymdif
+| T47 -> w42 // c0
+| T48 T5 wff T14 class T14 class T7 -> w43 // cif
+| T49 class -> w44 // cpw
+| T29 class T31 -> w45 // csn
+| T29 class T14 class T31 -> w46 // cpr
+| T29 class T14 class T14 class T31 -> w47 // ctp
+| T50 class T14 class T51 -> w48 // cop
+| T50 class T14 class T14 class T51 -> w49 // cotp
+| T52 class -> w50 // cuni
+| T53 class -> w51 // cint
+| T54 setvar T26 class class -> w52 // ciun
+| T55 setvar T26 class class -> w53 // ciin
+| T29 T50 setvar T14 setvar T51 T30 wff T31 -> w56 // copab
+| T5 setvar T26 class T57 class T7 -> w57 // cmpt
+| T59 -> w59 // cep
+| T60 -> w60 // cid
+| T5 class T66 class T7 -> w66 // cxp
+| T67 class -> w67 // ccnv
+| T68 class -> w68 // cdm
+| T69 class -> w69 // crn
+| T5 class T70 class T7 -> w70 // cres
+| T5 class T71 class T7 -> w71 // cima
+| T5 class T72 class T7 -> w72 // ccom
+| T74 T5 class T14 class T14 class T7 -> w74 // cpred
+| T76 -> w76 // con0
+| T78 class -> w78 // csuc
+| T5 T79 setvar wff T7 -> w79 // cio
+| T5 class T87 class T7 -> w86 // cfv
+| T5 T89 setvar T26 class wff T7 -> w88 // crio
+| T5 class class class T7 -> w89 // co
+| T29 T50 T50 setvar T14 setvar T51 T14 setvar T51 T30 wff T31 -> w90 // coprab
+| T5 setvar T26 class T14 setvar T26 class T57 class T7 -> w91 // cmpt2
+| T90 class -> w92 // cof
+| T91 class -> w93 // cofr
+| T92 -> w94 // crpss
+| T93 -> w95 // com
+| T94 -> w96 // c1st
+| T95 -> w97 // c2nd
+| T96 -> w98 // csupp
+| T97 class -> w99 // ctpos
+| T98 class -> w100 // ccur
+| T99 class -> w101 // cunc
+| T100 -> w102 // cund
+| T101 T5 class T14 class T14 class T7 -> w103 // cwrecs
+| T103 T5 class T7 -> w105 // crecs
+| T104 T5 class T14 class T7 -> w106 // crdg
+| T105 T5 class T14 class T7 -> w107 // cseqom
+| T106 -> w108 // c1o
+| T107 -> w109 // c2o
+| T108 -> w110 // c3o
+| T109 -> w111 // c4o
+| T110 -> w112 // coa
+| T111 -> w113 // comu
+| T112 -> w114 // coe
+| T23 class T25 class -> w116 // cec
+| T5 class T114 class T7 -> w117 // cqs
+| T115 -> w118 // cmap
+| T116 -> w119 // cpm
+| T117 setvar T26 class class -> w120 // cixp
+| T118 -> w121 // cen
+| T119 -> w122 // cdom
+| T120 -> w123 // csdm
+| T121 -> w124 // cfn
+| T122 -> w125 // cfsupp
+| T123 -> w126 // cfi
+| T124 T5 class T14 class T14 class T7 -> w127 // csup
+| T125 T5 class T14 class T14 class T7 -> w128 // cinf
+| T126 T5 class T14 class T7 -> w129 // coi
+| T127 -> w130 // char
+| T128 -> w131 // cwdom
+| T129 -> w132 // ccnf
+| T130 -> w133 // ctc
+| T131 -> w134 // cr1
+| T132 -> w135 // crnk
+| T133 -> w136 // ccrd
+| T134 -> w137 // cale
+| T135 -> w138 // ccf
+| T136 class -> w139 // wacn
+| T138 -> w141 // ccda
+| T139 -> w142 // cfin1a
+| T140 -> w143 // cfin2
+| T141 -> w144 // cfin4
+| T142 -> w145 // cfin3
+| T143 -> w146 // cfin5
+| T144 -> w147 // cfin6
+| T145 -> w148 // cfin7
+| T146 -> w149 // cgch
+| T147 -> w150 // cwina
+| T148 -> w151 // cina
+| T149 -> w152 // cwun
+| T150 -> w153 // cwunm
+| T151 -> w154 // ctsk
+| T152 -> w155 // cgru
+| T153 -> w156 // ctskm
+| T154 -> w157 // cnpi
+| T155 -> w158 // cpli
+| T156 -> w159 // cmi
+| T157 -> w160 // clti
+| T158 -> w161 // cplpq
+| T159 -> w162 // cmpq
+| T160 -> w163 // cltpq
+| T161 -> w164 // ceq
+| T162 -> w165 // cnq
+| T163 -> w166 // c1q
+| T164 -> w167 // cerq
+| T165 -> w168 // cplq
+| T166 -> w169 // cmq
+| T167 -> w170 // crq
+| T168 -> w171 // cltq
+| T169 -> w172 // cnp
+| T170 -> w173 // c1p
+| T171 -> w174 // cpp
+| T172 -> w175 // cmp
+| T173 -> w176 // cltp
+| T174 -> w177 // cer
+| T175 -> w178 // cnr
+| T176 -> w179 // c0r
+| T177 -> w180 // c1r
+| T178 -> w181 // cm1r
+| T179 -> w182 // cplr
+| T180 -> w183 // cmr
+| T181 -> w184 // cltr
+| T182 -> w185 // cc
+| T183 -> w186 // cr
+| T184 -> w187 // cc0
+| T185 -> w188 // c1
+| T186 -> w189 // ci
+| T187 -> w190 // caddc
+| T188 -> w191 // cltrr
+| T189 -> w192 // cmul
+| T190 -> w193 // cpnf
+| T191 -> w194 // cmnf
+| T192 -> w195 // cxr
+| T193 -> w196 // clt
+| T194 -> w197 // cle
+| T195 -> w198 // cmin
+| T196 class -> w199 // cneg
+| T24 -> w200 // cdiv
+| T197 -> w201 // cn
+| T198 -> w202 // c2
+| T199 -> w203 // c3
+| T200 -> w204 // c4
+| T201 -> w205 // c5
+| T202 -> w206 // c6
+| T203 -> w207 // c7
+| T204 -> w208 // c8
+| T205 -> w209 // c9
+| T206 -> w210 // c10
+| T207 -> w211 // cn0
+| T208 -> w212 // cz
+| T209 class class -> w213 // cdc
+| T210 -> w214 // cuz
+| T211 -> w215 // cq
+| T212 -> w216 // crp
+| T213 class -> w217 // cxne
+| T214 -> w218 // cxad
+| T215 -> w219 // cxmu
+| T216 -> w220 // cioo
+| T217 -> w221 // cioc
+| T218 -> w222 // cico
+| T219 -> w223 // cicc
+| T220 -> w224 // cfz
+| T221 -> w225 // cfzo
+| T222 -> w226 // cfl
+| T223 -> w227 // cceil
+| T224 -> w228 // cmo
+| T225 class T5 class T14 class T7 -> w229 // cseq
+| T226 -> w230 // cexp
+| T227 -> w231 // cfa
+| T228 -> w232 // cbc
+| T229 -> w233 // chash
+| T230 class -> w234 // cword
+| T231 -> w235 // clsw
+| T232 -> w236 // cconcat
+| T233 class T234 -> w237 // cs1
+| T235 -> w238 // csubstr
+| T236 -> w239 // csplice
+| T237 -> w240 // creverse
+| T238 -> w241 // creps
+| T239 -> w242 // ccsh
+| T233 class class T234 -> w243 // cs2
+| T233 class class class T234 -> w244 // cs3
+| T233 class class class class T234 -> w245 // cs4
+| T233 class class class class class T234 -> w246 // cs5
+| T233 class class class class class class T234 -> w247 // cs6
+| T233 class class class class class class class T234 -> w248 // cs7
+| T233 class class class class class class class class T234 -> w249 // cs8
+| T240 -> w250 // ctcl
+| T241 -> w251 // crtcl
+| T242 -> w252 // crelexp
+| T243 -> w253 // crtrcl
+| T244 -> w254 // cshi
+| T245 -> w255 // csgn
+| T246 -> w256 // ccj
+| T247 -> w257 // cre
+| T248 -> w258 // cim
+| T249 -> w259 // csqrt
+| T250 -> w260 // cabs
+| T251 -> w261 // clsp
+| T252 -> w262 // clspold
+| T253 -> w263 // cli
+| T254 -> w264 // crli
+| T255 -> w265 // co1
+| T256 -> w266 // clo1
+| T257 setvar T26 class class -> w267 // csu
+| T258 setvar T26 class class -> w268 // cprod
+| T259 -> w269 // cfallfac
+| T260 -> w270 // crisefac
+| T261 -> w271 // cbp
+| T262 -> w272 // ce
+| T263 -> w273 // ceu
+| T264 -> w274 // csin
+| T265 -> w275 // ccos
+| T266 -> w276 // ctan
+| T267 -> w277 // cpi
+| T268 -> w278 // cpiold
+| T269 -> w279 // cdvds
+| T270 -> w280 // cbits
+| T271 -> w281 // csad
+| T272 -> w282 // csmu
+| T273 -> w283 // cgcd
+| T274 -> w284 // clcm
+| T275 -> w285 // clcmf
+| T276 -> w286 // clcmold
+| T277 -> w287 // clcmfold
+| T278 -> w288 // cprime
+| T279 -> w289 // cnumer
+| T280 -> w290 // cdenom
+| T281 -> w291 // codz
+| T282 -> w292 // codzold
+| T283 -> w293 // cphi
+| T284 -> w294 // cpc
+| T285 -> w295 // cgz
+| T286 -> w296 // cvdwa
+| T287 -> w297 // cvdwm
+| T288 -> w298 // cvdwp
+| T289 -> w299 // cram
+| T290 -> w300 // cramold
+| T291 -> w301 // cprmo
+| T292 -> w302 // cstr
+| T293 -> w303 // cnx
+| T294 -> w304 // csts
+| T295 class -> w305 // cslot
+| T296 -> w306 // cbs
+| T297 -> w307 // cress
+| T298 -> w308 // cplusg
+| T299 -> w309 // cmulr
+| T300 -> w310 // cstv
+| T301 -> w311 // csca
+| T302 -> w312 // cvsca
+| T303 -> w313 // cip
+| T304 -> w314 // cts
+| T305 -> w315 // cple
+| T306 -> w316 // coc
+| T307 -> w317 // cds
+| T308 -> w318 // cunif
+| T309 -> w319 // chom
+| T310 -> w320 // cco
+| T311 -> w321 // crest
+| T312 -> w322 // ctopn
+| T313 -> w323 // ctg
+| T314 -> w324 // cpt
+| T315 -> w325 // c0g
+| T316 -> w326 // cgsu
+| T317 -> w327 // cprds
+| T318 -> w328 // cpws
+| T319 -> w329 // cordt
+| T320 -> w330 // cxrs
+| T321 -> w331 // cqtop
+| T322 -> w332 // cimas
+| T323 -> w333 // cimasold
+| T324 -> w334 // cqus
+| T325 -> w335 // cxps
+| T326 -> w336 // cmre
+| T327 -> w337 // cmrc
+| T328 -> w338 // cmri
+| T329 -> w339 // cacs
+| T330 -> w340 // ccat
+| T331 -> w341 // ccid
+| T332 -> w342 // chomf
+| T333 -> w343 // ccomf
+| T334 -> w344 // coppc
+| T335 -> w345 // cmon
+| T336 -> w346 // cepi
+| T337 -> w347 // csect
+| T338 -> w348 // cinv
+| T339 -> w349 // ciso
+| T340 -> w350 // ccic
+| T341 -> w351 // cssc
+| T342 -> w352 // cresc
+| T343 -> w353 // csubc
+| T344 -> w354 // cfunc
+| T345 -> w355 // cidfu
+| T346 -> w356 // ccofu
+| T347 -> w357 // cresf
+| T348 -> w358 // cful
+| T349 -> w359 // cfth
+| T350 -> w360 // cnat
+| T351 -> w361 // cfuc
+| T352 -> w362 // cinito
+| T353 -> w363 // ctermo
+| T354 -> w364 // czeroo
+| T355 -> w365 // cdoma
+| T356 -> w366 // ccoda
+| T357 -> w367 // carw
+| T358 -> w368 // choma
+| T359 -> w369 // cida
+| T360 -> w370 // ccoa
+| T361 -> w371 // csetc
+| T362 -> w372 // ccatc
+| T363 -> w373 // cestrc
+| T364 -> w374 // cxpc
+| T365 -> w375 // c1stf
+| T366 -> w376 // c2ndf
+| T367 -> w377 // cprf
+| T368 -> w378 // cevlf
+| T369 -> w379 // ccurf
+| T370 -> w380 // cuncf
+| T371 -> w381 // cdiag
+| T372 -> w382 // chof
+| T373 -> w383 // cyon
+| T374 -> w384 // cpreset
+| T375 -> w385 // cdrs
+| T376 -> w386 // cpo
+| T377 -> w387 // cplt
+| T378 -> w388 // club
+| T379 -> w389 // cglb
+| T380 -> w390 // cjn
+| T381 -> w391 // cmee
+| T382 -> w392 // ctos
+| T383 -> w393 // cp0
+| T384 -> w394 // cp1
+| T385 -> w395 // clat
+| T386 -> w396 // ccla
+| T387 -> w397 // codu
+| T388 -> w398 // cipo
+| T389 -> w399 // cdlat
+| T390 -> w400 // cps
+| T391 -> w401 // ctsr
+| T392 -> w402 // cdir
+| T393 -> w403 // ctail
+| T394 -> w404 // cplusf
+| T395 -> w405 // cmgm
+| T396 -> w406 // csgrp
+| T397 -> w407 // cmnd
+| T398 -> w408 // cmndOLD
+| T399 -> w409 // cmhm
+| T400 -> w410 // csubmnd
+| T401 -> w411 // cfrmd
+| T402 -> w412 // cvrmd
+| T403 -> w413 // cgrp
+| T404 -> w414 // cminusg
+| T405 -> w415 // csg
+| T406 -> w416 // cmg
+| T407 -> w417 // csubg
+| T408 -> w418 // cnsg
+| T409 -> w419 // cqg
+| T410 -> w420 // cghm
+| T411 -> w421 // cgim
+| T412 -> w422 // cgic
+| T413 -> w423 // cga
+| T414 -> w424 // ccntz
+| T415 -> w425 // ccntr
+| T416 -> w426 // coppg
+| T417 -> w427 // csymg
+| T418 -> w428 // cpmtr
+| T419 -> w429 // cpsgn
+| T420 -> w430 // cevpm
+| T421 -> w431 // cod
+| T422 -> w432 // codold
+| T423 -> w433 // cgex
+| T424 -> w434 // cgexold
+| T425 -> w435 // cpgp
+| T426 -> w436 // cpgpold
+| T427 -> w437 // cslw
+| T428 -> w438 // clsm
+| T429 -> w439 // cpj1
+| T430 -> w440 // cefg
+| T431 -> w441 // cfrgp
+| T432 -> w442 // cvrgp
+| T433 -> w443 // ccmn
+| T434 -> w444 // cabl
+| T435 -> w445 // ccyg
+| T436 -> w446 // cdprd
+| T437 -> w447 // cdpj
+| T438 -> w448 // cmgp
+| T439 -> w449 // cur
+| T440 -> w450 // csrg
+| T441 -> w451 // crg
+| T442 -> w452 // ccrg
+| T443 -> w453 // coppr
+| T444 -> w454 // cdsr
+| T445 -> w455 // cui
+| T446 -> w456 // cir
+| T447 -> w457 // cinvr
+| T448 -> w458 // cdvr
+| T449 -> w459 // crh
+| T450 -> w460 // crs
+| T451 -> w461 // cric
+| T452 -> w462 // cdr
+| T453 -> w463 // cfield
+| T454 -> w464 // csubrg
+| T455 -> w465 // crgspn
+| T456 -> w466 // cabv
+| T457 -> w467 // cstf
+| T458 -> w468 // csr
+| T459 -> w469 // clmod
+| T460 -> w470 // cscaf
+| T461 -> w471 // clss
+| T462 -> w472 // clspn
+| T463 -> w473 // clmhm
+| T464 -> w474 // clmim
+| T465 -> w475 // clmic
+| T466 -> w476 // clbs
+| T467 -> w477 // clvec
+| T468 -> w478 // csra
+| T469 -> w479 // crglmod
+| T470 -> w480 // clidl
+| T471 -> w481 // crsp
+| T472 -> w482 // c2idl
+| T473 -> w483 // clpidl
+| T474 -> w484 // clpir
+| T475 -> w485 // cnzr
+| T476 -> w486 // crlreg
+| T477 -> w487 // cdomn
+| T478 -> w488 // cidom
+| T479 -> w489 // cpid
+| T480 -> w490 // casa
+| T481 -> w491 // casp
+| T482 -> w492 // cascl
+| T483 -> w493 // cmps
+| T484 -> w494 // cmvr
+| T485 -> w495 // cmpl
+| T486 -> w496 // cltb
+| T487 -> w497 // copws
+| T488 -> w498 // ces
+| T489 -> w499 // cevl
+| T490 -> w500 // cmhp
+| T491 -> w501 // cpsd
+| T492 -> w502 // cslv
+| T493 -> w503 // cai
+| T494 -> w504 // cps1
+| T495 -> w505 // cv1
+| T496 -> w506 // cpl1
+| T497 -> w507 // cco1
+| T498 -> w508 // ctp1
+| T499 -> w509 // ces1
+| T500 -> w510 // ce1
+| T501 -> w511 // cpsmet
+| T502 -> w512 // cxmt
+| T503 -> w513 // cme
+| T504 -> w514 // cbl
+| T505 -> w515 // cfbas
+| T506 -> w516 // cfg
+| T507 -> w517 // cmopn
+| T508 -> w518 // cmetu
+| T509 -> w519 // ccnfld
+| T510 -> w520 // zring
+| T511 -> w521 // czrh
+| T512 -> w522 // czlm
+| T513 -> w523 // cchr
+| T514 -> w524 // czn
+| T515 -> w525 // crefld
+| T516 -> w526 // cphl
+| T517 -> w527 // cipf
+| T518 -> w528 // cocv
+| T519 -> w529 // ccss
+| T520 -> w530 // cthl
+| T521 -> w531 // cpj
+| T522 -> w532 // chs
+| T523 -> w533 // cobs
+| T524 -> w534 // cdsmm
+| T525 -> w535 // cfrlm
+| T526 -> w536 // cuvc
+| T527 -> w537 // clindf
+| T528 -> w538 // clinds
+| T529 -> w539 // cmmul
+| T530 -> w540 // cmat
+| T531 -> w541 // cdmat
+| T532 -> w542 // cscmat
+| T533 -> w543 // cmvmul
+| T534 -> w544 // cmarrep
+| T535 -> w545 // cmatrepV
+| T536 -> w546 // csubma
+| T537 -> w547 // cmdat
+| T538 -> w548 // cmadu
+| T539 -> w549 // cminmar1
+| T540 -> w550 // ccpmat
+| T541 -> w551 // cmat2pmat
+| T542 -> w552 // ccpmat2mat
+| T543 -> w553 // cdecpmat
+| T544 -> w554 // cpm2mp
+| T545 -> w555 // cchpmat
+| T546 -> w556 // ctop
+| T547 -> w557 // ctopon
+| T548 -> w558 // ctps
+| T549 -> w559 // ctb
+| T550 -> w560 // ccld
+| T551 -> w561 // cnt
+| T552 -> w562 // ccl
+| T553 -> w563 // cnei
+| T554 -> w564 // clp
+| T555 -> w565 // cperf
+| T556 -> w566 // ccn
+| T557 -> w567 // ccnp
+| T558 -> w568 // clm
+| T559 -> w569 // ct0
+| T560 -> w570 // ct1
+| T561 -> w571 // cha
+| T562 -> w572 // creg
+| T563 -> w573 // cnrm
+| T564 -> w574 // ccnrm
+| T565 -> w575 // cpnrm
+| T566 -> w576 // ccmp
+| T567 -> w577 // ccon
+| T568 -> w578 // c1stc
+| T569 -> w579 // c2ndc
+| T570 class -> w580 // clly
+| T571 class -> w581 // cnlly
+| T572 -> w582 // cref
+| T573 -> w583 // cptfin
+| T574 -> w584 // clocfin
+| T575 -> w585 // ckgen
+| T576 -> w586 // ctx
+| T577 -> w587 // cxko
+| T578 -> w588 // ckq
+| T579 -> w589 // chmeo
+| T580 -> w590 // chmph
+| T581 -> w591 // cfil
+| T582 -> w592 // cufil
+| T583 -> w593 // cufl
+| T584 -> w594 // cfm
+| T585 -> w595 // cflim
+| T586 -> w596 // cflf
+| T587 -> w597 // cfcls
+| T588 -> w598 // cfcf
+| T589 -> w599 // ccnext
+| T590 -> w600 // ctmd
+| T591 -> w601 // ctgp
+| T592 -> w602 // ctsu
+| T593 -> w603 // ctrg
+| T594 -> w604 // ctdrg
+| T595 -> w605 // ctlm
+| T596 -> w606 // ctvc
+| T597 -> w607 // cust
+| T598 -> w608 // cutop
+| T599 -> w609 // cuss
+| T600 -> w610 // cusp
+| T601 -> w611 // ctus
+| T602 -> w612 // cucn
+| T603 -> w613 // ccfilu
+| T604 -> w614 // ccusp
+| T605 -> w615 // cxme
+| T606 -> w616 // cmt
+| T607 -> w617 // ctmt
+| T608 -> w618 // cnm
+| T609 -> w619 // cngp
+| T610 -> w620 // ctng
+| T611 -> w621 // cnrg
+| T612 -> w622 // cnlm
+| T613 -> w623 // cnvc
+| T614 -> w624 // cnmo
+| T615 -> w625 // cnmoold
+| T616 -> w626 // cnghm
+| T617 -> w627 // cnghmold
+| T618 -> w628 // cnmhm
+| T619 -> w629 // cii
+| T620 -> w630 // ccncf
+| T621 -> w631 // chtpy
+| T622 -> w632 // cphtpy
+| T623 -> w633 // cphtpc
+| T624 -> w634 // cpco
+| T625 -> w635 // comi
+| T626 -> w636 // comn
+| T627 -> w637 // cpi1
+| T628 -> w638 // cpin
+| T629 -> w639 // cclm
+| T630 -> w640 // ccvs
+| T631 -> w641 // ccph
+| T632 -> w642 // ctch
+| T633 -> w643 // ccfil
+| T634 -> w644 // cca
+| T635 -> w645 // cms
+| T636 -> w646 // ccms
+| T637 -> w647 // cbn
+| T638 -> w648 // chl
+| T639 -> w649 // crrx
+| T640 -> w650 // cehl
+| T641 -> w651 // covol
+| T642 -> w652 // covolold
+| T643 -> w653 // cvol
+| T644 -> w654 // cmbf
+| T645 -> w655 // citg1
+| T646 -> w656 // citg2
+| T647 -> w657 // cibl
+| T648 class class T649 setvar -> w658 // citg
+| T650 -> w659 // c0p
+| T651 T23 class T6 class T25 class T649 setvar -> w660 // cdit
+| T652 -> w661 // climc
+| T653 -> w662 // cdv
+| T654 -> w663 // cdvn
+| T655 -> w664 // ccpn
+| T656 -> w665 // cmdg
+| T657 -> w666 // cdg1
+| T658 -> w667 // cmn1
+| T659 -> w668 // cuc1p
+| T660 -> w669 // cq1p
+| T661 -> w670 // cr1p
+| T662 -> w671 // cig1p
+| T663 -> w672 // cig1pold
+| T664 -> w673 // cply
+| T665 -> w674 // cidp
+| T666 -> w675 // ccoe
+| T667 -> w676 // cdgr
+| T668 -> w677 // cquot
+| T669 -> w678 // caa
+| T670 -> w679 // ctayl
+| T671 -> w680 // cana
+| T672 -> w681 // culm
+| T673 -> w682 // clog
+| T674 -> w683 // ccxp
+| T675 -> w684 // clogb
+| T676 -> w685 // casin
+| T677 -> w686 // cacos
+| T678 -> w687 // catan
+| T679 -> w688 // carea
+| T680 -> w689 // cem
+| T681 -> w690 // czeta
+| T682 -> w691 // clgam
+| T683 -> w692 // cgam
+| T684 -> w693 // cigam
+| T685 -> w694 // ccht
+| T686 -> w695 // cvma
+| T687 -> w696 // cchp
+| T688 -> w697 // cppi
+| T689 -> w698 // cmu
+| T690 -> w699 // csgm
+| T691 -> w700 // cdchr
+| T692 -> w701 // clgs
+| T693 -> w702 // cstrkg
+| T694 -> w703 // cstrkgc
+| T695 -> w704 // cstrkgb
+| T696 -> w705 // cstrkgcb
+| T697 -> w706 // cstrkgld
+| T698 -> w707 // cstrkge
+| T699 -> w708 // citv
+| T700 -> w709 // clng
+| T701 -> w710 // ccgrg
+| T702 -> w711 // cismt
+| T703 -> w712 // cleg
+| T704 -> w713 // chlg
+| T705 -> w714 // cmir
+| T706 -> w715 // crag
+| T707 -> w716 // cperpg
+| T708 -> w717 // chpg
+| T709 -> w718 // cmid
+| T710 -> w719 // clmi
+| T711 -> w720 // ccgra
+| T712 -> w721 // cinag
+| T713 -> w722 // cleag
+| T714 -> w723 // ceqlg
+| T715 -> w724 // cttg
+| T716 -> w725 // cee
+| T717 -> w726 // cbtwn
+| T718 -> w727 // ccgr
+| T719 -> w728 // ceeng
+| T720 -> w729 // cuhg
+| T721 -> w730 // cushg
+| T722 -> w731 // cumg
+| T723 -> w732 // cuslg
+| T724 -> w733 // cusg
+| T725 -> w734 // cedg
+| T726 -> w735 // cnbgra
+| T727 -> w736 // ccusgra
+| T728 -> w737 // cuvtx
+| T729 -> w738 // cwalk
+| T730 -> w739 // ctrail
+| T731 -> w740 // cpath
+| T732 -> w741 // cspath
+| T733 -> w742 // cwlkon
+| T734 -> w743 // ctrlon
+| T735 -> w744 // cpthon
+| T736 -> w745 // cspthon
+| T737 -> w746 // ccrct
+| T738 -> w747 // ccycl
+| T739 -> w748 // cconngra
+| T740 -> w749 // cwwlk
+| T741 -> w750 // cwwlkn
+| T742 -> w751 // cclwlk
+| T743 -> w752 // cclwwlk
+| T744 -> w753 // cclwwlkn
+| T745 -> w754 // c2wlkot
+| T746 -> w755 // c2wlkonot
+| T747 -> w756 // c2spthot
+| T748 -> w757 // c2pthonot
+| T749 -> w758 // cvdg
+| T750 -> w759 // crgra
+| T751 -> w760 // crusgra
+| T752 -> w761 // ceup
+| T753 -> w762 // cfrgra
+| T754 -> w763 // cplig
+| T755 -> w764 // crpm
+| T756 -> w765 // cgr
+| T757 -> w766 // cgi
+| T758 -> w767 // cgn
+| T759 -> w768 // cgs
+| T760 -> w769 // cgx
+| T761 -> w770 // cablo
+| T762 -> w771 // csubgo
+| T763 -> w772 // cass
+| T764 -> w773 // cexid
+| T765 -> w774 // cmagm
+| T766 -> w775 // csem
+| T767 -> w776 // cmndo
+| T768 -> w777 // cghomOLD
+| T769 -> w778 // cgisoOLD
+| T770 -> w779 // crngo
+| T771 -> w780 // cdrng
+| T772 -> w781 // csfld
+| T773 -> w782 // ccm2
+| T774 -> w783 // cfld
+| T775 -> w784 // cvc
+| T776 -> w785 // cnv
+| T777 -> w786 // cpv
+| T778 -> w787 // cba
+| T779 -> w788 // cns
+| T780 -> w789 // cn0v
+| T781 -> w790 // cnsb
+| T782 -> w791 // cnmcv
+| T783 -> w792 // cims
+| T784 -> w793 // cdip
+| T785 -> w794 // css
+| T786 -> w795 // clno
+| T787 -> w796 // cnmoo
+| T788 -> w797 // cblo
+| T789 -> w798 // c0o
+| T790 -> w799 // caj
+| T791 -> w800 // chmo
+| T792 -> w801 // ccphlo
+| T793 -> w802 // ccbn
+| T794 -> w803 // chlo
+| T795 -> w804 // chil
+| T796 -> w805 // cva
+| T797 -> w806 // csm
+| T798 -> w807 // csp
+| T799 -> w808 // cno
+| T800 -> w809 // c0v
+| T801 -> w810 // cmv
+| T802 -> w811 // ccau
+| T803 -> w812 // chli
+| T804 -> w813 // csh
+| T805 -> w814 // cch
+| T806 -> w815 // cort
+| T807 -> w816 // cph
+| T808 -> w817 // cspn
+| T809 -> w818 // chj
+| T810 -> w819 // chsup
+| T811 -> w820 // c0h
+| T812 -> w821 // ccm
+| T813 -> w822 // cpjh
+| T814 -> w823 // chos
+| T815 -> w824 // chot
+| T816 -> w825 // chod
+| T817 -> w826 // chfs
+| T818 -> w827 // chft
+| T819 -> w828 // ch0o
+| T820 -> w829 // chio
+| T821 -> w830 // cnop
+| T822 -> w831 // ccop
+| T823 -> w832 // clo
+| T824 -> w833 // cbo
+| T825 -> w834 // cuo
+| T826 -> w835 // cho
+| T827 -> w836 // cnmf
+| T828 -> w837 // cnl
+| T829 -> w838 // ccnfn
+| T830 -> w839 // clf
+| T831 -> w840 // cado
+| T832 -> w841 // cbr
+| T833 -> w842 // ck
+| T834 -> w843 // cleo
+| T835 -> w844 // cei
+| T836 -> w845 // cel
+| T837 -> w846 // cspc
+| T838 -> w847 // cst
+| T839 -> w848 // chst
+| T840 -> w849 // ccv
+| T841 -> w850 // cat
+| T842 -> w851 // cmd
+| T843 -> w852 // cdmd
+| T844 -> w853 // cxdiv
+| T845 -> w854 // comnd
+| T846 -> w855 // cogrp
+| T847 -> w856 // csgns
+| T848 -> w857 // cinftm
+| T849 -> w858 // carchi
+| T850 -> w859 // cslmd
+| T851 -> w860 // corng
+| T852 -> w861 // cofld
+| T853 -> w862 // cresv
+| T854 -> w863 // csmat
+| T855 -> w864 // clmat
+| T856 class -> w865 // ccref
+| T857 -> w866 // cldlf
+| T858 -> w867 // cpcmp
+| T859 -> w868 // cmetid
+| T860 -> w869 // cpstm
+| T861 -> w870 // chcmp
+| T862 -> w871 // cqqh
+| T863 -> w872 // crrh
+| T864 -> w873 // crrext
+| T865 -> w874 // cxrh
+| T866 -> w875 // cmntop
+| T867 -> w876 // cind
+| T868 setvar T26 class class -> w877 // cesum
+| T869 class -> w878 // cofc
+| T870 -> w879 // csiga
+| T871 -> w880 // csigagen
+| T872 -> w881 // cbrsiga
+| T873 -> w882 // csx
+| T874 -> w883 // cmeas
+| T875 -> w884 // cdde
+| T876 -> w885 // cae
+| T877 -> w886 // cfae
+| T878 -> w887 // cmbfm
+| T879 -> w888 // coms
+| T880 -> w889 // comsold
+| T881 -> w890 // ccarsg
+| T882 -> w891 // citgm
+| T883 -> w892 // csitm
+| T884 -> w893 // csitg
+| T885 -> w894 // csseq
+| T886 -> w895 // cfib
+| T887 -> w896 // cprb
+| T888 -> w897 // ccprob
+| T889 -> w898 // crrv
+| T890 class -> w899 // corvc
+| T891 -> w900 // cstrkg2d
+| T892 -> w901 // cafs
+| T893 T5 class T14 class T14 class T7 -> w903 // c-bnj14
+| T896 T5 class T14 class T14 class T7 -> w906 // c-bnj18
+| T898 -> w908 // cretr
+| T899 -> w909 // cpcon
+| T900 -> w910 // cscon
+| T901 -> w911 // ccvm
+| T902 -> w912 // cgoe
+| T903 -> w913 // cgna
+| T904 class class -> w914 // cgol
+| T905 -> w915 // csat
+| T906 -> w916 // cfmla
+| T907 -> w917 // csate
+| T908 -> w918 // cprv
+| T909 class -> w919 // cgon
+| T910 -> w920 // cgoa
+| T911 -> w921 // cgoi
+| T912 -> w922 // cgoo
+| T913 -> w923 // cgob
+| T914 -> w924 // cgoq
+| T915 class class -> w925 // cgox
+| T916 -> w926 // cgze
+| T917 -> w927 // cgzr
+| T918 -> w928 // cgzp
+| T919 -> w929 // cgzu
+| T920 -> w930 // cgzg
+| T921 -> w931 // cgzi
+| T922 -> w932 // cgzf
+| T923 -> w933 // cmcn
+| T924 -> w934 // cmvar
+| T925 -> w935 // cmty
+| T926 -> w936 // cmvt
+| T927 -> w937 // cmtc
+| T928 -> w938 // cmax
+| T929 -> w939 // cmrex
+| T930 -> w940 // cmex
+| T931 -> w941 // cmdv
+| T932 -> w942 // cmvrs
+| T933 -> w943 // cmrsub
+| T934 -> w944 // cmsub
+| T935 -> w945 // cmvh
+| T936 -> w946 // cmpst
+| T937 -> w947 // cmsr
+| T938 -> w948 // cmsta
+| T939 -> w949 // cmfs
+| T940 -> w950 // cmcls
+| T941 -> w951 // cmpps
+| T942 -> w952 // cmthm
+| T943 -> w953 // cm0s
+| T944 -> w954 // cmsa
+| T945 -> w955 // cmwgfs
+| T946 -> w956 // cmsy
+| T947 -> w957 // cmesy
+| T948 -> w958 // cmgfs
+| T949 -> w959 // cmtree
+| T950 -> w960 // cmst
+| T951 -> w961 // cmsax
+| T952 -> w962 // cmufs
+| T953 -> w963 // cmuv
+| T954 -> w964 // cmvl
+| T955 -> w965 // cmvsb
+| T956 -> w966 // cmfsh
+| T957 -> w967 // cmfr
+| T958 -> w968 // cmevl
+| T959 -> w969 // cmdl
+| T960 -> w970 // cusyn
+| T961 -> w971 // cgmdl
+| T962 -> w972 // cmitp
+| T963 -> w973 // cmfitp
+| T964 -> w974 // citr
+| T965 -> w975 // ccpms
+| T966 -> w976 // chlb
+| T967 -> w977 // chlim
+| T968 -> w978 // cpfl
+| T969 -> w979 // csf1
+| T970 -> w980 // csf
+| T971 -> w981 // cpsl
+| T972 -> w982 // czr
+| T973 -> w983 // cgf
+| T974 -> w984 // cgfo
+| T975 -> w985 // ceqp
+| T976 -> w986 // crqp
+| T977 -> w987 // cqp
+| T978 -> w988 // czp
+| T979 -> w989 // cqpa
+| T980 -> w990 // ccp
+| T981 T5 class T14 class T14 class T7 -> w991 // ctrpred
+| T982 T5 class T14 class T14 class T7 -> w992 // cwsuc
+| T983 T5 class T14 class T7 -> w993 // cwlim
+| T984 -> w994 // csur
+| T985 -> w995 // cslt
+| T986 -> w996 // cbday
+| T5 class T987 class T7 -> w997 // ctxp
+| T988 T5 class T14 class T7 -> w998 // cpprod
+| T989 -> w999 // csset
+| T990 -> w1000 // ctrans
+| T991 -> w1001 // cbigcup
+| T992 class -> w1002 // cfix
+| T993 -> w1003 // climits
+| T994 -> w1004 // cfuns
+| T995 -> w1005 // csingle
+| T996 -> w1006 // csingles
+| T997 class -> w1007 // cimage
+| T998 -> w1008 // ccart
+| T999 -> w1009 // cimg
+| T1000 -> w1010 // cdomain
+| T1001 -> w1011 // crange
+| T1002 -> w1012 // capply
+| T1003 -> w1013 // ccup
+| T1004 -> w1014 // ccap
+| T1005 -> w1015 // csuccf
+| T1006 class -> w1016 // cfunpart
+| T1007 class -> w1017 // cfullfn
+| T1008 -> w1018 // crestrict
+| T1009 class -> w1019 // cub
+| T1010 class -> w1020 // clb
+| T1011 class T14 class T1012 -> w1021 // caltop
+| T5 class T1013 class T7 -> w1022 // caltxp
+| T1014 -> w1023 // cofs
+| T1015 -> w1024 // ctransport
+| T1016 -> w1025 // cifs
+| T1017 -> w1026 // ccgr3
+| T1018 -> w1027 // ccolin
+| T1019 -> w1028 // cfs
+| T1020 -> w1029 // csegle
+| T1021 -> w1030 // coutsideof
+| T1022 -> w1031 // cline2
+| T1023 -> w1032 // cray
+| T1024 -> w1033 // clines2
+| T1025 -> w1034 // cfwddif
+| T1026 -> w1035 // cfwddifn
+| T1027 -> w1036 // chf
+| T1028 -> w1037 // cfne
+| T1029 T5 class T14 class T7 -> w1039 // cgcdOLD
+| T1032 class -> w1042 // bj-csngl
+| T1033 class -> w1043 // bj-ctag
+| T5 class T1034 class T7 -> w1044 // bj-cproj
+| T1035 class T1036 -> w1045 // bj-c1upl
+| T1037 class -> w1046 // bj-cpr1
+| T1035 class T1038 class T1036 -> w1047 // bj-c2uple
+| T1039 class -> w1048 // bj-cpr2
+| T5 setvar T26 class T14 setvar T26 class T14 setvar T26 class T57 class T7 -> w1049 // cmpt3
+| T1040 -> w1050 // cfset
+| T1041 -> w1051 // ccur-
+| T1042 -> w1052 // cunc-
+| T1043 -> w1053 // cdiag2
+| T1044 -> w1054 // cinftyexpi
+| T1045 -> w1055 // cccinfty
+| T1046 -> w1056 // cccbar
+| T1047 -> w1057 // cpinfty
+| T1048 -> w1058 // cminfty
+| T1049 -> w1059 // crrbar
+| T1050 -> w1060 // cinfty
+| T1051 -> w1061 // ccchat
+| T1052 -> w1062 // crrhat
+| T1053 -> w1063 // caddcc
+| T1054 -> w1064 // coppcc
+| T1055 -> w1065 // cprcpal
+| T1056 -> w1066 // carg
+| T1057 -> w1067 // cmulc
+| T1058 -> w1068 // cinvc
+| T1059 -> w1069 // cfinsum
+| T1060 -> w1070 // crrvec
+| T1061 -> w1071 // ctau
+| T1062 -> w1072 // ctotbnd
+| T1063 -> w1073 // cbnd
+| T1064 -> w1074 // cismty
+| T1065 -> w1075 // crrn
+| T1066 -> w1076 // crnghom
+| T1067 -> w1077 // crngiso
+| T1068 -> w1078 // crisc
+| T1069 -> w1079 // ccring
+| T1070 -> w1080 // cidl
+| T1071 -> w1081 // cpridl
+| T1072 -> w1082 // cmaxidl
+| T1073 -> w1083 // cprrng
+| T1074 -> w1084 // cdmn
+| T1075 -> w1085 // cigen
+| T1077 -> w1087 // clsa
+| T1078 -> w1088 // clsh
+| T1079 -> w1089 // clcv
+| T1080 -> w1090 // clfn
+| T1081 -> w1091 // clk
+| T1082 -> w1092 // cld
+| T1083 -> w1093 // cops
+| T1084 -> w1094 // ccmtN
+| T1085 -> w1095 // col
+| T1086 -> w1096 // coml
+| T1087 -> w1097 // ccvr
+| T1088 -> w1098 // catm
+| T1089 -> w1099 // cal
+| T1090 -> w1100 // clc
+| T1091 -> w1101 // chlt
+| T1092 -> w1102 // clln
+| T1093 -> w1103 // clpl
+| T1094 -> w1104 // clvol
+| T1095 -> w1105 // clines
+| T1096 -> w1106 // cpointsN
+| T1097 -> w1107 // cpsubsp
+| T1098 -> w1108 // cpmap
+| T1099 -> w1109 // cpadd
+| T1100 -> w1110 // cpclN
+| T1101 -> w1111 // cpolN
+| T1102 -> w1112 // cpscN
+| T1103 -> w1113 // clh
+| T1104 -> w1114 // claut
+| T1105 -> w1115 // cwpointsN
+| T1106 -> w1116 // cpautN
+| T1107 -> w1117 // cldil
+| T1108 -> w1118 // cltrn
+| T1109 -> w1119 // cdilN
+| T1110 -> w1120 // ctrnN
+| T1111 -> w1121 // ctrl
+| T1112 -> w1122 // ctgrp
+| T1113 -> w1123 // ctendo
+| T1114 -> w1124 // cedring
+| T1115 -> w1125 // cedring-rN
+| T1116 -> w1126 // cdveca
+| T1117 -> w1127 // cdia
+| T1118 -> w1128 // cdvh
+| T1119 -> w1129 // cocaN
+| T1120 -> w1130 // cdjaN
+| T1121 -> w1131 // cdib
+| T1122 -> w1132 // cdic
+| T1123 -> w1133 // cdih
+| T1124 -> w1134 // coch
+| T1125 -> w1135 // cdjh
+| T1126 -> w1136 // clpoN
+| T1127 -> w1137 // clcd
+| T1128 -> w1138 // cmpd
+| T1129 -> w1139 // chvm
+| T1130 -> w1140 // chdma1
+| T1131 -> w1141 // chdma
+| T1132 -> w1142 // chg
+| T1133 -> w1143 // chlh
+| T1134 -> w1144 // cnacs
+| T1135 -> w1145 // cmzpcl
+| T1136 -> w1146 // cmzp
+| T1137 -> w1147 // cdioph
+| T1138 -> w1148 // csquarenn
+| T1139 -> w1149 // cpell1qr
+| T1140 -> w1150 // cpell1234qr
+| T1141 -> w1151 // cpell14qr
+| T1142 -> w1152 // cpellfund
+| T1143 -> w1153 // cpellfundold
+| T1144 -> w1154 // crmx
+| T1145 -> w1155 // crmy
+| T1146 -> w1156 // clfig
+| T1147 -> w1157 // clnm
+| T1148 -> w1158 // clnr
+| T1149 -> w1159 // cldgis
+| T1150 -> w1160 // cmnc
+| T1151 -> w1161 // cplylt
+| T1152 -> w1162 // cdgraa
+| T1153 -> w1163 // cdgraaold
+| T1154 -> w1164 // cmpaa
+| T1155 -> w1165 // citgo
+| T1156 -> w1166 // cza
+| T1157 -> w1167 // cmend
+| T1158 -> w1168 // csdrg
+| T1159 -> w1169 // ccytp
+| T1160 -> w1170 // ctopsep
+| T1161 -> w1171 // ctoplnd
+| T1162 -> w1172 // crcl
+| T1164 -> w1174 // cbcc
+| T1165 -> w1175 // cplusr
+| T1166 -> w1176 // cminusr
+| T1167 -> w1177 // ctimesr
+| T1168 T5 class T14 class T7 -> w1178 // cptdfc
+| T1169 -> w1179 // crr3c
+| T1170 -> w1180 // cline3
+| T1175 -> w1195 // csalg
+| T1176 -> w1196 // csalon
+| T1177 -> w1197 // csalgen
+| T1178 -> w1198 // csumge0
+| T1179 -> w1199 // cmea
+| T1180 -> w1200 // come
+| T1181 -> w1201 // ccaragen
+| T1182 -> w1202 // covoln
+| T1183 -> w1203 // cvoln
+| T5 class T1185 class T7 -> w1205 // cafv
+| T1186 class class class T1187 -> w1206 // caov
+| T1188 -> w1207 // ciccp
+| T1189 -> w1208 // ceven
+| T1190 -> w1209 // codd
+| T1191 -> w1210 // cgbe
+| T1192 -> w1211 // cgbo
+| T1193 -> w1212 // cgboa
+| T1194 -> w1213 // cpfx
+| T1195 -> w1214 // cedgf
+| T1196 -> w1215 // cvtx
+| T1197 -> w1216 // ciedg
+| T1198 -> w1217 // cuhgr
+| T1199 -> w1218 // cushgr
+| T1200 -> w1219 // cumgr
+| T1201 -> w1220 // cuhgraltv
+| T1202 -> w1221 // cushgraltv
+| T1203 -> w1222 // cvtxaltv
+| T1204 -> w1223 // cgord
+| T1205 -> w1224 // cgsiz
+| T1206 -> w1225 // cfusg
+| T1207 -> w1226 // cmgmhm
+| T1208 -> w1227 // csubmgm
+| T1209 -> w1228 // ccllaw
+| T1210 -> w1229 // casslaw
+| T1211 -> w1230 // ccomlaw
+| T1212 -> w1231 // cintop
+| T1213 -> w1232 // cclintop
+| T1214 -> w1233 // cassintop
+| T1215 -> w1234 // cmgm2
+| T1216 -> w1235 // ccmgm2
+| T1217 -> w1236 // csgrp2
+| T1218 -> w1237 // ccsgrp2
+| T1219 -> w1238 // crng
+| T1220 -> w1239 // crngh
+| T1221 -> w1240 // crngs
+| T1222 -> w1241 // crngc
+| T1223 -> w1242 // crngcALTV
+| T1224 -> w1243 // cringc
+| T1225 -> w1244 // cringcALTV
+| T1226 -> w1245 // cdmatalt
+| T1227 -> w1246 // cscmatalt
+| T1228 -> w1247 // clinc
+| T1229 -> w1248 // clinco
+| T1230 -> w1249 // clininds
+| T1231 -> w1250 // clindeps
+| T1232 -> w1251 // cfdiv
+| T1233 -> w1252 // cbigo
+| T1234 -> w1253 // cblen
+| T1235 -> w1254 // cdig
+| T1236 -> w1255 // cge-real
+| T1237 -> w1256 // cgt
+| T1238 -> w1257 // csinh
+| T1239 -> w1258 // ccosh
+| T1240 -> w1259 // ctanh
+| T1241 -> w1260 // csec
+| T1242 -> w1261 // ccsc
+| T1243 -> w1262 // ccot
+| T1244 class class -> w1263 // cdp2
+| T1245 -> w1264 // cdp
+| T1246 -> w1265 // clog-
+
+setvar: _setvar_var -> setvar_var // Must be a var
+
+_wff_var: T1250 | T1251 | T1252 | T1253 | T1254 | T1255 | T1256 | T1257 | T1258 | T1259 | T1260 | T1261 | T1262 | T1263 | T1264 | T1265 | T1266 | T1267 | T1268 | T1269 | T1270 | T1271 | T1272 | T1273 | T1274 | T1275 | T1276 | T1277 | T1278 | T1279 | T1280 | T1281 | T1282 | T1283 | T1284 | T1285 | T1286 | T1287 | T1288 | T1289 | T1290 | T1291 | T1292 | T1293 | T1294 | T1295 | T1296 | T1297 | T1298 | T1299 | T1300 | T1301 | T1302 | T1303 | T1304 | T1305 | T1306 | T1307 | T1308
+
+_class_var: T1439 | T1440 | T1441 | T1442 | T1443 | T1444 | T1445 | T1446 | T1447 | T1448 | T1449 | T1450 | T1451 | T1452 | T1453 | T1454 | T1455 | T1456 | T1457 | T1458 | T1459 | T1460 | T1461 | T1462 | T1463 | T1464 | T1465 | T1466 | T1467 | T1468 | T1469 | T1470 | T1471 | T1472 | T1473 | T1474 | T1475 | T1476 | T1477 | T1478 | T1479 | T1480 | T1481 | T1482 | T1483 | T1484 | T1485 | T1486 | T1487 | T1488 | T1489 | T1490 | T1491 | T1492 | T1493 | T1494 | T1495 | T1496 | T1497 | T1498 | T1499 | T1500 | T1501 | T1502 | T1503 | T1504 | T1505 | T1506 | T1507 | T1508 | T1509 | T1510 | T1511 | T1512 | T1513 | T1514 | T1515 | T1516 | T1517 | T1518 | T1519 | T1520 | T1521 | T1522 | T1523 | T1524 | T1525 | T1526 | T1527 | T1528 | T1529 | T1530 | T1531 | T1532 | T1533 | T1534 | T1535 | T1536 | T1537 | T1538 | T1539 | T1540 | T1541 | T1542 | T1543 | T1544 | T1545 | T1546 | T1547 | T1548 | T1549 | T1550 | T1551 | T1552 | T1553 | T1554 | T1555 | T1556 | T1557 | T1558 | T1559 | T1560 | T1561 | T1562 | T1563 | T1564 | T1565 | T1566 | T1567 | T1568 | T1569 | T1570 | T1571 | T1572 | T1573 | T1574 | T1575 | T1576 | T1577 | T1578 | T1579 | T1580 | T1581 | T1582 | T1583 | T1584 | T1585 | T1586 | T1587 | T1588 | T1589 | T1590 | T1591 | T1592
+
+_setvar_var: T1309 | T1310 | T1311 | T1312 | T1313 | T1314 | T1315 | T1316 | T1317 | T1318 | T1319 | T1320 | T1321 | T1322 | T1323 | T1324 | T1325 | T1326 | T1327 | T1328 | T1329 | T1330 | T1331 | T1332 | T1333 | T1334 | T1335 | T1336 | T1337 | T1338 | T1339 | T1340 | T1341 | T1342 | T1343 | T1344 | T1345 | T1346 | T1347 | T1348 | T1349 | T1350 | T1351 | T1352 | T1353 | T1354 | T1355 | T1356 | T1357 | T1358 | T1359 | T1360 | T1361 | T1362 | T1363 | T1364 | T1365 | T1366 | T1367 | T1368 | T1369 | T1370 | T1371 | T1372 | T1373 | T1374 | T1375 | T1376 | T1377 | T1378 | T1379 | T1380 | T1381 | T1382 | T1383 | T1384 | T1385 | T1386 | T1387 | T1388 | T1389 | T1390 | T1391 | T1392 | T1393 | T1394 | T1395 | T1396 | T1397 | T1398 | T1399 | T1400 | T1401 | T1402 | T1403 | T1404 | T1405 | T1406 | T1407 | T1408 | T1409 | T1410 | T1411 | T1412 | T1413 | T1414 | T1415 | T1416 | T1417 | T1418 | T1419 | T1420 | T1421 | T1422 | T1423 | T1424 | T1425 | T1426 | T1427 | T1428 | T1429 | T1430 | T1431 | T1432 | T1433 | T1434 | T1435 | T1436 | T1437 | T1438
+
+%declare _TWFF _TCLASS _TSETVAR _TSET T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 T21 T22 T23 T24 T25 T26 T27 T28 T29 T30 T31 T32 T33 T34 T35 T36 T37 T38 T39 T40 T41 T42 T43 T44 T45 T46 T47 T48 T49 T50 T51 T52 T53 T54 T55 T56 T57 T58 T59 T60 T61 T62 T63 T64 T65 T66 T67 T68 T69 T70 T71 T72 T73 T74 T75 T76 T77 T78 T79 T80 T81 T82 T83 T84 T85 T86 T87 T88 T89 T90 T91 T92 T93 T94 T95 T96 T97 T98 T99 T100 T101 T102 T103 T104 T105 T106 T107 T108 T109 T110 T111 T112 T113 T114 T115 T116 T117 T118 T119 T120 T121 T122 T123 T124 T125 T126 T127 T128 T129 T130 T131 T132 T133 T134 T135 T136 T137 T138 T139 T140 T141 T142 T143 T144 T145 T146 T147 T148 T149 T150 T151 T152 T153 T154 T155 T156 T157 T158 T159 T160 T161 T162 T163 T164 T165 T166 T167 T168 T169 T170 T171 T172 T173 T174 T175 T176 T177 T178 T179 T180 T181 T182 T183 T184 T185 T186 T187 T188 T189 T190 T191 T192 T193 T194 T195 T196 T197 T198 T199 T200 T201 T202 T203 T204 T205 T206 T207 T208 T209 T210 T211 T212 T213 T214 T215 T216 T217 T218 T219 T220 T221 T222 T223 T224 T225 T226 T227 T228 T229 T230 T231 T232 T233 T234 T235 T236 T237 T238 T239 T240 T241 T242 T243 T244 T245 T246 T247 T248 T249 T250 T251 T252 T253 T254 T255 T256 T257 T258 T259 T260 T261 T262 T263 T264 T265 T266 T267 T268 T269 T270 T271 T272 T273 T274 T275 T276 T277 T278 T279 T280 T281 T282 T283 T284 T285 T286 T287 T288 T289 T290 T291 T292 T293 T294 T295 T296 T297 T298 T299 T300 T301 T302 T303 T304 T305 T306 T307 T308 T309 T310 T311 T312 T313 T314 T315 T316 T317 T318 T319 T320 T321 T322 T323 T324 T325 T326 T327 T328 T329 T330 T331 T332 T333 T334 T335 T336 T337 T338 T339 T340 T341 T342 T343 T344 T345 T346 T347 T348 T349 T350 T351 T352 T353 T354 T355 T356 T357 T358 T359 T360 T361 T362 T363 T364 T365 T366 T367 T368 T369 T370 T371 T372 T373 T374 T375 T376 T377 T378 T379 T380 T381 T382 T383 T384 T385 T386 T387 T388 T389 T390 T391 T392 T393 T394 T395 T396 T397 T398 T399 T400 T401 T402 T403 T404 T405 T406 T407 T408 T409 T410 T411 T412 T413 T414 T415 T416 T417 T418 T419 T420 T421 T422 T423 T424 T425 T426 T427 T428 T429 T430 T431 T432 T433 T434 T435 T436 T437 T438 T439 T440 T441 T442 T443 T444 T445 T446 T447 T448 T449 T450 T451 T452 T453 T454 T455 T456 T457 T458 T459 T460 T461 T462 T463 T464 T465 T466 T467 T468 T469 T470 T471 T472 T473 T474 T475 T476 T477 T478 T479 T480 T481 T482 T483 T484 T485 T486 T487 T488 T489 T490 T491 T492 T493 T494 T495 T496 T497 T498 T499 T500 T501 T502 T503 T504 T505 T506 T507 T508 T509 T510 T511 T512 T513 T514 T515 T516 T517 T518 T519 T520 T521 T522 T523 T524 T525 T526 T527 T528 T529 T530 T531 T532 T533 T534 T535 T536 T537 T538 T539 T540 T541 T542 T543 T544 T545 T546 T547 T548 T549 T550 T551 T552 T553 T554 T555 T556 T557 T558 T559 T560 T561 T562 T563 T564 T565 T566 T567 T568 T569 T570 T571 T572 T573 T574 T575 T576 T577 T578 T579 T580 T581 T582 T583 T584 T585 T586 T587 T588 T589 T590 T591 T592 T593 T594 T595 T596 T597 T598 T599 T600 T601 T602 T603 T604 T605 T606 T607 T608 T609 T610 T611 T612 T613 T614 T615 T616 T617 T618 T619 T620 T621 T622 T623 T624 T625 T626 T627 T628 T629 T630 T631 T632 T633 T634 T635 T636 T637 T638 T639 T640 T641 T642 T643 T644 T645 T646 T647 T648 T649 T650 T651 T652 T653 T654 T655 T656 T657 T658 T659 T660 T661 T662 T663 T664 T665 T666 T667 T668 T669 T670 T671 T672 T673 T674 T675 T676 T677 T678 T679 T680 T681 T682 T683 T684 T685 T686 T687 T688 T689 T690 T691 T692 T693 T694 T695 T696 T697 T698 T699 T700 T701 T702 T703 T704 T705 T706 T707 T708 T709 T710 T711 T712 T713 T714 T715 T716 T717 T718 T719 T720 T721 T722 T723 T724 T725 T726 T727 T728 T729 T730 T731 T732 T733 T734 T735 T736 T737 T738 T739 T740 T741 T742 T743 T744 T745 T746 T747 T748 T749 T750 T751 T752 T753 T754 T755 T756 T757 T758 T759 T760 T761 T762 T763 T764 T765 T766 T767 T768 T769 T770 T771 T772 T773 T774 T775 T776 T777 T778 T779 T780 T781 T782 T783 T784 T785 T786 T787 T788 T789 T790 T791 T792 T793 T794 T795 T796 T797 T798 T799 T800 T801 T802 T803 T804 T805 T806 T807 T808 T809 T810 T811 T812 T813 T814 T815 T816 T817 T818 T819 T820 T821 T822 T823 T824 T825 T826 T827 T828 T829 T830 T831 T832 T833 T834 T835 T836 T837 T838 T839 T840 T841 T842 T843 T844 T845 T846 T847 T848 T849 T850 T851 T852 T853 T854 T855 T856 T857 T858 T859 T860 T861 T862 T863 T864 T865 T866 T867 T868 T869 T870 T871 T872 T873 T874 T875 T876 T877 T878 T879 T880 T881 T882 T883 T884 T885 T886 T887 T888 T889 T890 T891 T892 T893 T894 T895 T896 T897 T898 T899 T900 T901 T902 T903 T904 T905 T906 T907 T908 T909 T910 T911 T912 T913 T914 T915 T916 T917 T918 T919 T920 T921 T922 T923 T924 T925 T926 T927 T928 T929 T930 T931 T932 T933 T934 T935 T936 T937 T938 T939 T940 T941 T942 T943 T944 T945 T946 T947 T948 T949 T950 T951 T952 T953 T954 T955 T956 T957 T958 T959 T960 T961 T962 T963 T964 T965 T966 T967 T968 T969 T970 T971 T972 T973 T974 T975 T976 T977 T978 T979 T980 T981 T982 T983 T984 T985 T986 T987 T988 T989 T990 T991 T992 T993 T994 T995 T996 T997 T998 T999 T1000 T1001 T1002 T1003 T1004 T1005 T1006 T1007 T1008 T1009 T1010 T1011 T1012 T1013 T1014 T1015 T1016 T1017 T1018 T1019 T1020 T1021 T1022 T1023 T1024 T1025 T1026 T1027 T1028 T1029 T1030 T1031 T1032 T1033 T1034 T1035 T1036 T1037 T1038 T1039 T1040 T1041 T1042 T1043 T1044 T1045 T1046 T1047 T1048 T1049 T1050 T1051 T1052 T1053 T1054 T1055 T1056 T1057 T1058 T1059 T1060 T1061 T1062 T1063 T1064 T1065 T1066 T1067 T1068 T1069 T1070 T1071 T1072 T1073 T1074 T1075 T1076 T1077 T1078 T1079 T1080 T1081 T1082 T1083 T1084 T1085 T1086 T1087 T1088 T1089 T1090 T1091 T1092 T1093 T1094 T1095 T1096 T1097 T1098 T1099 T1100 T1101 T1102 T1103 T1104 T1105 T1106 T1107 T1108 T1109 T1110 T1111 T1112 T1113 T1114 T1115 T1116 T1117 T1118 T1119 T1120 T1121 T1122 T1123 T1124 T1125 T1126 T1127 T1128 T1129 T1130 T1131 T1132 T1133 T1134 T1135 T1136 T1137 T1138 T1139 T1140 T1141 T1142 T1143 T1144 T1145 T1146 T1147 T1148 T1149 T1150 T1151 T1152 T1153 T1154 T1155 T1156 T1157 T1158 T1159 T1160 T1161 T1162 T1163 T1164 T1165 T1166 T1167 T1168 T1169 T1170 T1171 T1172 T1173 T1174 T1175 T1176 T1177 T1178 T1179 T1180 T1181 T1182 T1183 T1184 T1185 T1186 T1187 T1188 T1189 T1190 T1191 T1192 T1193 T1194 T1195 T1196 T1197 T1198 T1199 T1200 T1201 T1202 T1203 T1204 T1205 T1206 T1207 T1208 T1209 T1210 T1211 T1212 T1213 T1214 T1215 T1216 T1217 T1218 T1219 T1220 T1221 T1222 T1223 T1224 T1225 T1226 T1227 T1228 T1229 T1230 T1231 T1232 T1233 T1234 T1235 T1236 T1237 T1238 T1239 T1240 T1241 T1242 T1243 T1244 T1245 T1246 T1247 T1248 T1249 T1250 T1251 T1252 T1253 T1254 T1255 T1256 T1257 T1258 T1259 T1260 T1261 T1262 T1263 T1264 T1265 T1266 T1267 T1268 T1269 T1270 T1271 T1272 T1273 T1274 T1275 T1276 T1277 T1278 T1279 T1280 T1281 T1282 T1283 T1284 T1285 T1286 T1287 T1288 T1289 T1290 T1291 T1292 T1293 T1294 T1295 T1296 T1297 T1298 T1299 T1300 T1301 T1302 T1303 T1304 T1305 T1306 T1307 T1308 T1309 T1310 T1311 T1312 T1313 T1314 T1315 T1316 T1317 T1318 T1319 T1320 T1321 T1322 T1323 T1324 T1325 T1326 T1327 T1328 T1329 T1330 T1331 T1332 T1333 T1334 T1335 T1336 T1337 T1338 T1339 T1340 T1341 T1342 T1343 T1344 T1345 T1346 T1347 T1348 T1349 T1350 T1351 T1352 T1353 T1354 T1355 T1356 T1357 T1358 T1359 T1360 T1361 T1362 T1363 T1364 T1365 T1366 T1367 T1368 T1369 T1370 T1371 T1372 T1373 T1374 T1375 T1376 T1377 T1378 T1379 T1380 T1381 T1382 T1383 T1384 T1385 T1386 T1387 T1388 T1389 T1390 T1391 T1392 T1393 T1394 T1395 T1396 T1397 T1398 T1399 T1400 T1401 T1402 T1403 T1404 T1405 T1406 T1407 T1408 T1409 T1410 T1411 T1412 T1413 T1414 T1415 T1416 T1417 T1418 T1419 T1420 T1421 T1422 T1423 T1424 T1425 T1426 T1427 T1428 T1429 T1430 T1431 T1432 T1433 T1434 T1435 T1436 T1437 T1438 T1439 T1440 T1441 T1442 T1443 T1444 T1445 T1446 T1447 T1448 T1449 T1450 T1451 T1452 T1453 T1454 T1455 T1456 T1457 T1458 T1459 T1460 T1461 T1462 T1463 T1464 T1465 T1466 T1467 T1468 T1469 T1470 T1471 T1472 T1473 T1474 T1475 T1476 T1477 T1478 T1479 T1480 T1481 T1482 T1483 T1484 T1485 T1486 T1487 T1488 T1489 T1490 T1491 T1492 T1493 T1494 T1495 T1496 T1497 T1498 T1499 T1500 T1501 T1502 T1503 T1504 T1505 T1506 T1507 T1508 T1509 T1510 T1511 T1512 T1513 T1514 T1515 T1516 T1517 T1518 T1519 T1520 T1521 T1522 T1523 T1524 T1525 T1526 T1527 T1528 T1529 T1530 T1531 T1532 T1533 T1534 T1535 T1536 T1537 T1538 T1539 T1540 T1541 T1542 T1543 T1544 T1545 T1546 T1547 T1548 T1549 T1550 T1551 T1552 T1553 T1554 T1555 T1556 T1557 T1558 T1559 T1560 T1561 T1562 T1563 T1564 T1565 T1566 T1567 T1568 T1569 T1570 T1571 T1572 T1573 T1574 T1575 T1576 T1577 T1578 T1579 T1580 T1581 T1582 T1583 T1584 T1585 T1586 T1587 T1588 T1589 T1590 T1591 T1592

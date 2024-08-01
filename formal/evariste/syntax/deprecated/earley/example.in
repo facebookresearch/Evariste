@@ -1,0 +1,6 @@
+#num# 0 1
+$start $e $*start
+$e $e * $b $*mul
+$e $e + $b $*add
+$e $b $*eb
+$b #num#
