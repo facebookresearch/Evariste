@@ -1,7 +1,7 @@
 ply==3.11
 torch>=1.6.0
 torchvision
-pytest==5.4.3
+pytest==9.0.3
 redis
 pexpect
 scipy
